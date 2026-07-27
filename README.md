@@ -1,10 +1,10 @@
 # MerQube PE Support Ops Report (GitHub Pages)
 
-Static, MerQube-branded report page for Platform Engineering support ops.
+Static MerQube-branded review of **Platform Engineering Support (PES)** cases.
 
-- **Quarterly sample** from `PE_Quarterly_Delivery_Review_Mar_To_June_2026.pdf` (delivery + BAU context)
-- **May–Jul 2026 deep dive** from the local PES analysis suite (SLA, timing, types, hotspots, etc.)
-- Person names anonymized; ticket summaries redacted for public hosting
+Data source: offline Jira export for `2026-05-01 ≤ created < 2026-08-01` (395 tickets). No quarterly PDF / capacity figures.
+
+Includes SLA, demand timing, case types, hotspots, closers (real Jira display names), and a filterable raw case dump.
 
 ## Local preview
 
@@ -14,18 +14,7 @@ python3 -m http.server 4173
 # open http://localhost:4173
 ```
 
-## Publish (GitHub Pages)
-
-Repo intended for: `https://github.com/arjit-merq/pes-ops-report`
-
-```bash
-# after: gh auth refresh -h github.com
-gh repo create arjit-merq/pes-ops-report --public --source=. --remote=origin --push
-gh api repos/arjit-merq/pes-ops-report/pages -X POST -f build_type=workflow \
-  || echo "Enable Pages in Settings → Pages → Deploy from branch: main / root"
-```
-
-Expected URL after Pages is enabled:
+## Live URL
 
 `https://arjit-merq.github.io/pes-ops-report/`
 
@@ -36,9 +25,5 @@ From `PES-CASE-ANALYSIS`:
 ```bash
 python3 scripts/analyze_full_suite.py
 python3 scripts/build_dashboard_report_bundle.py
-# then re-run the sanitize export into this repo's data/report.json
+# then rebuild public report.json (copy dashboard_full_report.json + tickets dump)
 ```
-
-## Privacy
-
-Do **not** commit `.env`, raw Jira JSON, or unsanitized breach tables with customer text.

@@ -1,15 +1,15 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
 const COLORS = {
-  teal: "#7aff8a",
-  sky: "#6685c2",
-  amber: "#f5b942",
-  rose: "#fb7185",
-  emerald: "#7aff8a",
+  teal: "#0f7a3a",
+  sky: "#335cad",
+  amber: "#b45309",
+  rose: "#be123c",
+  emerald: "#16a34a",
   indigo: "#3241ff",
   violet: "#6c32ff",
-  slate: "#9aa3a6",
-  white: "#f1f2f2",
+  slate: "#727a7d",
+  white: "#212322",
 };
 
 const SECTIONS = [
@@ -20,8 +20,9 @@ const SECTIONS = [
   { id: "types", num: "04", title: "Case types", sub: "Volume & pain rank" },
   { id: "hotspots", num: "05", title: "Hotspots", sub: "Recurring systems" },
   { id: "monthly", num: "06", title: "Monthly trend", sub: "Trajectory" },
-  { id: "people", num: "07", title: "Closers & credit", sub: "Anonymized ownership" },
+  { id: "people", num: "07", title: "Closers & credit", sub: "Ownership from changelog" },
   { id: "pain", num: "08", title: "Pain points", sub: "Themes from comments" },
+  { id: "cases", num: "09", title: "Case dump", sub: "All PES tickets" },
 ];
 
 const chartRegistry = [];
@@ -105,11 +106,26 @@ function pager(currentId) {
 }
 
 function configureChartDefaults() {
-  Chart.defaults.color = "#9aa3a6";
-  Chart.defaults.borderColor = "rgba(241,242,242,0.12)";
+  Chart.defaults.color = "#727a7d";
+  Chart.defaults.borderColor = "rgba(33,35,34,0.1)";
   Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
   Chart.defaults.plugins.legend.labels.boxWidth = 12;
   Chart.defaults.plugins.legend.labels.usePointStyle = true;
+}
+
+function fmtTs(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso;
+  return d.toISOString().replace("T", " ").slice(0, 19) + "Z";
+}
+
+function escapeHtml(s) {
+  return String(s ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
 }
 
 function buildHome(report) {
@@ -136,8 +152,8 @@ function buildHome(report) {
           <div class="stat-pill"><div class="label">Resolution SLA</div><div class="value">${fmtPct(reso.meet_pct)}</div></div>
         </div>
         <div class="notice">
-          Public sample: engineer and reporter identities are anonymized; ticket summaries are redacted.
-          Metrics and charts remain faithful to the offline analysis suite.
+          Source: offline Jira export of PES cases only (${report.window}). No quarterly PDF capacity figures.
+          Closer names and ticket fields come from Jira as exported.
         </div>
         ${insights("What this review answers", [
           "Is support demand stable, and where does it spike by time of day?",
@@ -340,7 +356,7 @@ function buildPeople(report) {
     <section class="view" data-view="people">
       ${pageHead(
         s,
-        `Anonymized ownership view. Closer ≠ top-commenter on ${fmtPct(cw.mismatch_pct)} of closed tickets (${cw.n_mismatch}/${cw.n_closed_with_closer}).`,
+        `Closer = author of first changelog transition to a terminal status. Closer ≠ top-commenter on ${fmtPct(cw.mismatch_pct)} of closed tickets (${cw.n_mismatch}/${cw.n_closed_with_closer}).`,
       )}
       <div class="content">
         ${card("Tickets closed (changelog closer)", `<div class="chart-box tall"><canvas id="c-closers"></canvas></div>`)}
@@ -349,7 +365,7 @@ function buildPeople(report) {
           table(
             ["Person", "Closed as closer", "Was top commenter", "Delta"],
             cw.credit_delta.slice(0, 15).map((r) => [
-              r.person,
+              escapeHtml(r.person),
               r.closed_as_closer,
               r.was_top_commenter_on_closed,
               r.delta_closer_minus_top,
@@ -359,6 +375,77 @@ function buildPeople(report) {
         ${pager("people")}
       </div>
     </section>`;
+}
+
+function ticketRows(tickets) {
+  return tickets.map((t) => [
+    `<span class="mono">${escapeHtml(t.key)}</span>`,
+    `<span class="wrap">${escapeHtml(t.summary)}</span>`,
+    escapeHtml(t.creator || "—"),
+    escapeHtml(t.assignee || "—"),
+    `<span class="mono">${fmtTs(t.created_at)}</span>`,
+    `<span class="mono">${fmtTs(t.closed_at)}</span>`,
+    escapeHtml(t.status),
+    escapeHtml(t.priority),
+  ]);
+}
+
+function renderCaseTable(tickets) {
+  return `<div class="table-wrap raw"><table><thead><tr>${[
+    "Case",
+    "Subject",
+    "Creator",
+    "Assignee",
+    "Created",
+    "Closed",
+    "Status",
+    "Priority",
+  ]
+    .map((h) => `<th>${h}</th>`)
+    .join("")}</tr></thead><tbody>${ticketRows(tickets)
+    .map((r) => `<tr>${r.map((c) => `<td>${c ?? "—"}</td>`).join("")}</tr>`)
+    .join("")}</tbody></table></div>`;
+}
+
+function buildCases(report) {
+  const s = SECTIONS.find((x) => x.id === "cases");
+  const tickets = report.tickets || [];
+  return `
+    <section class="view" data-view="cases">
+      ${pageHead(
+        s,
+        `All ${tickets.length} PES tickets in the cohort. Closed-at is first terminal status transition (not Jira resolutiondate).`,
+      )}
+      <div class="content">
+        <div class="toolbar">
+          <input id="case-filter" type="search" placeholder="Filter by key, summary, creator, assignee, status…" />
+          <span class="count" id="case-count">${tickets.length} shown</span>
+        </div>
+        ${card("Raw case table", `<div id="case-table">${renderCaseTable(tickets)}</div>`)}
+        ${pager("cases")}
+      </div>
+    </section>`;
+}
+
+function wireCaseFilter(report) {
+  const input = document.getElementById("case-filter");
+  const host = document.getElementById("case-table");
+  const count = document.getElementById("case-count");
+  if (!input || !host) return;
+  const all = report.tickets || [];
+  const apply = () => {
+    const q = input.value.trim().toLowerCase();
+    const filtered = !q
+      ? all
+      : all.filter((t) =>
+          [t.key, t.summary, t.creator, t.assignee, t.status, t.priority]
+            .map((x) => String(x || "").toLowerCase())
+            .some((x) => x.includes(q)),
+        );
+    host.innerHTML = renderCaseTable(filtered);
+    count.textContent = `${filtered.length} shown`;
+  };
+  input.addEventListener("input", apply);
 }
 
 function buildPain(report) {
@@ -612,7 +699,7 @@ async function main() {
     if (!res.ok) throw new Error(`Could not load report.json (${res.status})`);
     const report = await res.json();
 
-    document.getElementById("sidebar-meta").textContent = `${report.window} · ${report.overview.n} tickets`;
+    document.getElementById("sidebar-meta").textContent = `${report.window} · ${report.overview.n} PES cases`;
 
     nav.innerHTML = SECTIONS.map(
       (s) => `<button class="nav-item" type="button" data-nav="${s.id}">
@@ -631,9 +718,11 @@ async function main() {
       buildMonthly(report),
       buildPeople(report),
       buildPain(report),
+      buildCases(report),
     ].join("");
 
     wireNav(report);
+    wireCaseFilter(report);
     const initial = (location.hash.replace(/^#\/?/, "") || "home").split("?")[0];
     navigate(report, initial, { push: false });
   } catch (err) {
