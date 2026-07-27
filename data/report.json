@@ -5304,43 +5304,6 @@
       }
     ]
   },
-  "quarterly_sample": {
-    "title": "Platform Engineering Quarterly Report",
-    "period": "Sprint 5 (Mar 9) to Sprint 11 (June 12), 2026",
-    "source": "PE_Quarterly_Delivery_Review_Mar_To_June_2026.pdf",
-    "delivery": {
-      "capacity_sp": 1113,
-      "committed_sp": 1250,
-      "delivered_sp": 1159,
-      "commitment_pct": 112,
-      "completion_pct": 93,
-      "utilization_pct": 104
-    },
-    "allocation": {
-      "helix_sp": 567.7,
-      "helix_pct": 49.0,
-      "support_bau_sp": 141,
-      "support_bau_pct": 12.2,
-      "legacy_sp": 450.75,
-      "legacy_pct": 38.9
-    },
-    "bau": {
-      "total_tickets": 512,
-      "avg_weekly_inflow": 32,
-      "peak_week": "Week 16 (39 tickets)",
-      "closed_resolved": 495,
-      "closed_pct": 96.7,
-      "top_category": "Data ETL (201 \u00b7 39.3%)",
-      "top_reporting_team": "Support (289 \u00b7 56.4%)"
-    },
-    "insights": [
-      "Overall commitment was 112% of quarterly capacity.",
-      "Helix accounted for 49% of area-based delivery.",
-      "Support / BAU consumed 12.2% of total effort to keep the lights on.",
-      "BAU inflow averaged 32 tickets/week; peak Week 16 at 39.",
-      "96.7% of quarterly PES tickets closed/resolved (495/512)."
-    ]
-  },
   "privacy": {
     "note": "Person names anonymized for public GitHub Pages. Ticket summaries redacted. Aggregates unchanged.",
     "deep_dive_window": "2026-05-01 \u2264 created < 2026-08-01"

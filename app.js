@@ -1,28 +1,27 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
 const COLORS = {
-  teal: "#2dd4bf",
-  sky: "#38bdf8",
+  teal: "#7aff8a",
+  sky: "#6685c2",
   amber: "#f5b942",
   rose: "#fb7185",
-  emerald: "#34d399",
-  indigo: "#818cf8",
-  violet: "#a5b4fc",
-  slate: "#94a3b8",
-  white: "#f8fafc",
+  emerald: "#7aff8a",
+  indigo: "#3241ff",
+  violet: "#6c32ff",
+  slate: "#9aa3a6",
+  white: "#f1f2f2",
 };
 
 const SECTIONS = [
   { id: "home", num: "00", title: "Cover", sub: "Executive summary" },
-  { id: "quarter", num: "01", title: "Quarterly sample", sub: "Mar–Jun delivery & BAU" },
-  { id: "overview", num: "02", title: "Deep-dive overview", sub: "May–Jul cohort" },
-  { id: "timing", num: "03", title: "Demand timing", sub: "IST windows & TTR" },
-  { id: "sla", num: "04", title: "SLA performance", sub: "Response & resolution" },
-  { id: "types", num: "05", title: "Case types", sub: "Volume & pain rank" },
-  { id: "hotspots", num: "06", title: "Hotspots", sub: "Recurring systems" },
-  { id: "monthly", num: "07", title: "Monthly trend", sub: "Trajectory" },
-  { id: "people", num: "08", title: "Closers & credit", sub: "Anonymized ownership" },
-  { id: "pain", num: "09", title: "Pain points", sub: "Themes from comments" },
+  { id: "overview", num: "01", title: "Overview", sub: "PES cohort volume" },
+  { id: "timing", num: "02", title: "Demand timing", sub: "IST windows & TTR" },
+  { id: "sla", num: "03", title: "SLA performance", sub: "Response & resolution" },
+  { id: "types", num: "04", title: "Case types", sub: "Volume & pain rank" },
+  { id: "hotspots", num: "05", title: "Hotspots", sub: "Recurring systems" },
+  { id: "monthly", num: "06", title: "Monthly trend", sub: "Trajectory" },
+  { id: "people", num: "07", title: "Closers & credit", sub: "Anonymized ownership" },
+  { id: "pain", num: "08", title: "Pain points", sub: "Themes from comments" },
 ];
 
 const chartRegistry = [];
@@ -106,15 +105,14 @@ function pager(currentId) {
 }
 
 function configureChartDefaults() {
-  Chart.defaults.color = "#93a4bd";
-  Chart.defaults.borderColor = "rgba(148,163,184,0.14)";
+  Chart.defaults.color = "#9aa3a6";
+  Chart.defaults.borderColor = "rgba(241,242,242,0.12)";
   Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
   Chart.defaults.plugins.legend.labels.boxWidth = 12;
   Chart.defaults.plugins.legend.labels.usePointStyle = true;
 }
 
 function buildHome(report) {
-  const q = report.quarterly_sample;
   const ov = report.overview;
   const resp = report.sla_response.overall;
   const reso = report.sla_resolution.overall;
@@ -122,18 +120,18 @@ function buildHome(report) {
     <section class="view active" data-view="home">
       <div class="cover">
         <p class="cover-eyebrow">Platform Engineering · Support Operations</p>
-        <h1>Support review for leadership</h1>
+        <h1>PES support case review</h1>
         <p class="cover-lead">
-          A MerQube-branded executive walkthrough of PE support health: quarterly delivery context
-          from the Mar–Jun review, then a May–Jul deep dive into SLA, demand timing, case mix, and recurring hotspots.
+          Executive walkthrough of Platform Engineering Support cases for ${report.window}:
+          volume, SLA, demand timing, case mix, hotspots, and ownership credit.
         </p>
         <div class="cover-actions">
-          <button class="btn btn-primary" data-nav="quarter">Start review</button>
-          <button class="btn btn-ghost" data-nav="overview">Jump to May–Jul deep dive</button>
+          <button class="btn btn-primary" data-nav="overview">Start review</button>
+          <button class="btn btn-ghost" data-nav="sla">Jump to SLA</button>
         </div>
         <div class="cover-stats">
-          <div class="stat-pill"><div class="label">Quarter tickets</div><div class="value">${q.bau.total_tickets}</div></div>
-          <div class="stat-pill"><div class="label">May–Jul cohort</div><div class="value">${ov.n}</div></div>
+          <div class="stat-pill"><div class="label">PES cases</div><div class="value">${ov.n}</div></div>
+          <div class="stat-pill"><div class="label">Closed</div><div class="value">${fmtPct(ov.closed_pct)}</div></div>
           <div class="stat-pill"><div class="label">Response SLA</div><div class="value">${fmtPct(resp.meet_pct)}</div></div>
           <div class="stat-pill"><div class="label">Resolution SLA</div><div class="value">${fmtPct(reso.meet_pct)}</div></div>
         </div>
@@ -147,41 +145,6 @@ function buildHome(report) {
           "Which case types and systems create the most operational pain?",
           "Is ownership credit aligned with who actually works the tickets?",
         ])}
-      </div>
-    </section>`;
-}
-
-function buildQuarter(report) {
-  const s = SECTIONS.find((x) => x.id === "quarter");
-  const q = report.quarterly_sample;
-  return `
-    <section class="view" data-view="quarter">
-      ${pageHead(s, `${q.title}. Period: ${q.period}. Source: ${q.source}.`)}
-      <div class="content">
-        <div class="kpi-row">
-          ${kpi("Capacity", `${q.delivery.capacity_sp} SP`)}
-          ${kpi("Committed", `${q.delivery.committed_sp} SP`, `${q.delivery.commitment_pct}% commitment`)}
-          ${kpi("Delivered", `${q.delivery.delivered_sp} SP`, `${q.delivery.completion_pct}% completion`)}
-          ${kpi("Utilization", `${q.delivery.utilization_pct}%`)}
-        </div>
-        <div class="grid-2">
-          ${card("Delivery allocation", `<div class="chart-box"><canvas id="c-alloc"></canvas></div>`)}
-          ${card(
-            "BAU support snapshot",
-            `<div class="kpi-row" style="grid-template-columns:repeat(2,minmax(0,1fr))">
-              ${kpi("Total tickets", q.bau.total_tickets)}
-              ${kpi("Avg weekly inflow", q.bau.avg_weekly_inflow)}
-              ${kpi("Closed / resolved", q.bau.closed_resolved, `${q.bau.closed_pct}%`)}
-              ${kpi("Peak week", q.bau.peak_week)}
-            </div>
-            <p style="margin:14px 0 0;color:var(--muted);font-size:13px;line-height:1.5">
-              Top category: <strong style="color:var(--white)">${q.bau.top_category}</strong><br/>
-              Top reporting team: <strong style="color:var(--white)">${q.bau.top_reporting_team}</strong>
-            </p>`,
-          )}
-        </div>
-        ${insights("Quarterly takeaways", q.insights)}
-        ${pager("quarter")}
       </div>
     </section>`;
 }
@@ -417,24 +380,6 @@ function mountCharts(report, viewId) {
     responsive: true,
     maintainAspectRatio: false,
   };
-
-  if (viewId === "quarter") {
-    const q = report.quarterly_sample;
-    chart(document.getElementById("c-alloc"), {
-      type: "doughnut",
-      data: {
-        labels: ["Helix", "Support / BAU", "Legacy Platform"],
-        datasets: [
-          {
-            data: [q.allocation.helix_sp, q.allocation.support_bau_sp, q.allocation.legacy_sp],
-            backgroundColor: [COLORS.sky, COLORS.teal, COLORS.indigo],
-            borderWidth: 0,
-          },
-        ],
-      },
-      options: { ...commonOpts, cutout: "62%", plugins: { legend: { position: "bottom" } } },
-    });
-  }
 
   if (viewId === "overview") {
     const ov = report.overview;
@@ -678,7 +623,6 @@ async function main() {
 
     stage.innerHTML = [
       buildHome(report),
-      buildQuarter(report),
       buildOverview(report),
       buildTiming(report),
       buildSla(report),
