@@ -143,7 +143,6 @@ function buildHome(report) {
         </p>
         <div class="cover-actions">
           <button class="btn btn-primary" data-nav="overview">Start review</button>
-          <button class="btn btn-ghost" data-nav="sla">Jump to SLA</button>
         </div>
         <div class="cover-stats">
           <div class="stat-pill"><div class="label">PES cases</div><div class="value">${ov.n}</div></div>
@@ -152,8 +151,8 @@ function buildHome(report) {
           <div class="stat-pill"><div class="label">Resolution SLA</div><div class="value">${fmtPct(reso.meet_pct)}</div></div>
         </div>
         <div class="notice">
-          Source: offline Jira export of PES cases only (${report.window}). No quarterly PDF capacity figures.
-          Closer names and ticket fields come from Jira as exported.
+          Internal review · offline Jira export of PES cases only (${report.window}).
+          Names, summaries, and ticket fields are shown as in Jira.
         </div>
         ${insights("What this review answers", [
           "Is support demand stable, and where does it spike by time of day?",
