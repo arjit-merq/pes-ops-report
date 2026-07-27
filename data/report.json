@@ -1,0 +1,5348 @@
+{
+  "generated_at": "2026-07-27T19:43:45.065486+00:00",
+  "title": "PES May\u2013Jul 2026 full report",
+  "window": "2026-05-01 \u2264 created < 2026-08-01",
+  "methodology": {
+    "first_response": {
+      "first_response": "Timestamp of first issue comment authored by a human who is not the reporter (excludes accountType=app and bot-like display names).",
+      "not_used": "Assignee change alone is NOT counted as first response (tracked separately in closer/worker section).",
+      "hour_slas": "Highest \u22642h, High \u22646h \u2014 elapsed calendar hours created\u2192first_response.",
+      "day_slas": "Medium \u22642 / Low \u22644 / Lowest \u22646 business days (IST dates, Mon\u2013Fri; no holiday calendar).",
+      "source": "Notion On-call Guidelines"
+    },
+    "resolution": {
+      "closed_at": "First changelog transition into a terminal status (not resolutiondate).",
+      "highest": "Met if same IST business day (busday_count==0) OR \u226424 calendar hours (continuous-effort proxy).",
+      "high": "Met if \u22643 IST business days.",
+      "medium": "Met if \u22645 IST business days.",
+      "low": "Met if \u226410 IST business days (~2 weeks).",
+      "lowest": "No committed resolution SLA \u2014 excluded from meet rate.",
+      "holidays": "Not applied (weekends only excluded)."
+    },
+    "ops": {
+      "timezone_buckets": "Asia/Kolkata (IST), based on created timestamp",
+      "closed_definition": "current status in ['ACCEPTED', 'Approved', 'Approved - Assigned to Backlog', 'Approved - Fast Track Project', 'Awaiting Deployment', 'Canceled', 'Cancelled', 'Completed', 'DECLINED', 'Declined', 'Done', 'ENHANCEMENT', 'Failed']",
+      "ttr_and_closer": "first changelog status transition into a terminal status (not Jira resolutiondate \u2014 185 issues share resolutiondate 2026-06-16)",
+      "ttr_unit": "elapsed calendar hours (created \u2192 first terminal status)",
+      "weekly": "ISO week in IST of first terminal status transition; grouped by changelog author",
+      "mismatch_heuristic": "flag when closer != top non-reporter commenter and that commenter has >= 2 comments"
+    },
+    "notes": [
+      "Closed-at = first changelog transition to terminal status (not resolutiondate).",
+      "Business days = IST Mon\u2013Fri; no company holiday calendar.",
+      "Case types from summary/description rule classifier."
+    ]
+  },
+  "overview": {
+    "n": 395,
+    "closed_now": 382,
+    "open_now": 13,
+    "closed_pct": 96.7,
+    "status_counts": [
+      {
+        "status": "Completed",
+        "n": 345
+      },
+      {
+        "status": "ENHANCEMENT",
+        "n": 19
+      },
+      {
+        "status": "Canceled",
+        "n": 18
+      },
+      {
+        "status": "In Progress",
+        "n": 6
+      },
+      {
+        "status": "Waiting for Input",
+        "n": 4
+      },
+      {
+        "status": "TRIAGE",
+        "n": 2
+      },
+      {
+        "status": "Open",
+        "n": 1
+      }
+    ],
+    "priority_counts": [
+      {
+        "priority": "Highest",
+        "n": 86
+      },
+      {
+        "priority": "High",
+        "n": 173
+      },
+      {
+        "priority": "Medium",
+        "n": 127
+      },
+      {
+        "priority": "Low",
+        "n": 9
+      },
+      {
+        "priority": "Lowest",
+        "n": 0
+      }
+    ],
+    "open_issues": [
+      {
+        "key": "PES-997",
+        "priority": "Highest",
+        "status": "In Progress",
+        "summary": "(redacted)",
+        "assignee": "Eng-2728"
+      },
+      {
+        "key": "PES-993",
+        "priority": "High",
+        "status": "Waiting for Input",
+        "summary": "(redacted)",
+        "assignee": "Eng-4E85"
+      },
+      {
+        "key": "PES-1000",
+        "priority": "Medium",
+        "status": "Waiting for Input",
+        "summary": "(redacted)",
+        "assignee": "Eng-4E85"
+      },
+      {
+        "key": "PES-890",
+        "priority": "Medium",
+        "status": "Waiting for Input",
+        "summary": "(redacted)",
+        "assignee": "Eng-4E85"
+      },
+      {
+        "key": "PES-891",
+        "priority": "Medium",
+        "status": "In Progress",
+        "summary": "(redacted)",
+        "assignee": "Eng-78E7"
+      },
+      {
+        "key": "PES-918",
+        "priority": "Medium",
+        "status": "In Progress",
+        "summary": "(redacted)",
+        "assignee": "Eng-2728"
+      },
+      {
+        "key": "PES-974",
+        "priority": "Medium",
+        "status": "Waiting for Input",
+        "summary": "(redacted)",
+        "assignee": "Eng-4E85"
+      },
+      {
+        "key": "PES-982",
+        "priority": "Medium",
+        "status": "Open",
+        "summary": "(redacted)",
+        "assignee": "Eng-2728"
+      },
+      {
+        "key": "PES-990",
+        "priority": "Medium",
+        "status": "TRIAGE",
+        "summary": "(redacted)",
+        "assignee": "Eng-2728"
+      },
+      {
+        "key": "PES-995",
+        "priority": "Medium",
+        "status": "In Progress",
+        "summary": "(redacted)",
+        "assignee": "Eng-9807"
+      },
+      {
+        "key": "PES-996",
+        "priority": "Medium",
+        "status": "TRIAGE",
+        "summary": "(redacted)",
+        "assignee": "Eng-9807"
+      },
+      {
+        "key": "PES-998",
+        "priority": "Medium",
+        "status": "In Progress",
+        "summary": "(redacted)",
+        "assignee": "Eng-9807"
+      },
+      {
+        "key": "PES-999",
+        "priority": "Low",
+        "status": "In Progress",
+        "summary": "(redacted)",
+        "assignee": "Eng-9807"
+      }
+    ]
+  },
+  "ist_buckets": [
+    {
+      "bucket": "09:00\u201312:00 IST",
+      "opened": 29
+    },
+    {
+      "bucket": "12:00\u201315:00 IST",
+      "opened": 30
+    },
+    {
+      "bucket": "15:00\u201318:00 IST",
+      "opened": 55
+    },
+    {
+      "bucket": "18:00\u201321:00 IST",
+      "opened": 79
+    },
+    {
+      "bucket": "21:00\u201300:00 IST",
+      "opened": 67
+    },
+    {
+      "bucket": "00:00\u201303:00 IST",
+      "opened": 65
+    },
+    {
+      "bucket": "03:00\u201306:00 IST",
+      "opened": 44
+    },
+    {
+      "bucket": "06:00\u201309:00 IST",
+      "opened": 26
+    }
+  ],
+  "ttr_by_priority": [
+    {
+      "priority": "Highest",
+      "n": 85,
+      "avg_h": 54.963871281045755,
+      "p50_h": 10.306327777777778,
+      "p90_h": 162.69531883333335,
+      "p99_h": 415.8182527444441,
+      "min_h": 0.13732972222222223,
+      "max_h": 496.53515194444446
+    },
+    {
+      "priority": "High",
+      "n": 172,
+      "avg_h": 89.02560436046511,
+      "p50_h": 25.95319166666667,
+      "p90_h": 278.3135173333334,
+      "p99_h": 676.7158761083324,
+      "min_h": 0.03220666666666667,
+      "max_h": 1372.9523097222223
+    },
+    {
+      "priority": "Medium",
+      "n": 117,
+      "avg_h": 120.6355045322887,
+      "p50_h": 51.698994444444445,
+      "p90_h": 318.97980805555574,
+      "p99_h": 766.7725621333334,
+      "min_h": 0.03811638888888889,
+      "max_h": 947.6225730555554
+    },
+    {
+      "priority": "Low",
+      "n": 8,
+      "avg_h": 142.20347236111112,
+      "p50_h": 60.29153666666666,
+      "p90_h": 325.56989374999995,
+      "p99_h": 587.780528625,
+      "min_h": 6.673541111111111,
+      "max_h": 616.9150436111112
+    },
+    {
+      "priority": "Lowest",
+      "n": 0,
+      "avg_h": null,
+      "p50_h": null,
+      "p90_h": null,
+      "p99_h": null,
+      "min_h": null,
+      "max_h": null
+    }
+  ],
+  "closers_all_time": [
+    {
+      "person": "Eng-4E85",
+      "closed": 81
+    },
+    {
+      "person": "Eng-9807",
+      "closed": 48
+    },
+    {
+      "person": "Eng-B9EF",
+      "closed": 41
+    },
+    {
+      "person": "Eng-3E94",
+      "closed": 33
+    },
+    {
+      "person": "Eng-A114",
+      "closed": 31
+    },
+    {
+      "person": "Eng-3200",
+      "closed": 28
+    },
+    {
+      "person": "Eng-98C2",
+      "closed": 22
+    },
+    {
+      "person": "Eng-DB0B",
+      "closed": 20
+    },
+    {
+      "person": "Eng-155C",
+      "closed": 17
+    },
+    {
+      "person": "Eng-2728",
+      "closed": 17
+    },
+    {
+      "person": "Eng-ADE7",
+      "closed": 14
+    },
+    {
+      "person": "Eng-EC85",
+      "closed": 8
+    },
+    {
+      "person": "Eng-70B4",
+      "closed": 7
+    },
+    {
+      "person": "Eng-E457",
+      "closed": 3
+    },
+    {
+      "person": "Eng-B679",
+      "closed": 3
+    },
+    {
+      "person": "Eng-4D22",
+      "closed": 2
+    },
+    {
+      "person": "Eng-59E5",
+      "closed": 1
+    },
+    {
+      "person": "Eng-A872",
+      "closed": 1
+    },
+    {
+      "person": "Eng-19EC",
+      "closed": 1
+    },
+    {
+      "person": "Eng-E082",
+      "closed": 1
+    },
+    {
+      "person": "Eng-78E7",
+      "closed": 1
+    },
+    {
+      "person": "Eng-9FD8",
+      "closed": 1
+    },
+    {
+      "person": "Eng-F12F",
+      "closed": 1
+    }
+  ],
+  "weekly_closers": [
+    {
+      "week": "2026-W18 (week of 2026-04-27)",
+      "total_closed": 5,
+      "by_person": [
+        {
+          "person": "Eng-B9EF",
+          "closed": 5
+        }
+      ]
+    },
+    {
+      "week": "2026-W19 (week of 2026-05-04)",
+      "total_closed": 16,
+      "by_person": [
+        {
+          "person": "Eng-ADE7",
+          "closed": 4
+        },
+        {
+          "person": "Eng-70B4",
+          "closed": 3
+        },
+        {
+          "person": "Eng-3E94",
+          "closed": 2
+        },
+        {
+          "person": "Eng-59E5",
+          "closed": 1
+        },
+        {
+          "person": "Eng-A872",
+          "closed": 1
+        },
+        {
+          "person": "Eng-4D22",
+          "closed": 1
+        },
+        {
+          "person": "Eng-E457",
+          "closed": 1
+        },
+        {
+          "person": "Eng-B9EF",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W20 (week of 2026-05-11)",
+      "total_closed": 20,
+      "by_person": [
+        {
+          "person": "Eng-98C2",
+          "closed": 10
+        },
+        {
+          "person": "Eng-3E94",
+          "closed": 3
+        },
+        {
+          "person": "Eng-EC85",
+          "closed": 2
+        },
+        {
+          "person": "Eng-70B4",
+          "closed": 2
+        },
+        {
+          "person": "Eng-ADE7",
+          "closed": 1
+        },
+        {
+          "person": "Eng-4D22",
+          "closed": 1
+        },
+        {
+          "person": "Eng-155C",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W21 (week of 2026-05-18)",
+      "total_closed": 36,
+      "by_person": [
+        {
+          "person": "Eng-B9EF",
+          "closed": 14
+        },
+        {
+          "person": "Eng-DB0B",
+          "closed": 11
+        },
+        {
+          "person": "Eng-3E94",
+          "closed": 5
+        },
+        {
+          "person": "Eng-ADE7",
+          "closed": 2
+        },
+        {
+          "person": "Eng-4E85",
+          "closed": 2
+        },
+        {
+          "person": "Eng-70B4",
+          "closed": 1
+        },
+        {
+          "person": "Eng-98C2",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W22 (week of 2026-05-25)",
+      "total_closed": 28,
+      "by_person": [
+        {
+          "person": "Eng-B9EF",
+          "closed": 12
+        },
+        {
+          "person": "Eng-DB0B",
+          "closed": 8
+        },
+        {
+          "person": "Eng-4E85",
+          "closed": 5
+        },
+        {
+          "person": "Eng-ADE7",
+          "closed": 2
+        },
+        {
+          "person": "Eng-98C2",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W23 (week of 2026-06-01)",
+      "total_closed": 31,
+      "by_person": [
+        {
+          "person": "Eng-A114",
+          "closed": 12
+        },
+        {
+          "person": "Eng-3E94",
+          "closed": 8
+        },
+        {
+          "person": "Eng-4E85",
+          "closed": 5
+        },
+        {
+          "person": "Eng-B9EF",
+          "closed": 2
+        },
+        {
+          "person": "Eng-DB0B",
+          "closed": 1
+        },
+        {
+          "person": "Eng-B679",
+          "closed": 1
+        },
+        {
+          "person": "Eng-155C",
+          "closed": 1
+        },
+        {
+          "person": "Eng-19EC",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W24 (week of 2026-06-08)",
+      "total_closed": 39,
+      "by_person": [
+        {
+          "person": "Eng-A114",
+          "closed": 17
+        },
+        {
+          "person": "Eng-3E94",
+          "closed": 11
+        },
+        {
+          "person": "Eng-B9EF",
+          "closed": 5
+        },
+        {
+          "person": "Eng-4E85",
+          "closed": 3
+        },
+        {
+          "person": "Eng-B679",
+          "closed": 1
+        },
+        {
+          "person": "Eng-ADE7",
+          "closed": 1
+        },
+        {
+          "person": "Eng-EC85",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W25 (week of 2026-06-15)",
+      "total_closed": 24,
+      "by_person": [
+        {
+          "person": "Eng-155C",
+          "closed": 7
+        },
+        {
+          "person": "Eng-4E85",
+          "closed": 7
+        },
+        {
+          "person": "Eng-2728",
+          "closed": 4
+        },
+        {
+          "person": "Eng-3E94",
+          "closed": 3
+        },
+        {
+          "person": "Eng-A114",
+          "closed": 1
+        },
+        {
+          "person": "Eng-EC85",
+          "closed": 1
+        },
+        {
+          "person": "Eng-3200",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W26 (week of 2026-06-22)",
+      "total_closed": 28,
+      "by_person": [
+        {
+          "person": "Eng-4E85",
+          "closed": 9
+        },
+        {
+          "person": "Eng-2728",
+          "closed": 8
+        },
+        {
+          "person": "Eng-3200",
+          "closed": 3
+        },
+        {
+          "person": "Eng-ADE7",
+          "closed": 3
+        },
+        {
+          "person": "Eng-155C",
+          "closed": 1
+        },
+        {
+          "person": "Eng-E082",
+          "closed": 1
+        },
+        {
+          "person": "Eng-70B4",
+          "closed": 1
+        },
+        {
+          "person": "Eng-B9EF",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W27 (week of 2026-06-29)",
+      "total_closed": 32,
+      "by_person": [
+        {
+          "person": "Eng-9807",
+          "closed": 14
+        },
+        {
+          "person": "Eng-4E85",
+          "closed": 6
+        },
+        {
+          "person": "Eng-98C2",
+          "closed": 4
+        },
+        {
+          "person": "Eng-2728",
+          "closed": 3
+        },
+        {
+          "person": "Eng-B679",
+          "closed": 1
+        },
+        {
+          "person": "Eng-E457",
+          "closed": 1
+        },
+        {
+          "person": "Eng-EC85",
+          "closed": 1
+        },
+        {
+          "person": "Eng-155C",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W28 (week of 2026-07-06)",
+      "total_closed": 35,
+      "by_person": [
+        {
+          "person": "Eng-9807",
+          "closed": 11
+        },
+        {
+          "person": "Eng-4E85",
+          "closed": 11
+        },
+        {
+          "person": "Eng-98C2",
+          "closed": 5
+        },
+        {
+          "person": "Eng-EC85",
+          "closed": 3
+        },
+        {
+          "person": "Eng-2728",
+          "closed": 2
+        },
+        {
+          "person": "Eng-E457",
+          "closed": 1
+        },
+        {
+          "person": "Eng-155C",
+          "closed": 1
+        },
+        {
+          "person": "Eng-B9EF",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W29 (week of 2026-07-13)",
+      "total_closed": 38,
+      "by_person": [
+        {
+          "person": "Eng-4E85",
+          "closed": 14
+        },
+        {
+          "person": "Eng-9807",
+          "closed": 10
+        },
+        {
+          "person": "Eng-3200",
+          "closed": 8
+        },
+        {
+          "person": "Eng-155C",
+          "closed": 4
+        },
+        {
+          "person": "Eng-ADE7",
+          "closed": 1
+        },
+        {
+          "person": "Eng-78E7",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W30 (week of 2026-07-20)",
+      "total_closed": 49,
+      "by_person": [
+        {
+          "person": "Eng-4E85",
+          "closed": 16
+        },
+        {
+          "person": "Eng-3200",
+          "closed": 16
+        },
+        {
+          "person": "Eng-9807",
+          "closed": 13
+        },
+        {
+          "person": "Eng-A114",
+          "closed": 1
+        },
+        {
+          "person": "Eng-9FD8",
+          "closed": 1
+        },
+        {
+          "person": "Eng-155C",
+          "closed": 1
+        },
+        {
+          "person": "Eng-F12F",
+          "closed": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-W31 (week of 2026-07-27)",
+      "total_closed": 3,
+      "by_person": [
+        {
+          "person": "Eng-4E85",
+          "closed": 3
+        }
+      ]
+    }
+  ],
+  "sla_response": {
+    "overall": {
+      "n_applicable": 383,
+      "n_met": 312,
+      "n_missed": 71,
+      "meet_pct": 81.5
+    },
+    "by_priority": [
+      {
+        "priority": "Highest",
+        "response_meet_pct": 76.8,
+        "resolution_meet_pct": 67.1,
+        "response_p50_h": 0.760307638888889,
+        "response_p90_h": 12.661447027777797,
+        "ttr_p50_h": 10.306327777777778,
+        "ttr_p90_h": 162.69531883333335,
+        "ttr_p99_h": 415.8182527444441,
+        "n_tickets": 86
+      },
+      {
+        "priority": "High",
+        "response_meet_pct": 74.7,
+        "resolution_meet_pct": 80.2,
+        "response_p50_h": 1.4978819444444444,
+        "response_p90_h": 35.820764861111094,
+        "ttr_p50_h": 25.95319166666667,
+        "ttr_p90_h": 278.3135173333334,
+        "ttr_p99_h": 676.7158761083324,
+        "n_tickets": 173
+      },
+      {
+        "priority": "Medium",
+        "response_meet_pct": 93.4,
+        "resolution_meet_pct": 83.8,
+        "response_p50_h": 1.623485,
+        "response_p90_h": 51.81718297222222,
+        "ttr_p50_h": 51.698994444444445,
+        "ttr_p90_h": 318.97980805555574,
+        "ttr_p99_h": 766.7725621333334,
+        "n_tickets": 127
+      },
+      {
+        "priority": "Low",
+        "response_meet_pct": 88.9,
+        "resolution_meet_pct": 87.5,
+        "response_p50_h": 4.540504166666667,
+        "response_p90_h": 72.30376055555558,
+        "ttr_p50_h": 60.29153666666666,
+        "ttr_p90_h": 325.56989374999995,
+        "ttr_p99_h": 587.780528625,
+        "n_tickets": 9
+      },
+      {
+        "priority": "Lowest",
+        "response_meet_pct": null,
+        "resolution_meet_pct": null,
+        "response_p50_h": null,
+        "response_p90_h": null,
+        "ttr_p50_h": null,
+        "ttr_p90_h": null,
+        "ttr_p99_h": null,
+        "n_tickets": 0
+      }
+    ],
+    "breach_count": 71,
+    "breaches": [
+      {
+        "key": "PES-716",
+        "priority": "Highest",
+        "hours": 365.97,
+        "business_days": 11,
+        "responder": "Eng-155C",
+        "summary": "(redacted)",
+        "case_type": "missing_data_or_gap"
+      },
+      {
+        "key": "PES-655",
+        "priority": "Highest",
+        "hours": 146.81,
+        "business_days": 4,
+        "responder": "Eng-DB0B",
+        "summary": "(redacted)",
+        "case_type": "data_request_or_backfill"
+      },
+      {
+        "key": "PES-780",
+        "priority": "Highest",
+        "hours": 36.89,
+        "business_days": 0,
+        "responder": "Eng-6C3F",
+        "summary": "(redacted)",
+        "case_type": "admin_ui_or_api"
+      },
+      {
+        "key": "PES-653",
+        "priority": "Highest",
+        "hours": 26.46,
+        "business_days": 1,
+        "responder": "Eng-F12F",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-608",
+        "priority": "Highest",
+        "hours": 26.33,
+        "business_days": 1,
+        "responder": "Eng-ADE7",
+        "summary": "(redacted)",
+        "case_type": "infra_platform"
+      },
+      {
+        "key": "PES-692",
+        "priority": "Highest",
+        "hours": 23.26,
+        "business_days": 1,
+        "responder": "Eng-B9EF",
+        "summary": "(redacted)",
+        "case_type": "ci_dev_tooling"
+      },
+      {
+        "key": "PES-717",
+        "priority": "Highest",
+        "hours": 18.54,
+        "business_days": 1,
+        "responder": "Eng-A114",
+        "summary": "(redacted)",
+        "case_type": "infra_platform"
+      },
+      {
+        "key": "PES-687",
+        "priority": "Highest",
+        "hours": 18.08,
+        "business_days": 1,
+        "responder": "Eng-DB0B",
+        "summary": "(redacted)",
+        "case_type": "data_request_or_backfill"
+      },
+      {
+        "key": "PES-618",
+        "priority": "Highest",
+        "hours": 13.02,
+        "business_days": 0,
+        "responder": "Eng-ADE7",
+        "summary": "(redacted)",
+        "case_type": "rt_intraday_ticking"
+      },
+      {
+        "key": "PES-713",
+        "priority": "Highest",
+        "hours": 9.43,
+        "business_days": 0,
+        "responder": "Eng-8657",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-652",
+        "priority": "Highest",
+        "hours": 9.2,
+        "business_days": 1,
+        "responder": "Eng-B9EF",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-804",
+        "priority": "Highest",
+        "hours": 7.6,
+        "business_days": 0,
+        "responder": "Eng-F12F",
+        "summary": "(redacted)",
+        "case_type": "options_futures_etl"
+      },
+      {
+        "key": "PES-943",
+        "priority": "Highest",
+        "hours": 7.33,
+        "business_days": 0,
+        "responder": "Eng-9807",
+        "summary": "(redacted)",
+        "case_type": "admin_ui_or_api"
+      },
+      {
+        "key": "PES-932",
+        "priority": "Highest",
+        "hours": 5.78,
+        "business_days": 0,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "pricer_vol_surface"
+      },
+      {
+        "key": "PES-821",
+        "priority": "Highest",
+        "hours": 5.52,
+        "business_days": 1,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "ci_dev_tooling"
+      },
+      {
+        "key": "PES-651",
+        "priority": "Highest",
+        "hours": 4.25,
+        "business_days": 0,
+        "responder": "Eng-DB0B",
+        "summary": "(redacted)",
+        "case_type": "missing_data_or_gap"
+      },
+      {
+        "key": "PES-686",
+        "priority": "Highest",
+        "hours": 2.37,
+        "business_days": 0,
+        "responder": "Eng-BD07",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-988",
+        "priority": "Highest",
+        "hours": 2.02,
+        "business_days": 0,
+        "responder": "Eng-3200",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-680",
+        "priority": "Highest",
+        "hours": 2.01,
+        "business_days": 0,
+        "responder": "Eng-DB0B",
+        "summary": "(redacted)",
+        "case_type": "dissemination_or_report"
+      },
+      {
+        "key": "PES-656",
+        "priority": "High",
+        "hours": 572.95,
+        "business_days": 18,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "mapping_config_portfolio"
+      },
+      {
+        "key": "PES-604",
+        "priority": "High",
+        "hours": 364.82,
+        "business_days": 12,
+        "responder": "Eng-B9EF",
+        "summary": "(redacted)",
+        "case_type": "data_request_or_backfill"
+      },
+      {
+        "key": "PES-689",
+        "priority": "High",
+        "hours": 352.15,
+        "business_days": 10,
+        "responder": "Eng-A114",
+        "summary": "(redacted)",
+        "case_type": "infra_platform"
+      },
+      {
+        "key": "PES-619",
+        "priority": "High",
+        "hours": 329.86,
+        "business_days": 9,
+        "responder": "Eng-DB0B",
+        "summary": "(redacted)",
+        "case_type": "missing_data_or_gap"
+      },
+      {
+        "key": "PES-707",
+        "priority": "High",
+        "hours": 308.6,
+        "business_days": 9,
+        "responder": "Eng-A114",
+        "summary": "(redacted)",
+        "case_type": "rt_intraday_ticking"
+      },
+      {
+        "key": "PES-712",
+        "priority": "High",
+        "hours": 230.4,
+        "business_days": 7,
+        "responder": "Eng-A114",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-694",
+        "priority": "High",
+        "hours": 189.32,
+        "business_days": 5,
+        "responder": "Eng-B679",
+        "summary": "(redacted)",
+        "case_type": "pricer_vol_surface"
+      },
+      {
+        "key": "PES-587",
+        "priority": "High",
+        "hours": 130.78,
+        "business_days": 3,
+        "responder": "Eng-70B4",
+        "summary": "(redacted)",
+        "case_type": "impact_dependency"
+      },
+      {
+        "key": "PES-801",
+        "priority": "High",
+        "hours": 96.42,
+        "business_days": 2,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-677",
+        "priority": "High",
+        "hours": 90.46,
+        "business_days": 1,
+        "responder": "Eng-B9EF",
+        "summary": "(redacted)",
+        "case_type": "pricer_vol_surface"
+      },
+      {
+        "key": "PES-711",
+        "priority": "High",
+        "hours": 83.03,
+        "business_days": 3,
+        "responder": "Eng-F12F",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-807",
+        "priority": "High",
+        "hours": 81.62,
+        "business_days": 2,
+        "responder": "Eng-BD07",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-674",
+        "priority": "High",
+        "hours": 72.85,
+        "business_days": 1,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "enhancement_or_process"
+      },
+      {
+        "key": "PES-847",
+        "priority": "High",
+        "hours": 53.76,
+        "business_days": 0,
+        "responder": "Eng-E457",
+        "summary": "(redacted)",
+        "case_type": "infra_platform"
+      },
+      {
+        "key": "PES-879",
+        "priority": "High",
+        "hours": 46.41,
+        "business_days": 0,
+        "responder": "Eng-689C",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-690",
+        "priority": "High",
+        "hours": 44.24,
+        "business_days": 2,
+        "responder": "Eng-B9EF",
+        "summary": "(redacted)",
+        "case_type": "missing_data_or_gap"
+      },
+      {
+        "key": "PES-642",
+        "priority": "High",
+        "hours": 37.77,
+        "business_days": 0,
+        "responder": "Eng-B9EF",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-650",
+        "priority": "High",
+        "hours": 35.6,
+        "business_days": 1,
+        "responder": "Eng-78E7",
+        "summary": "(redacted)",
+        "case_type": "rt_intraday_ticking"
+      },
+      {
+        "key": "PES-824",
+        "priority": "High",
+        "hours": 35.22,
+        "business_days": 1,
+        "responder": "Eng-3200",
+        "summary": "(redacted)",
+        "case_type": "data_request_or_backfill"
+      },
+      {
+        "key": "PES-861",
+        "priority": "High",
+        "hours": 30.67,
+        "business_days": 1,
+        "responder": "Eng-689C",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-822",
+        "priority": "High",
+        "hours": 26.69,
+        "business_days": 2,
+        "responder": "Eng-5E66",
+        "summary": "(redacted)",
+        "case_type": "missing_data_or_gap"
+      },
+      {
+        "key": "PES-595",
+        "priority": "High",
+        "hours": 26.04,
+        "business_days": 2,
+        "responder": "Eng-3E94",
+        "summary": "(redacted)",
+        "case_type": "data_quality_check"
+      },
+      {
+        "key": "PES-592",
+        "priority": "High",
+        "hours": 23.95,
+        "business_days": 1,
+        "responder": "Eng-59E5",
+        "summary": "(redacted)",
+        "case_type": "data_quality_check"
+      },
+      {
+        "key": "PES-609",
+        "priority": "High",
+        "hours": 23.87,
+        "business_days": 1,
+        "responder": "Eng-EC85",
+        "summary": "(redacted)",
+        "case_type": "pricer_vol_surface"
+      },
+      {
+        "key": "PES-659",
+        "priority": "High",
+        "hours": 21.85,
+        "business_days": 1,
+        "responder": "Eng-B9EF",
+        "summary": "(redacted)",
+        "case_type": "data_quality_check"
+      },
+      {
+        "key": "PES-766",
+        "priority": "High",
+        "hours": 19.16,
+        "business_days": 1,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "airflow_job_failure"
+      },
+      {
+        "key": "PES-664",
+        "priority": "High",
+        "hours": 18.41,
+        "business_days": 1,
+        "responder": "Eng-EC85",
+        "summary": "(redacted)",
+        "case_type": "mapping_config_portfolio"
+      },
+      {
+        "key": "PES-755",
+        "priority": "High",
+        "hours": 17.66,
+        "business_days": 1,
+        "responder": "Eng-A114",
+        "summary": "(redacted)",
+        "case_type": "missing_data_or_gap"
+      },
+      {
+        "key": "PES-987",
+        "priority": "High",
+        "hours": 16.46,
+        "business_days": 0,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "infra_platform"
+      },
+      {
+        "key": "PES-911",
+        "priority": "High",
+        "hours": 16.23,
+        "business_days": 0,
+        "responder": "Eng-4E85",
+        "summary": "(redacted)",
+        "case_type": "impact_dependency"
+      },
+      {
+        "key": "PES-594",
+        "priority": "High",
+        "hours": 14.41,
+        "business_days": 1,
+        "responder": "Eng-70B4",
+        "summary": "(redacted)",
+        "case_type": "options_futures_etl"
+      }
+    ]
+  },
+  "sla_resolution": {
+    "overall": {
+      "n_applicable": 382,
+      "n_met": 300,
+      "n_missed": 82,
+      "meet_pct": 78.5
+    },
+    "by_priority": [
+      {
+        "priority": "Highest",
+        "response_meet_pct": 76.8,
+        "resolution_meet_pct": 67.1,
+        "response_p50_h": 0.760307638888889,
+        "response_p90_h": 12.661447027777797,
+        "ttr_p50_h": 10.306327777777778,
+        "ttr_p90_h": 162.69531883333335,
+        "ttr_p99_h": 415.8182527444441,
+        "n_tickets": 86
+      },
+      {
+        "priority": "High",
+        "response_meet_pct": 74.7,
+        "resolution_meet_pct": 80.2,
+        "response_p50_h": 1.4978819444444444,
+        "response_p90_h": 35.820764861111094,
+        "ttr_p50_h": 25.95319166666667,
+        "ttr_p90_h": 278.3135173333334,
+        "ttr_p99_h": 676.7158761083324,
+        "n_tickets": 173
+      },
+      {
+        "priority": "Medium",
+        "response_meet_pct": 93.4,
+        "resolution_meet_pct": 83.8,
+        "response_p50_h": 1.623485,
+        "response_p90_h": 51.81718297222222,
+        "ttr_p50_h": 51.698994444444445,
+        "ttr_p90_h": 318.97980805555574,
+        "ttr_p99_h": 766.7725621333334,
+        "n_tickets": 127
+      },
+      {
+        "priority": "Low",
+        "response_meet_pct": 88.9,
+        "resolution_meet_pct": 87.5,
+        "response_p50_h": 4.540504166666667,
+        "response_p90_h": 72.30376055555558,
+        "ttr_p50_h": 60.29153666666666,
+        "ttr_p90_h": 325.56989374999995,
+        "ttr_p99_h": 587.780528625,
+        "n_tickets": 9
+      },
+      {
+        "priority": "Lowest",
+        "response_meet_pct": null,
+        "resolution_meet_pct": null,
+        "response_p50_h": null,
+        "response_p90_h": null,
+        "ttr_p50_h": null,
+        "ttr_p90_h": null,
+        "ttr_p99_h": null,
+        "n_tickets": 0
+      }
+    ],
+    "breach_count": 82,
+    "breaches": [
+      {
+        "key": "PES-600",
+        "priority": "Highest",
+        "ttr_hours": 496.54,
+        "ttr_business_days": 14,
+        "closer": "Eng-ADE7",
+        "case_type": "infra_platform",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-597",
+        "priority": "Highest",
+        "ttr_hours": 400.44,
+        "ttr_business_days": 12,
+        "closer": "Eng-ADE7",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-716",
+        "priority": "Highest",
+        "ttr_hours": 386.75,
+        "ttr_business_days": 12,
+        "closer": "Eng-3E94",
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-692",
+        "priority": "Highest",
+        "ttr_hours": 333.17,
+        "ttr_business_days": 10,
+        "closer": "Eng-B679",
+        "case_type": "ci_dev_tooling",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-618",
+        "priority": "Highest",
+        "ttr_hours": 322.22,
+        "ttr_business_days": 9,
+        "closer": "Eng-98C2",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-786",
+        "priority": "Highest",
+        "ttr_hours": 262.6,
+        "ttr_business_days": 9,
+        "closer": "Eng-155C",
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-633",
+        "priority": "Highest",
+        "ttr_hours": 219.43,
+        "ttr_business_days": 7,
+        "closer": "Eng-3E94",
+        "case_type": "website_or_docs",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-899",
+        "priority": "Highest",
+        "ttr_hours": 189.52,
+        "ttr_business_days": 6,
+        "closer": "Eng-3200",
+        "case_type": "mapping_config_portfolio",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-655",
+        "priority": "Highest",
+        "ttr_hours": 163.81,
+        "ttr_business_days": 5,
+        "closer": "Eng-ADE7",
+        "case_type": "data_request_or_backfill",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-678",
+        "priority": "Highest",
+        "ttr_hours": 161.02,
+        "ttr_business_days": 4,
+        "closer": "Eng-DB0B",
+        "case_type": "dissemination_or_report",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-805",
+        "priority": "Highest",
+        "ttr_hours": 139.39,
+        "ttr_business_days": 4,
+        "closer": "Eng-2728",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-686",
+        "priority": "Highest",
+        "ttr_hours": 136.66,
+        "ttr_business_days": 4,
+        "closer": "Eng-DB0B",
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-687",
+        "priority": "Highest",
+        "ttr_hours": 132.71,
+        "ttr_business_days": 4,
+        "closer": "Eng-4E85",
+        "case_type": "data_request_or_backfill",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-613",
+        "priority": "Highest",
+        "ttr_hours": 132.5,
+        "ttr_business_days": 3,
+        "closer": "Eng-ADE7",
+        "case_type": "impact_dependency",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-602",
+        "priority": "Highest",
+        "ttr_hours": 125.45,
+        "ttr_business_days": 3,
+        "closer": "Eng-98C2",
+        "case_type": "mapping_config_portfolio",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-738",
+        "priority": "Highest",
+        "ttr_hours": 112.9,
+        "ttr_business_days": 3,
+        "closer": "Eng-EC85",
+        "case_type": "enhancement_or_process",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-675",
+        "priority": "Highest",
+        "ttr_hours": 93.74,
+        "ttr_business_days": 2,
+        "closer": "Eng-B9EF",
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-804",
+        "priority": "Highest",
+        "ttr_hours": 80.91,
+        "ttr_business_days": 1,
+        "closer": "Eng-4E85",
+        "case_type": "options_futures_etl",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-652",
+        "priority": "Highest",
+        "ttr_hours": 49.53,
+        "ttr_business_days": 2,
+        "closer": "Eng-DB0B",
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-653",
+        "priority": "Highest",
+        "ttr_hours": 48.46,
+        "ttr_business_days": 2,
+        "closer": "Eng-DB0B",
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-719",
+        "priority": "Highest",
+        "ttr_hours": 47.84,
+        "ttr_business_days": 2,
+        "closer": "Eng-3E94",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-626",
+        "priority": "Highest",
+        "ttr_hours": 36.09,
+        "ttr_business_days": 1,
+        "closer": "Eng-70B4",
+        "case_type": "index_compute_or_secapi",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-836",
+        "priority": "Highest",
+        "ttr_hours": 28.89,
+        "ttr_business_days": 1,
+        "closer": "Eng-2728",
+        "case_type": "admin_ui_or_api",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-984",
+        "priority": "Highest",
+        "ttr_hours": 28.45,
+        "ttr_business_days": 1,
+        "closer": "Eng-4E85",
+        "case_type": "website_or_docs",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-754",
+        "priority": "Highest",
+        "ttr_hours": 27.34,
+        "ttr_business_days": 1,
+        "closer": "Eng-3E94",
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-855",
+        "priority": "Highest",
+        "ttr_hours": 26.82,
+        "ttr_business_days": 1,
+        "closer": "Eng-EC85",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-608",
+        "priority": "Highest",
+        "ttr_hours": 26.34,
+        "ttr_business_days": 1,
+        "closer": "Eng-ADE7",
+        "case_type": "infra_platform",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-651",
+        "priority": "Highest",
+        "ttr_hours": 24.32,
+        "ttr_business_days": 1,
+        "closer": "Eng-DB0B",
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-656",
+        "priority": "High",
+        "ttr_hours": 1372.95,
+        "ttr_business_days": 42,
+        "closer": "Eng-4E85",
+        "case_type": "mapping_config_portfolio",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-775",
+        "priority": "High",
+        "ttr_hours": 766.19,
+        "ttr_business_days": 22,
+        "closer": "Eng-3200",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-659",
+        "priority": "High",
+        "ttr_hours": 640.17,
+        "ttr_business_days": 18,
+        "closer": "Eng-A114",
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-665",
+        "priority": "High",
+        "ttr_hours": 497.3,
+        "ttr_business_days": 14,
+        "closer": "Eng-A114",
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-859",
+        "priority": "High",
+        "ttr_hours": 496.52,
+        "ttr_business_days": 14,
+        "closer": "Eng-4E85",
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-832",
+        "priority": "High",
+        "ttr_hours": 465.26,
+        "ttr_business_days": 13,
+        "closer": "Eng-ADE7",
+        "case_type": "index_compute_or_secapi",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-871",
+        "priority": "High",
+        "ttr_hours": 454.04,
+        "ttr_business_days": 13,
+        "closer": "Eng-4E85",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-592",
+        "priority": "High",
+        "ttr_hours": 408.46,
+        "ttr_business_days": 13,
+        "closer": "Eng-ADE7",
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-595",
+        "priority": "High",
+        "ttr_hours": 404.01,
+        "ttr_business_days": 13,
+        "closer": "Eng-4E85",
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-848",
+        "priority": "High",
+        "ttr_hours": 374.17,
+        "ttr_business_days": 10,
+        "closer": "Eng-B679",
+        "case_type": "options_futures_etl",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-604",
+        "priority": "High",
+        "ttr_hours": 364.83,
+        "ttr_business_days": 12,
+        "closer": "Eng-B9EF",
+        "case_type": "data_request_or_backfill",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-739",
+        "priority": "High",
+        "ttr_hours": 358.04,
+        "ttr_business_days": 11,
+        "closer": "Eng-EC85",
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-689",
+        "priority": "High",
+        "ttr_hours": 352.18,
+        "ttr_business_days": 10,
+        "closer": "Eng-A114",
+        "case_type": "infra_platform",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-619",
+        "priority": "High",
+        "ttr_hours": 329.87,
+        "ttr_business_days": 9,
+        "closer": "Eng-DB0B",
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-818",
+        "priority": "High",
+        "ttr_hours": 329.58,
+        "ttr_business_days": 10,
+        "closer": "Eng-2728",
+        "case_type": "data_request_or_backfill",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-707",
+        "priority": "High",
+        "ttr_hours": 310.89,
+        "ttr_business_days": 9,
+        "closer": "Eng-A114",
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-701",
+        "priority": "High",
+        "ttr_hours": 310.34,
+        "ttr_business_days": 9,
+        "closer": "Eng-B9EF",
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-710",
+        "priority": "High",
+        "ttr_hours": 278.65,
+        "ttr_business_days": 7,
+        "closer": "Eng-A114",
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-694",
+        "priority": "High",
+        "ttr_hours": 275.27,
+        "ttr_business_days": 7,
+        "closer": "Eng-ADE7",
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-807",
+        "priority": "High",
+        "ttr_hours": 249.66,
+        "ttr_business_days": 7,
+        "closer": "Eng-4E85",
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-712",
+        "priority": "High",
+        "ttr_hours": 230.4,
+        "ttr_business_days": 7,
+        "closer": "Eng-A114",
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-822",
+        "priority": "High",
+        "ttr_hours": 210.51,
+        "ttr_business_days": 7,
+        "closer": "Eng-2728",
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      }
+    ]
+  },
+  "case_types": {
+    "bars": [
+      {
+        "type": "airflow_job_failure",
+        "n": 82,
+        "share_pct": 20.8
+      },
+      {
+        "type": "dissemination_or_report",
+        "n": 34,
+        "share_pct": 8.6
+      },
+      {
+        "type": "pricer_vol_surface",
+        "n": 30,
+        "share_pct": 7.6
+      },
+      {
+        "type": "grafana_alert",
+        "n": 27,
+        "share_pct": 6.8
+      },
+      {
+        "type": "infra_platform",
+        "n": 26,
+        "share_pct": 6.6
+      },
+      {
+        "type": "data_request_or_backfill",
+        "n": 25,
+        "share_pct": 6.3
+      },
+      {
+        "type": "missing_data_or_gap",
+        "n": 23,
+        "share_pct": 5.8
+      },
+      {
+        "type": "impact_dependency",
+        "n": 17,
+        "share_pct": 4.3
+      },
+      {
+        "type": "admin_ui_or_api",
+        "n": 17,
+        "share_pct": 4.3
+      },
+      {
+        "type": "ci_dev_tooling",
+        "n": 17,
+        "share_pct": 4.3
+      },
+      {
+        "type": "mapping_config_portfolio",
+        "n": 17,
+        "share_pct": 4.3
+      },
+      {
+        "type": "options_futures_etl",
+        "n": 16,
+        "share_pct": 4.1
+      },
+      {
+        "type": "rt_intraday_ticking",
+        "n": 16,
+        "share_pct": 4.1
+      },
+      {
+        "type": "index_compute_or_secapi",
+        "n": 13,
+        "share_pct": 3.3
+      },
+      {
+        "type": "data_quality_check",
+        "n": 12,
+        "share_pct": 3.0
+      },
+      {
+        "type": "enhancement_or_process",
+        "n": 9,
+        "share_pct": 2.3
+      },
+      {
+        "type": "website_or_docs",
+        "n": 7,
+        "share_pct": 1.8
+      },
+      {
+        "type": "access_or_entitlement",
+        "n": 7,
+        "share_pct": 1.8
+      }
+    ],
+    "pe_category_bars": [
+      {
+        "category": "Data ETL",
+        "n": 153
+      },
+      {
+        "category": "Infrastructure",
+        "n": 84
+      },
+      {
+        "category": "Others",
+        "n": 72
+      },
+      {
+        "category": "Reports",
+        "n": 26
+      },
+      {
+        "category": "Admin App",
+        "n": 14
+      },
+      {
+        "category": "<empty>",
+        "n": 14
+      },
+      {
+        "category": "Index Methodology Logic",
+        "n": 9
+      },
+      {
+        "category": "Garage",
+        "n": 9
+      },
+      {
+        "category": "Enhancement",
+        "n": 8
+      },
+      {
+        "category": "Marketing Website",
+        "n": 6
+      }
+    ],
+    "low_confidence_count": 31,
+    "pain_ranked": [
+      {
+        "case_type": "airflow_job_failure",
+        "n": 82,
+        "open_now": 1,
+        "pain_score": 941.1,
+        "ttr_p50_h": 23.719938055555556,
+        "ttr_p90_h": 180.64456833333332,
+        "response_meet_pct": 80.2,
+        "resolution_meet_pct": 85.2
+      },
+      {
+        "case_type": "data_quality_check",
+        "n": 12,
+        "open_now": 1,
+        "pain_score": 596.1,
+        "ttr_p50_h": 278.6518888888889,
+        "ttr_p90_h": 640.1692036111111,
+        "response_meet_pct": 75.0,
+        "resolution_meet_pct": 45.5
+      },
+      {
+        "case_type": "data_request_or_backfill",
+        "n": 25,
+        "open_now": 3,
+        "pain_score": 539.5,
+        "ttr_p50_h": 46.00237152777778,
+        "ttr_p90_h": 327.61245900000006,
+        "response_meet_pct": 80.0,
+        "resolution_meet_pct": 72.7
+      },
+      {
+        "case_type": "rt_intraday_ticking",
+        "n": 16,
+        "open_now": 0,
+        "pain_score": 531.6,
+        "ttr_p50_h": 116.20323111111111,
+        "ttr_p90_h": 427.24000027777777,
+        "response_meet_pct": 73.3,
+        "resolution_meet_pct": 50.0
+      },
+      {
+        "case_type": "missing_data_or_gap",
+        "n": 23,
+        "open_now": 0,
+        "pain_score": 493.2,
+        "ttr_p50_h": 27.337814722222223,
+        "ttr_p90_h": 290.3723878333334,
+        "response_meet_pct": 66.7,
+        "resolution_meet_pct": 69.6
+      },
+      {
+        "case_type": "pricer_vol_surface",
+        "n": 30,
+        "open_now": 1,
+        "pain_score": 417.7,
+        "ttr_p50_h": 90.45740916666666,
+        "ttr_p90_h": 202.70659222222216,
+        "response_meet_pct": 76.7,
+        "resolution_meet_pct": 75.9
+      },
+      {
+        "case_type": "impact_dependency",
+        "n": 17,
+        "open_now": 1,
+        "pain_score": 391.7,
+        "ttr_p50_h": 105.42240833333332,
+        "ttr_p90_h": 303.6100181944445,
+        "response_meet_pct": 75.0,
+        "resolution_meet_pct": 56.2
+      },
+      {
+        "case_type": "mapping_config_portfolio",
+        "n": 17,
+        "open_now": 0,
+        "pain_score": 363.6,
+        "ttr_p50_h": 18.068341666666665,
+        "ttr_p90_h": 321.70358616666675,
+        "response_meet_pct": 75.0,
+        "resolution_meet_pct": 76.5
+      },
+      {
+        "case_type": "dissemination_or_report",
+        "n": 34,
+        "open_now": 1,
+        "pain_score": 329.8,
+        "ttr_p50_h": 23.064499166666668,
+        "ttr_p90_h": 168.08850955555556,
+        "response_meet_pct": 90.9,
+        "resolution_meet_pct": 87.9
+      },
+      {
+        "case_type": "index_compute_or_secapi",
+        "n": 13,
+        "open_now": 0,
+        "pain_score": 307.8,
+        "ttr_p50_h": 19.276644444444443,
+        "ttr_p90_h": 410.4467091111113,
+        "response_meet_pct": 100.0,
+        "resolution_meet_pct": 69.2
+      },
+      {
+        "case_type": "ci_dev_tooling",
+        "n": 17,
+        "open_now": 0,
+        "pain_score": 302.7,
+        "ttr_p50_h": 30.995069722222222,
+        "ttr_p90_h": 263.7817657777778,
+        "response_meet_pct": 75.0,
+        "resolution_meet_pct": 76.5
+      },
+      {
+        "case_type": "infra_platform",
+        "n": 26,
+        "open_now": 0,
+        "pain_score": 276.2,
+        "ttr_p50_h": 24.81278777777778,
+        "ttr_p90_h": 150.50685291666667,
+        "response_meet_pct": 73.1,
+        "resolution_meet_pct": 80.8
+      },
+      {
+        "case_type": "options_futures_etl",
+        "n": 16,
+        "open_now": 0,
+        "pain_score": 229.5,
+        "ttr_p50_h": 8.33702625,
+        "ttr_p90_h": 234.65838805555558,
+        "response_meet_pct": 85.7,
+        "resolution_meet_pct": 81.2
+      },
+      {
+        "case_type": "grafana_alert",
+        "n": 27,
+        "open_now": 4,
+        "pain_score": 193.0,
+        "ttr_p50_h": 18.51036388888889,
+        "ttr_p90_h": 140.50142122222226,
+        "response_meet_pct": 100.0,
+        "resolution_meet_pct": 95.7
+      },
+      {
+        "case_type": "admin_ui_or_api",
+        "n": 17,
+        "open_now": 1,
+        "pain_score": 62.2,
+        "ttr_p50_h": 22.284722916666666,
+        "ttr_p90_h": 43.696764583333334,
+        "response_meet_pct": 76.5,
+        "resolution_meet_pct": 93.8
+      },
+      {
+        "case_type": "website_or_docs",
+        "n": 7,
+        "open_now": 0,
+        "pain_score": 60.2,
+        "ttr_p50_h": 28.316651944444445,
+        "ttr_p90_h": 136.52270322222228,
+        "response_meet_pct": 100.0,
+        "resolution_meet_pct": 71.4
+      },
+      {
+        "case_type": "enhancement_or_process",
+        "n": 9,
+        "open_now": 0,
+        "pain_score": 54.3,
+        "ttr_p50_h": 28.373564166666668,
+        "ttr_p90_h": 94.50107211111113,
+        "response_meet_pct": 88.9,
+        "resolution_meet_pct": 88.9
+      },
+      {
+        "case_type": "access_or_entitlement",
+        "n": 7,
+        "open_now": 0,
+        "pain_score": 19.4,
+        "ttr_p50_h": 3.1376980555555556,
+        "ttr_p90_h": 42.49528266666666,
+        "response_meet_pct": 100.0,
+        "resolution_meet_pct": 100.0
+      }
+    ]
+  },
+  "hotspots": [
+    {
+      "hotspot": "Grafana alert (generic)",
+      "n": 14,
+      "ttr_p50_h": 38.10229569444444,
+      "ttr_p90_h": 146.83370491666668,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 92.9,
+      "priorities": {
+        "High": 6,
+        "Medium": 8
+      }
+    },
+    {
+      "hotspot": "SFTP / EDI",
+      "n": 13,
+      "ttr_p50_h": 21.322084722222222,
+      "ttr_p90_h": 161.01679000000001,
+      "response_meet_pct": 91.7,
+      "resolution_meet_pct": 81.8,
+      "priorities": {
+        "High": 7,
+        "Highest": 3,
+        "Medium": 3
+      }
+    },
+    {
+      "hotspot": "M3 publisher / lag",
+      "n": 9,
+      "ttr_p50_h": 14.260847777777778,
+      "ttr_p90_h": 374.7984313333333,
+      "response_meet_pct": 77.8,
+      "resolution_meet_pct": 66.7,
+      "priorities": {
+        "High": 6,
+        "Highest": 1,
+        "Medium": 2
+      }
+    },
+    {
+      "hotspot": "reuters / lipper funds",
+      "n": 9,
+      "ttr_p50_h": 17.725296944444445,
+      "ttr_p90_h": 143.30001405555558,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "Medium": 5,
+        "High": 4
+      }
+    },
+    {
+      "hotspot": "dependency tracker",
+      "n": 9,
+      "ttr_p50_h": 55.568509722222224,
+      "ttr_p90_h": 242.0515916111111,
+      "response_meet_pct": 77.8,
+      "resolution_meet_pct": 66.7,
+      "priorities": {
+        "Medium": 4,
+        "High": 3,
+        "Highest": 2
+      }
+    },
+    {
+      "hotspot": "Helix",
+      "n": 8,
+      "ttr_p50_h": 31.1469825,
+      "ttr_p90_h": 90.67468941666664,
+      "response_meet_pct": 87.5,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "High": 5,
+        "Medium": 3
+      }
+    },
+    {
+      "hotspot": "eod_vol_surfaces",
+      "n": 7,
+      "ttr_p50_h": 66.26462055555555,
+      "ttr_p90_h": 90.97965683333334,
+      "response_meet_pct": 71.4,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "High": 6,
+        "Medium": 1
+      }
+    },
+    {
+      "hotspot": "flex-pricer / CarApi",
+      "n": 7,
+      "ttr_p50_h": 10.682998472222224,
+      "ttr_p90_h": 36.62715291666667,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "High": 5,
+        "Medium": 2
+      }
+    },
+    {
+      "hotspot": "secapi-price-integrity-checks",
+      "n": 6,
+      "ttr_p50_h": 341.3292376388889,
+      "ttr_p90_h": 722.4625866666667,
+      "response_meet_pct": 83.3,
+      "resolution_meet_pct": 33.3,
+      "priorities": {
+        "High": 4,
+        "Medium": 2
+      }
+    },
+    {
+      "hotspot": "tickhistory_options_daily",
+      "n": 6,
+      "ttr_p50_h": 5.529376805555556,
+      "ttr_p90_h": 191.87606694444446,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 83.3,
+      "priorities": {
+        "Highest": 4,
+        "High": 2
+      }
+    },
+    {
+      "hotspot": "dissapi",
+      "n": 5,
+      "ttr_p50_h": 158.26470027777776,
+      "ttr_p90_h": 267.5179546111111,
+      "response_meet_pct": 80.0,
+      "resolution_meet_pct": 60.0,
+      "priorities": {
+        "High": 3,
+        "Medium": 2
+      }
+    },
+    {
+      "hotspot": "ice_options / ice_futures",
+      "n": 4,
+      "ttr_p50_h": 14.077775138888889,
+      "ttr_p90_h": 36.27470202777778,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "Medium": 3,
+        "High": 1
+      }
+    },
+    {
+      "hotspot": "target portfolio / portfolio API",
+      "n": 4,
+      "ttr_p50_h": 10.070196944444444,
+      "ttr_p90_h": 36.47039416666667,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "Medium": 4
+      }
+    },
+    {
+      "hotspot": "dsp_reference_prices_data_loader",
+      "n": 3,
+      "ttr_p50_h": 93.73575694444443,
+      "ttr_p90_h": 180.52524961111112,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 66.7,
+      "priorities": {
+        "Highest": 2,
+        "Medium": 1
+      }
+    },
+    {
+      "hotspot": "Nomura",
+      "n": 3,
+      "ttr_p50_h": 27.75116472222222,
+      "ttr_p90_h": 31.398274944444445,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "Highest": 2,
+        "High": 1
+      }
+    },
+    {
+      "hotspot": "CME settlements / tickhistory",
+      "n": 3,
+      "ttr_p50_h": 95.14231666666667,
+      "ttr_p90_h": 336.4174046666667,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 66.7,
+      "priorities": {
+        "Medium": 2,
+        "High": 1
+      }
+    },
+    {
+      "hotspot": "index-data-store",
+      "n": 3,
+      "ttr_p50_h": 44.588410277777776,
+      "ttr_p90_h": 102.67596361111111,
+      "response_meet_pct": 66.7,
+      "resolution_meet_pct": 100.0,
+      "priorities": {
+        "Medium": 1,
+        "High": 2
+      }
+    },
+    {
+      "hotspot": "FTSE",
+      "n": 1,
+      "ttr_p50_h": 191.2051766666667,
+      "ttr_p90_h": 191.2051766666667,
+      "response_meet_pct": 100.0,
+      "resolution_meet_pct": 0.0,
+      "priorities": {
+        "High": 1
+      }
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2026-05",
+      "opened": 125,
+      "closed": 125,
+      "still_open": 0,
+      "ttr_p50_h": 41.12421944444444,
+      "ttr_p90_h": 359.76881911111116,
+      "response_meet_pct": 67.5,
+      "resolution_meet_pct": 68.0,
+      "priority": {
+        "High": 54,
+        "Medium": 34,
+        "Highest": 35,
+        "Low": 2
+      },
+      "top_types": [
+        [
+          "airflow_job_failure",
+          27
+        ],
+        [
+          "pricer_vol_surface",
+          10
+        ],
+        [
+          "missing_data_or_gap",
+          10
+        ],
+        [
+          "infra_platform",
+          9
+        ],
+        [
+          "impact_dependency",
+          8
+        ]
+      ]
+    },
+    {
+      "month": "2026-06",
+      "opened": 133,
+      "closed": 133,
+      "still_open": 0,
+      "ttr_p50_h": 29.87244527777778,
+      "ttr_p90_h": 246.96316966666663,
+      "response_meet_pct": 84.6,
+      "resolution_meet_pct": 77.4,
+      "priority": {
+        "High": 45,
+        "Highest": 39,
+        "Medium": 43,
+        "Low": 6
+      },
+      "top_types": [
+        [
+          "airflow_job_failure",
+          23
+        ],
+        [
+          "data_request_or_backfill",
+          12
+        ],
+        [
+          "missing_data_or_gap",
+          11
+        ],
+        [
+          "pricer_vol_surface",
+          11
+        ],
+        [
+          "dissemination_or_report",
+          10
+        ]
+      ]
+    },
+    {
+      "month": "2026-07",
+      "opened": 137,
+      "closed": 124,
+      "still_open": 13,
+      "ttr_p50_h": 20.735673472222224,
+      "ttr_p90_h": 147.90755663888888,
+      "response_meet_pct": 90.4,
+      "resolution_meet_pct": 90.3,
+      "priority": {
+        "High": 74,
+        "Medium": 50,
+        "Highest": 12,
+        "Low": 1
+      },
+      "top_types": [
+        [
+          "airflow_job_failure",
+          32
+        ],
+        [
+          "dissemination_or_report",
+          16
+        ],
+        [
+          "grafana_alert",
+          15
+        ],
+        [
+          "infra_platform",
+          11
+        ],
+        [
+          "data_request_or_backfill",
+          9
+        ]
+      ]
+    }
+  ],
+  "ist_x_type": {
+    "buckets": [
+      "09:00\u201312:00 IST",
+      "12:00\u201315:00 IST",
+      "15:00\u201318:00 IST",
+      "18:00\u201321:00 IST",
+      "21:00\u201300:00 IST",
+      "00:00\u201303:00 IST",
+      "03:00\u201306:00 IST",
+      "06:00\u201309:00 IST"
+    ],
+    "types": [
+      "airflow_job_failure",
+      "dissemination_or_report",
+      "pricer_vol_surface",
+      "grafana_alert",
+      "infra_platform",
+      "data_request_or_backfill",
+      "missing_data_or_gap",
+      "mapping_config_portfolio",
+      "admin_ui_or_api",
+      "ci_dev_tooling",
+      "impact_dependency",
+      "options_futures_etl",
+      "rt_intraday_ticking",
+      "index_compute_or_secapi",
+      "data_quality_check",
+      "enhancement_or_process",
+      "access_or_entitlement",
+      "website_or_docs"
+    ],
+    "cells": [
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "airflow_job_failure",
+        "n": 7
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "dissemination_or_report",
+        "n": 4
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 0
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "grafana_alert",
+        "n": 3
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "infra_platform",
+        "n": 2
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 2
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 1
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 2
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 1
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 0
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "impact_dependency",
+        "n": 0
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "options_futures_etl",
+        "n": 6
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 1
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 0
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "data_quality_check",
+        "n": 0
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "enhancement_or_process",
+        "n": 0
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "access_or_entitlement",
+        "n": 0
+      },
+      {
+        "bucket": "09:00\u201312:00 IST",
+        "type": "website_or_docs",
+        "n": 0
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "airflow_job_failure",
+        "n": 5
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "dissemination_or_report",
+        "n": 4
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 1
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "grafana_alert",
+        "n": 1
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "infra_platform",
+        "n": 1
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 0
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 1
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 5
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 4
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 1
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "impact_dependency",
+        "n": 3
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "options_futures_etl",
+        "n": 0
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 2
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 1
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "data_quality_check",
+        "n": 1
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "enhancement_or_process",
+        "n": 0
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "access_or_entitlement",
+        "n": 0
+      },
+      {
+        "bucket": "12:00\u201315:00 IST",
+        "type": "website_or_docs",
+        "n": 0
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "airflow_job_failure",
+        "n": 12
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "dissemination_or_report",
+        "n": 6
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 2
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "grafana_alert",
+        "n": 4
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "infra_platform",
+        "n": 2
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 1
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 5
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 1
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 5
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 1
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "impact_dependency",
+        "n": 3
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "options_futures_etl",
+        "n": 2
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 2
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 1
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "data_quality_check",
+        "n": 2
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "enhancement_or_process",
+        "n": 1
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "access_or_entitlement",
+        "n": 2
+      },
+      {
+        "bucket": "15:00\u201318:00 IST",
+        "type": "website_or_docs",
+        "n": 3
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "airflow_job_failure",
+        "n": 23
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "dissemination_or_report",
+        "n": 3
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 7
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "grafana_alert",
+        "n": 4
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "infra_platform",
+        "n": 4
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 9
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 2
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 1
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 3
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 5
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "impact_dependency",
+        "n": 5
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "options_futures_etl",
+        "n": 3
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 3
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 1
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "data_quality_check",
+        "n": 2
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "enhancement_or_process",
+        "n": 1
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "access_or_entitlement",
+        "n": 2
+      },
+      {
+        "bucket": "18:00\u201321:00 IST",
+        "type": "website_or_docs",
+        "n": 1
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "airflow_job_failure",
+        "n": 12
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "dissemination_or_report",
+        "n": 1
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 6
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "grafana_alert",
+        "n": 8
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "infra_platform",
+        "n": 6
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 4
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 3
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 3
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 3
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 3
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "impact_dependency",
+        "n": 1
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "options_futures_etl",
+        "n": 3
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 3
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 4
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "data_quality_check",
+        "n": 1
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "enhancement_or_process",
+        "n": 2
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "access_or_entitlement",
+        "n": 2
+      },
+      {
+        "bucket": "21:00\u201300:00 IST",
+        "type": "website_or_docs",
+        "n": 2
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "airflow_job_failure",
+        "n": 7
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "dissemination_or_report",
+        "n": 4
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 13
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "grafana_alert",
+        "n": 5
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "infra_platform",
+        "n": 4
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 4
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 3
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 3
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 1
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 5
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "impact_dependency",
+        "n": 3
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "options_futures_etl",
+        "n": 2
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 1
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 1
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "data_quality_check",
+        "n": 3
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "enhancement_or_process",
+        "n": 4
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "access_or_entitlement",
+        "n": 1
+      },
+      {
+        "bucket": "00:00\u201303:00 IST",
+        "type": "website_or_docs",
+        "n": 1
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "airflow_job_failure",
+        "n": 10
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "dissemination_or_report",
+        "n": 6
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 1
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "grafana_alert",
+        "n": 1
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "infra_platform",
+        "n": 4
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 4
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 6
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 0
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 0
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 1
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "impact_dependency",
+        "n": 2
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "options_futures_etl",
+        "n": 0
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 1
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 4
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "data_quality_check",
+        "n": 3
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "enhancement_or_process",
+        "n": 1
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "access_or_entitlement",
+        "n": 0
+      },
+      {
+        "bucket": "03:00\u201306:00 IST",
+        "type": "website_or_docs",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "airflow_job_failure",
+        "n": 6
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "dissemination_or_report",
+        "n": 6
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "pricer_vol_surface",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "grafana_alert",
+        "n": 1
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "infra_platform",
+        "n": 3
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "data_request_or_backfill",
+        "n": 1
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "missing_data_or_gap",
+        "n": 2
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "mapping_config_portfolio",
+        "n": 2
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "admin_ui_or_api",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "ci_dev_tooling",
+        "n": 1
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "impact_dependency",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "options_futures_etl",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "rt_intraday_ticking",
+        "n": 3
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "index_compute_or_secapi",
+        "n": 1
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "data_quality_check",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "enhancement_or_process",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "access_or_entitlement",
+        "n": 0
+      },
+      {
+        "bucket": "06:00\u201309:00 IST",
+        "type": "website_or_docs",
+        "n": 0
+      }
+    ],
+    "evening_top": [
+      [
+        "airflow_job_failure",
+        42
+      ],
+      [
+        "pricer_vol_surface",
+        26
+      ],
+      [
+        "grafana_alert",
+        17
+      ],
+      [
+        "data_request_or_backfill",
+        17
+      ],
+      [
+        "infra_platform",
+        14
+      ],
+      [
+        "ci_dev_tooling",
+        13
+      ],
+      [
+        "impact_dependency",
+        9
+      ],
+      [
+        "dissemination_or_report",
+        8
+      ],
+      [
+        "options_futures_etl",
+        8
+      ],
+      [
+        "missing_data_or_gap",
+        8
+      ]
+    ],
+    "daytime_top": [
+      [
+        "airflow_job_failure",
+        24
+      ],
+      [
+        "dissemination_or_report",
+        14
+      ],
+      [
+        "admin_ui_or_api",
+        10
+      ],
+      [
+        "mapping_config_portfolio",
+        8
+      ],
+      [
+        "options_futures_etl",
+        8
+      ],
+      [
+        "grafana_alert",
+        8
+      ],
+      [
+        "missing_data_or_gap",
+        7
+      ],
+      [
+        "impact_dependency",
+        6
+      ],
+      [
+        "infra_platform",
+        5
+      ],
+      [
+        "rt_intraday_ticking",
+        5
+      ]
+    ]
+  },
+  "wfi": {
+    "definition": "Sum of hours spent in status 'Waiting for Input' from changelog intervals (open interval ends at now if still in WFI).",
+    "n_ever_wfi": 138,
+    "n_currently_wfi": 4,
+    "dwell_hours": {
+      "n": 138,
+      "avg": 68.71952954135266,
+      "p50": 22.442123333333335,
+      "p90": 147.74827002777778,
+      "p99": 750.722628811111,
+      "min": 0.011361666666666667,
+      "max": 799.1915997222222
+    },
+    "currently": [
+      {
+        "key": "PES-890",
+        "priority": "Medium",
+        "assignee": "Eng-4E85",
+        "wfi_hours": 164.8,
+        "summary": "(redacted)",
+        "case_type": "data_request_or_backfill"
+      },
+      {
+        "key": "PES-974",
+        "priority": "Medium",
+        "assignee": "Eng-4E85",
+        "wfi_hours": 3.8,
+        "summary": "(redacted)",
+        "case_type": "impact_dependency"
+      },
+      {
+        "key": "PES-993",
+        "priority": "High",
+        "assignee": "Eng-4E85",
+        "wfi_hours": 73.5,
+        "summary": "(redacted)",
+        "case_type": "grafana_alert"
+      },
+      {
+        "key": "PES-1000",
+        "priority": "Medium",
+        "assignee": "Eng-4E85",
+        "wfi_hours": 1.6,
+        "summary": "(redacted)",
+        "case_type": "grafana_alert"
+      }
+    ],
+    "longest_dwell": [
+      {
+        "key": "PES-656",
+        "priority": "High",
+        "status": "Completed",
+        "wfi_hours": 799.2,
+        "case_type": "mapping_config_portfolio",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-775",
+        "priority": "High",
+        "status": "Completed",
+        "wfi_hours": 759.4,
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-742",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 736.0,
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-665",
+        "priority": "High",
+        "status": "Canceled",
+        "wfi_hours": 497.1,
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-743",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 432.5,
+        "case_type": "index_compute_or_secapi",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-592",
+        "priority": "High",
+        "status": "Canceled",
+        "wfi_hours": 384.5,
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-764",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 366.4,
+        "case_type": "data_request_or_backfill",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-692",
+        "priority": "Highest",
+        "status": "Completed",
+        "wfi_hours": 309.9,
+        "case_type": "ci_dev_tooling",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-618",
+        "priority": "Highest",
+        "status": "Completed",
+        "wfi_hours": 241.5,
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-645",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 187.7,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-806",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 168.6,
+        "case_type": "impact_dependency",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-890",
+        "priority": "Medium",
+        "status": "Waiting for Input",
+        "wfi_hours": 164.8,
+        "case_type": "data_request_or_backfill",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-868",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 162.9,
+        "case_type": "dissemination_or_report",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-778",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 154.1,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-871",
+        "priority": "High",
+        "status": "Completed",
+        "wfi_hours": 145.0,
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-909",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 141.7,
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-889",
+        "priority": "High",
+        "status": "Completed",
+        "wfi_hours": 139.5,
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-853",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 138.8,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-921",
+        "priority": "High",
+        "status": "Completed",
+        "wfi_hours": 136.0,
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-897",
+        "priority": "High",
+        "status": "Completed",
+        "wfi_hours": 135.9,
+        "case_type": "infra_platform",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-659",
+        "priority": "High",
+        "status": "Completed",
+        "wfi_hours": 135.4,
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-892",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 130.1,
+        "case_type": "impact_dependency",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-735",
+        "priority": "Low",
+        "status": "Completed",
+        "wfi_hours": 117.1,
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-930",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 106.8,
+        "case_type": "dissemination_or_report",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-885",
+        "priority": "Medium",
+        "status": "Completed",
+        "wfi_hours": 105.9,
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      }
+    ]
+  },
+  "closer_vs_worker": {
+    "definition": {
+      "closer": "Author of first changelog transition to terminal status.",
+      "top_commenter": "Non-reporter human with most comments on the ticket.",
+      "mismatch": "closer != top_commenter AND top_commenter has \u22652 comments."
+    },
+    "n_closed_with_closer": 382,
+    "n_mismatch": 97,
+    "mismatch_pct": 25.4,
+    "closers": [
+      {
+        "person": "Eng-4E85",
+        "closed": 81
+      },
+      {
+        "person": "Eng-9807",
+        "closed": 48
+      },
+      {
+        "person": "Eng-B9EF",
+        "closed": 41
+      },
+      {
+        "person": "Eng-3E94",
+        "closed": 33
+      },
+      {
+        "person": "Eng-A114",
+        "closed": 31
+      },
+      {
+        "person": "Eng-3200",
+        "closed": 28
+      },
+      {
+        "person": "Eng-98C2",
+        "closed": 22
+      },
+      {
+        "person": "Eng-DB0B",
+        "closed": 20
+      },
+      {
+        "person": "Eng-155C",
+        "closed": 17
+      },
+      {
+        "person": "Eng-2728",
+        "closed": 17
+      },
+      {
+        "person": "Eng-ADE7",
+        "closed": 14
+      },
+      {
+        "person": "Eng-EC85",
+        "closed": 8
+      },
+      {
+        "person": "Eng-70B4",
+        "closed": 7
+      },
+      {
+        "person": "Eng-E457",
+        "closed": 3
+      },
+      {
+        "person": "Eng-B679",
+        "closed": 3
+      },
+      {
+        "person": "Eng-4D22",
+        "closed": 2
+      },
+      {
+        "person": "Eng-59E5",
+        "closed": 1
+      },
+      {
+        "person": "Eng-A872",
+        "closed": 1
+      },
+      {
+        "person": "Eng-19EC",
+        "closed": 1
+      },
+      {
+        "person": "Eng-E082",
+        "closed": 1
+      }
+    ],
+    "top_commenters": [
+      {
+        "person": "Eng-4E85",
+        "n": 60
+      },
+      {
+        "person": "Eng-B9EF",
+        "n": 42
+      },
+      {
+        "person": "Eng-9807",
+        "n": 34
+      },
+      {
+        "person": "Eng-A114",
+        "n": 23
+      },
+      {
+        "person": "Eng-98C2",
+        "n": 21
+      },
+      {
+        "person": "Eng-155C",
+        "n": 20
+      },
+      {
+        "person": "Eng-3200",
+        "n": 20
+      },
+      {
+        "person": "Eng-3E94",
+        "n": 17
+      },
+      {
+        "person": "Eng-2728",
+        "n": 17
+      },
+      {
+        "person": "Eng-EC85",
+        "n": 16
+      },
+      {
+        "person": "Eng-DB0B",
+        "n": 13
+      },
+      {
+        "person": "Eng-5196",
+        "n": 9
+      },
+      {
+        "person": "Eng-ADE7",
+        "n": 8
+      },
+      {
+        "person": "Eng-7EF1",
+        "n": 8
+      },
+      {
+        "person": "Eng-689C",
+        "n": 8
+      },
+      {
+        "person": "Eng-A872",
+        "n": 7
+      },
+      {
+        "person": "Eng-4D22",
+        "n": 5
+      },
+      {
+        "person": "Eng-F12F",
+        "n": 5
+      },
+      {
+        "person": "Eng-59E5",
+        "n": 4
+      },
+      {
+        "person": "Eng-70B4",
+        "n": 4
+      }
+    ],
+    "credit_delta": [
+      {
+        "person": "Eng-4E85",
+        "closed_as_closer": 81,
+        "was_top_commenter_on_closed": 60,
+        "delta_closer_minus_top": 21
+      },
+      {
+        "person": "Eng-3E94",
+        "closed_as_closer": 33,
+        "was_top_commenter_on_closed": 17,
+        "delta_closer_minus_top": 16
+      },
+      {
+        "person": "Eng-9807",
+        "closed_as_closer": 48,
+        "was_top_commenter_on_closed": 34,
+        "delta_closer_minus_top": 14
+      },
+      {
+        "person": "Eng-5196",
+        "closed_as_closer": 0,
+        "was_top_commenter_on_closed": 9,
+        "delta_closer_minus_top": -9
+      },
+      {
+        "person": "Eng-3200",
+        "closed_as_closer": 28,
+        "was_top_commenter_on_closed": 20,
+        "delta_closer_minus_top": 8
+      },
+      {
+        "person": "Eng-A114",
+        "closed_as_closer": 31,
+        "was_top_commenter_on_closed": 23,
+        "delta_closer_minus_top": 8
+      },
+      {
+        "person": "Eng-7EF1",
+        "closed_as_closer": 0,
+        "was_top_commenter_on_closed": 8,
+        "delta_closer_minus_top": -8
+      },
+      {
+        "person": "Eng-EC85",
+        "closed_as_closer": 8,
+        "was_top_commenter_on_closed": 16,
+        "delta_closer_minus_top": -8
+      },
+      {
+        "person": "Eng-689C",
+        "closed_as_closer": 0,
+        "was_top_commenter_on_closed": 8,
+        "delta_closer_minus_top": -8
+      },
+      {
+        "person": "Eng-DB0B",
+        "closed_as_closer": 20,
+        "was_top_commenter_on_closed": 13,
+        "delta_closer_minus_top": 7
+      },
+      {
+        "person": "Eng-ADE7",
+        "closed_as_closer": 14,
+        "was_top_commenter_on_closed": 8,
+        "delta_closer_minus_top": 6
+      },
+      {
+        "person": "Eng-A872",
+        "closed_as_closer": 1,
+        "was_top_commenter_on_closed": 7,
+        "delta_closer_minus_top": -6
+      },
+      {
+        "person": "Eng-F12F",
+        "closed_as_closer": 1,
+        "was_top_commenter_on_closed": 5,
+        "delta_closer_minus_top": -4
+      },
+      {
+        "person": "Eng-70B4",
+        "closed_as_closer": 7,
+        "was_top_commenter_on_closed": 4,
+        "delta_closer_minus_top": 3
+      },
+      {
+        "person": "Eng-6C3F",
+        "closed_as_closer": 0,
+        "was_top_commenter_on_closed": 3,
+        "delta_closer_minus_top": -3
+      },
+      {
+        "person": "Eng-4D22",
+        "closed_as_closer": 2,
+        "was_top_commenter_on_closed": 5,
+        "delta_closer_minus_top": -3
+      },
+      {
+        "person": "Eng-155C",
+        "closed_as_closer": 17,
+        "was_top_commenter_on_closed": 20,
+        "delta_closer_minus_top": -3
+      },
+      {
+        "person": "Eng-59E5",
+        "closed_as_closer": 1,
+        "was_top_commenter_on_closed": 4,
+        "delta_closer_minus_top": -3
+      },
+      {
+        "person": "Eng-8657",
+        "closed_as_closer": 0,
+        "was_top_commenter_on_closed": 3,
+        "delta_closer_minus_top": -3
+      },
+      {
+        "person": "Eng-E082",
+        "closed_as_closer": 1,
+        "was_top_commenter_on_closed": 3,
+        "delta_closer_minus_top": -2
+      }
+    ],
+    "mismatches": [
+      {
+        "key": "PES-602",
+        "priority": "Highest",
+        "closer": "Eng-98C2",
+        "top_commenter": "Eng-EC85",
+        "top_commenter_count": 29,
+        "case_type": "mapping_config_portfolio",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-805",
+        "priority": "Highest",
+        "closer": "Eng-2728",
+        "top_commenter": "Eng-5196",
+        "top_commenter_count": 19,
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-887",
+        "priority": "High",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-5196",
+        "top_commenter_count": 17,
+        "case_type": "options_futures_etl",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-796",
+        "priority": "High",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-A872",
+        "top_commenter_count": 15,
+        "case_type": "infra_platform",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-930",
+        "priority": "Medium",
+        "closer": "Eng-3200",
+        "top_commenter": "Eng-6C3F",
+        "top_commenter_count": 15,
+        "case_type": "dissemination_or_report",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-675",
+        "priority": "Highest",
+        "closer": "Eng-B9EF",
+        "top_commenter": "Eng-4D22",
+        "top_commenter_count": 12,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-844",
+        "priority": "High",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-47A3",
+        "top_commenter_count": 12,
+        "case_type": "index_compute_or_secapi",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-665",
+        "priority": "High",
+        "closer": "Eng-A114",
+        "top_commenter": "Eng-B9EF",
+        "top_commenter_count": 11,
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-719",
+        "priority": "Highest",
+        "closer": "Eng-3E94",
+        "top_commenter": "Eng-5196",
+        "top_commenter_count": 11,
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-667",
+        "priority": "High",
+        "closer": "Eng-B9EF",
+        "top_commenter": "Eng-5196",
+        "top_commenter_count": 10,
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-652",
+        "priority": "Highest",
+        "closer": "Eng-DB0B",
+        "top_commenter": "Eng-B9EF",
+        "top_commenter_count": 8,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-834",
+        "priority": "Highest",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-5196",
+        "top_commenter_count": 8,
+        "case_type": "infra_platform",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-926",
+        "priority": "High",
+        "closer": "Eng-9807",
+        "top_commenter": "Eng-EC85",
+        "top_commenter_count": 8,
+        "case_type": "index_compute_or_secapi",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-962",
+        "priority": "High",
+        "closer": "Eng-3200",
+        "top_commenter": "Eng-59E5",
+        "top_commenter_count": 8,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-991",
+        "priority": "High",
+        "closer": "Eng-9807",
+        "top_commenter": "Eng-7EF1",
+        "top_commenter_count": 8,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-638",
+        "priority": "High",
+        "closer": "Eng-DB0B",
+        "top_commenter": "Eng-DBC6",
+        "top_commenter_count": 7,
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-657",
+        "priority": "High",
+        "closer": "Eng-DB0B",
+        "top_commenter": "Eng-B9EF",
+        "top_commenter_count": 7,
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-775",
+        "priority": "High",
+        "closer": "Eng-3200",
+        "top_commenter": "Eng-155C",
+        "top_commenter_count": 7,
+        "case_type": "rt_intraday_ticking",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-793",
+        "priority": "Highest",
+        "closer": "Eng-2728",
+        "top_commenter": "Eng-47A3",
+        "top_commenter_count": 7,
+        "case_type": "ci_dev_tooling",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-853",
+        "priority": "Medium",
+        "closer": "Eng-9807",
+        "top_commenter": "Eng-8657",
+        "top_commenter_count": 7,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-884",
+        "priority": "Medium",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-BD07",
+        "top_commenter_count": 7,
+        "case_type": "dissemination_or_report",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-921",
+        "priority": "High",
+        "closer": "Eng-3200",
+        "top_commenter": "Eng-155C",
+        "top_commenter_count": 7,
+        "case_type": "missing_data_or_gap",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-653",
+        "priority": "Highest",
+        "closer": "Eng-DB0B",
+        "top_commenter": "Eng-A872",
+        "top_commenter_count": 6,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-734",
+        "priority": "Highest",
+        "closer": "Eng-3E94",
+        "top_commenter": "Eng-5196",
+        "top_commenter_count": 6,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-782",
+        "priority": "High",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-5196",
+        "top_commenter_count": 6,
+        "case_type": "data_request_or_backfill",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-868",
+        "priority": "Medium",
+        "closer": "Eng-155C",
+        "top_commenter": "Eng-CA66",
+        "top_commenter_count": 6,
+        "case_type": "dissemination_or_report",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-966",
+        "priority": "High",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-155C",
+        "top_commenter_count": 6,
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-659",
+        "priority": "High",
+        "closer": "Eng-A114",
+        "top_commenter": "Eng-3C69",
+        "top_commenter_count": 5,
+        "case_type": "data_quality_check",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-685",
+        "priority": "High",
+        "closer": "Eng-B9EF",
+        "top_commenter": "Eng-7EF1",
+        "top_commenter_count": 5,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-714",
+        "priority": "Medium",
+        "closer": "Eng-A114",
+        "top_commenter": "Eng-EC85",
+        "top_commenter_count": 5,
+        "case_type": "dissemination_or_report",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-721",
+        "priority": "Highest",
+        "closer": "Eng-B679",
+        "top_commenter": "Eng-689C",
+        "top_commenter_count": 5,
+        "case_type": "index_compute_or_secapi",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-726",
+        "priority": "Highest",
+        "closer": "Eng-3E94",
+        "top_commenter": "Eng-EC85",
+        "top_commenter_count": 5,
+        "case_type": "admin_ui_or_api",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-744",
+        "priority": "Medium",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-A114",
+        "top_commenter_count": 5,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-797",
+        "priority": "Medium",
+        "closer": "Eng-3200",
+        "top_commenter": "Eng-EC85",
+        "top_commenter_count": 5,
+        "case_type": "ci_dev_tooling",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-807",
+        "priority": "High",
+        "closer": "Eng-4E85",
+        "top_commenter": "Eng-3A6F",
+        "top_commenter_count": 5,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-845",
+        "priority": "High",
+        "closer": "Eng-98C2",
+        "top_commenter": "Eng-4E85",
+        "top_commenter_count": 5,
+        "case_type": "ci_dev_tooling",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-931",
+        "priority": "High",
+        "closer": "Eng-3200",
+        "top_commenter": "Eng-A872",
+        "top_commenter_count": 5,
+        "case_type": "options_futures_etl",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-959",
+        "priority": "Medium",
+        "closer": "Eng-3200",
+        "top_commenter": "Eng-59E5",
+        "top_commenter_count": 5,
+        "case_type": "airflow_job_failure",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-610",
+        "priority": "Highest",
+        "closer": "Eng-ADE7",
+        "top_commenter": "Eng-B9EF",
+        "top_commenter_count": 4,
+        "case_type": "infra_platform",
+        "summary": "(redacted)"
+      },
+      {
+        "key": "PES-648",
+        "priority": "High",
+        "closer": "Eng-B9EF",
+        "top_commenter": "Eng-155C",
+        "top_commenter_count": 4,
+        "case_type": "pricer_vol_surface",
+        "summary": "(redacted)"
+      }
+    ]
+  },
+  "reporters": {
+    "n_unique_reporters": 37,
+    "alertish_summary_count": 102,
+    "alertish_pct": 25.8,
+    "reporters": [
+      {
+        "reporter": "Reporter-7EF1",
+        "n": 79,
+        "share_pct": 20.0,
+        "alertish_summaries": 2,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            16
+          ],
+          [
+            "infra_platform",
+            12
+          ],
+          [
+            "dissemination_or_report",
+            9
+          ]
+        ],
+        "priorities": {
+          "High": 56,
+          "Highest": 9,
+          "Medium": 14
+        }
+      },
+      {
+        "reporter": "Reporter-BD07",
+        "n": 45,
+        "share_pct": 11.4,
+        "alertish_summaries": 6,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            14
+          ],
+          [
+            "grafana_alert",
+            9
+          ],
+          [
+            "pricer_vol_surface",
+            7
+          ]
+        ],
+        "priorities": {
+          "High": 34,
+          "Highest": 5,
+          "Low": 1,
+          "Medium": 5
+        }
+      },
+      {
+        "reporter": "Reporter-8657",
+        "n": 44,
+        "share_pct": 11.1,
+        "alertish_summaries": 44,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            20
+          ],
+          [
+            "dissemination_or_report",
+            9
+          ],
+          [
+            "pricer_vol_surface",
+            4
+          ]
+        ],
+        "priorities": {
+          "High": 11,
+          "Medium": 25,
+          "Highest": 5,
+          "Low": 3
+        }
+      },
+      {
+        "reporter": "Reporter-F12F",
+        "n": 27,
+        "share_pct": 6.8,
+        "alertish_summaries": 27,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            12
+          ],
+          [
+            "data_quality_check",
+            3
+          ],
+          [
+            "pricer_vol_surface",
+            3
+          ]
+        ],
+        "priorities": {
+          "High": 16,
+          "Highest": 3,
+          "Medium": 8
+        }
+      },
+      {
+        "reporter": "Reporter-CBB6",
+        "n": 25,
+        "share_pct": 6.3,
+        "alertish_summaries": 23,
+        "top_types": [
+          [
+            "grafana_alert",
+            9
+          ],
+          [
+            "pricer_vol_surface",
+            5
+          ],
+          [
+            "airflow_job_failure",
+            5
+          ]
+        ],
+        "priorities": {
+          "Medium": 19,
+          "High": 6
+        }
+      },
+      {
+        "reporter": "Reporter-E082",
+        "n": 22,
+        "share_pct": 5.6,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            7
+          ],
+          [
+            "options_futures_etl",
+            5
+          ],
+          [
+            "dissemination_or_report",
+            4
+          ]
+        ],
+        "priorities": {
+          "Highest": 14,
+          "Medium": 3,
+          "High": 4,
+          "Low": 1
+        }
+      },
+      {
+        "reporter": "Reporter-6C3F",
+        "n": 22,
+        "share_pct": 5.6,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "impact_dependency",
+            5
+          ],
+          [
+            "mapping_config_portfolio",
+            4
+          ],
+          [
+            "website_or_docs",
+            2
+          ]
+        ],
+        "priorities": {
+          "Medium": 9,
+          "Highest": 8,
+          "Low": 1,
+          "High": 4
+        }
+      },
+      {
+        "reporter": "Reporter-0CE3",
+        "n": 19,
+        "share_pct": 4.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "data_request_or_backfill",
+            9
+          ],
+          [
+            "enhancement_or_process",
+            4
+          ],
+          [
+            "impact_dependency",
+            3
+          ]
+        ],
+        "priorities": {
+          "High": 4,
+          "Medium": 15
+        }
+      },
+      {
+        "reporter": "Reporter-4361",
+        "n": 16,
+        "share_pct": 4.1,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "data_request_or_backfill",
+            4
+          ],
+          [
+            "mapping_config_portfolio",
+            4
+          ],
+          [
+            "rt_intraday_ticking",
+            2
+          ]
+        ],
+        "priorities": {
+          "High": 12,
+          "Highest": 4
+        }
+      },
+      {
+        "reporter": "Reporter-CA66",
+        "n": 14,
+        "share_pct": 3.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "missing_data_or_gap",
+            5
+          ],
+          [
+            "mapping_config_portfolio",
+            2
+          ],
+          [
+            "ci_dev_tooling",
+            2
+          ]
+        ],
+        "priorities": {
+          "High": 4,
+          "Highest": 9,
+          "Low": 1
+        }
+      },
+      {
+        "reporter": "Reporter-CAD7",
+        "n": 8,
+        "share_pct": 2.0,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "impact_dependency",
+            3
+          ],
+          [
+            "ci_dev_tooling",
+            3
+          ],
+          [
+            "dissemination_or_report",
+            1
+          ]
+        ],
+        "priorities": {
+          "High": 2,
+          "Highest": 5,
+          "Medium": 1
+        }
+      },
+      {
+        "reporter": "Reporter-26F1",
+        "n": 8,
+        "share_pct": 2.0,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "admin_ui_or_api",
+            5
+          ],
+          [
+            "pricer_vol_surface",
+            1
+          ],
+          [
+            "ci_dev_tooling",
+            1
+          ]
+        ],
+        "priorities": {
+          "Medium": 7,
+          "High": 1
+        }
+      },
+      {
+        "reporter": "Reporter-FD9C",
+        "n": 7,
+        "share_pct": 1.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            2
+          ],
+          [
+            "mapping_config_portfolio",
+            2
+          ],
+          [
+            "ci_dev_tooling",
+            1
+          ]
+        ],
+        "priorities": {
+          "Highest": 6,
+          "High": 1
+        }
+      },
+      {
+        "reporter": "Reporter-155C",
+        "n": 7,
+        "share_pct": 1.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "options_futures_etl",
+            2
+          ],
+          [
+            "missing_data_or_gap",
+            2
+          ],
+          [
+            "index_compute_or_secapi",
+            1
+          ]
+        ],
+        "priorities": {
+          "High": 4,
+          "Medium": 3
+        }
+      },
+      {
+        "reporter": "Reporter-8983",
+        "n": 6,
+        "share_pct": 1.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "admin_ui_or_api",
+            2
+          ],
+          [
+            "mapping_config_portfolio",
+            1
+          ],
+          [
+            "infra_platform",
+            1
+          ]
+        ],
+        "priorities": {
+          "Highest": 5,
+          "High": 1
+        }
+      },
+      {
+        "reporter": "Reporter-31E7",
+        "n": 5,
+        "share_pct": 1.3,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "website_or_docs",
+            2
+          ],
+          [
+            "mapping_config_portfolio",
+            1
+          ],
+          [
+            "admin_ui_or_api",
+            1
+          ]
+        ],
+        "priorities": {
+          "Medium": 4,
+          "Highest": 1
+        }
+      },
+      {
+        "reporter": "Reporter-629C",
+        "n": 5,
+        "share_pct": 1.3,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "admin_ui_or_api",
+            3
+          ],
+          [
+            "ci_dev_tooling",
+            2
+          ]
+        ],
+        "priorities": {
+          "Highest": 3,
+          "Medium": 1,
+          "High": 1
+        }
+      },
+      {
+        "reporter": "Reporter-D9F3",
+        "n": 3,
+        "share_pct": 0.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            1
+          ],
+          [
+            "dissemination_or_report",
+            1
+          ],
+          [
+            "ci_dev_tooling",
+            1
+          ]
+        ],
+        "priorities": {
+          "Medium": 3
+        }
+      },
+      {
+        "reporter": "Reporter-47A3",
+        "n": 3,
+        "share_pct": 0.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "website_or_docs",
+            1
+          ],
+          [
+            "index_compute_or_secapi",
+            1
+          ],
+          [
+            "enhancement_or_process",
+            1
+          ]
+        ],
+        "priorities": {
+          "Highest": 2,
+          "High": 1
+        }
+      },
+      {
+        "reporter": "Reporter-EC85",
+        "n": 3,
+        "share_pct": 0.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "ci_dev_tooling",
+            1
+          ],
+          [
+            "access_or_entitlement",
+            1
+          ],
+          [
+            "airflow_job_failure",
+            1
+          ]
+        ],
+        "priorities": {
+          "Low": 1,
+          "Medium": 2
+        }
+      },
+      {
+        "reporter": "Reporter-3A6F",
+        "n": 3,
+        "share_pct": 0.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "pricer_vol_surface",
+            2
+          ],
+          [
+            "missing_data_or_gap",
+            1
+          ]
+        ],
+        "priorities": {
+          "High": 1,
+          "Medium": 2
+        }
+      },
+      {
+        "reporter": "Reporter-DAD2",
+        "n": 3,
+        "share_pct": 0.8,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "access_or_entitlement",
+            1
+          ],
+          [
+            "pricer_vol_surface",
+            1
+          ],
+          [
+            "missing_data_or_gap",
+            1
+          ]
+        ],
+        "priorities": {
+          "Medium": 1,
+          "Highest": 1,
+          "High": 1
+        }
+      },
+      {
+        "reporter": "Reporter-7758",
+        "n": 2,
+        "share_pct": 0.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "access_or_entitlement",
+            1
+          ],
+          [
+            "impact_dependency",
+            1
+          ]
+        ],
+        "priorities": {
+          "Medium": 2
+        }
+      },
+      {
+        "reporter": "Reporter-DBC6",
+        "n": 2,
+        "share_pct": 0.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "mapping_config_portfolio",
+            1
+          ],
+          [
+            "index_compute_or_secapi",
+            1
+          ]
+        ],
+        "priorities": {
+          "Medium": 1,
+          "Highest": 1
+        }
+      },
+      {
+        "reporter": "Reporter-C10C",
+        "n": 2,
+        "share_pct": 0.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "missing_data_or_gap",
+            1
+          ],
+          [
+            "data_request_or_backfill",
+            1
+          ]
+        ],
+        "priorities": {
+          "High": 2
+        }
+      },
+      {
+        "reporter": "Reporter-FD23",
+        "n": 2,
+        "share_pct": 0.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "infra_platform",
+            2
+          ]
+        ],
+        "priorities": {
+          "Highest": 2
+        }
+      },
+      {
+        "reporter": "Reporter-F05E",
+        "n": 2,
+        "share_pct": 0.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "missing_data_or_gap",
+            1
+          ],
+          [
+            "dissemination_or_report",
+            1
+          ]
+        ],
+        "priorities": {
+          "Highest": 1,
+          "High": 1
+        }
+      },
+      {
+        "reporter": "Reporter-9FD8",
+        "n": 2,
+        "share_pct": 0.5,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "ci_dev_tooling",
+            1
+          ],
+          [
+            "data_request_or_backfill",
+            1
+          ]
+        ],
+        "priorities": {
+          "High": 1,
+          "Highest": 1
+        }
+      },
+      {
+        "reporter": "Reporter-360E",
+        "n": 1,
+        "share_pct": 0.3,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "admin_ui_or_api",
+            1
+          ]
+        ],
+        "priorities": {
+          "Medium": 1
+        }
+      },
+      {
+        "reporter": "Reporter-BAE7",
+        "n": 1,
+        "share_pct": 0.3,
+        "alertish_summaries": 0,
+        "top_types": [
+          [
+            "rt_intraday_ticking",
+            1
+          ]
+        ],
+        "priorities": {
+          "Highest": 1
+        }
+      }
+    ]
+  },
+  "pain_points": {
+    "narrative_bullets": [
+      "Across 395 May\u2013Jul PES tickets, comment/summary mining highlights **missing data / no rows** (128), **config / mapping change** (113), and **vendor delay / upstream** (100) as the dominant textual pain signals.",
+      "22 tickets (5.6%) mention a GitHub PR in comments \u2014 useful proxy for 'needed a code change' vs pure rerun/config.",
+      "Infra pressure themes (CPU/memory/disk/node) and vendor/upstream language show up enough to treat capacity and vendor SLAs as first-class runbook tracks, not one-offs.",
+      "Handoff/urgency language in comments correlates with closer\u2260worker mismatches \u2014 process debt, not just tech debt."
+    ],
+    "pr_mention_count": 22,
+    "themes": [
+      {
+        "theme": "missing data / no rows",
+        "n": 128,
+        "share_pct": 32.4,
+        "resolution_meet_pct": 76.4,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            21
+          ],
+          [
+            "pricer_vol_surface",
+            18
+          ],
+          [
+            "missing_data_or_gap",
+            13
+          ],
+          [
+            "dissemination_or_report",
+            11
+          ],
+          [
+            "data_request_or_backfill",
+            9
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "config / mapping change",
+        "n": 113,
+        "share_pct": 28.6,
+        "resolution_meet_pct": 75.0,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            18
+          ],
+          [
+            "mapping_config_portfolio",
+            13
+          ],
+          [
+            "dissemination_or_report",
+            12
+          ],
+          [
+            "data_request_or_backfill",
+            11
+          ],
+          [
+            "index_compute_or_secapi",
+            7
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "vendor delay / upstream",
+        "n": 100,
+        "share_pct": 25.3,
+        "resolution_meet_pct": 70.1,
+        "top_types": [
+          [
+            "pricer_vol_surface",
+            16
+          ],
+          [
+            "airflow_job_failure",
+            15
+          ],
+          [
+            "data_request_or_backfill",
+            13
+          ],
+          [
+            "missing_data_or_gap",
+            9
+          ],
+          [
+            "rt_intraday_ticking",
+            7
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "PR / code fix",
+        "n": 49,
+        "share_pct": 12.4,
+        "resolution_meet_pct": 64.6,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            11
+          ],
+          [
+            "ci_dev_tooling",
+            8
+          ],
+          [
+            "dissemination_or_report",
+            6
+          ],
+          [
+            "pricer_vol_surface",
+            5
+          ],
+          [
+            "data_quality_check",
+            4
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "rerun / backfill needed",
+        "n": 46,
+        "share_pct": 11.6,
+        "resolution_meet_pct": 75.0,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            11
+          ],
+          [
+            "dissemination_or_report",
+            10
+          ],
+          [
+            "pricer_vol_surface",
+            7
+          ],
+          [
+            "data_request_or_backfill",
+            3
+          ],
+          [
+            "missing_data_or_gap",
+            2
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "customer waiting / urgency",
+        "n": 46,
+        "share_pct": 11.6,
+        "resolution_meet_pct": 77.8,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            7
+          ],
+          [
+            "dissemination_or_report",
+            6
+          ],
+          [
+            "infra_platform",
+            6
+          ],
+          [
+            "index_compute_or_secapi",
+            4
+          ],
+          [
+            "ci_dev_tooling",
+            3
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "capacity / infra pressure",
+        "n": 45,
+        "share_pct": 11.4,
+        "resolution_meet_pct": 65.9,
+        "top_types": [
+          [
+            "infra_platform",
+            10
+          ],
+          [
+            "airflow_job_failure",
+            8
+          ],
+          [
+            "data_request_or_backfill",
+            6
+          ],
+          [
+            "impact_dependency",
+            5
+          ],
+          [
+            "pricer_vol_surface",
+            4
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "timeout / hung / stuck",
+        "n": 35,
+        "share_pct": 8.9,
+        "resolution_meet_pct": 69.7,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            12
+          ],
+          [
+            "data_request_or_backfill",
+            4
+          ],
+          [
+            "options_futures_etl",
+            3
+          ],
+          [
+            "admin_ui_or_api",
+            3
+          ],
+          [
+            "dissemination_or_report",
+            3
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "schema / KeyError / column",
+        "n": 30,
+        "share_pct": 7.6,
+        "resolution_meet_pct": 79.3,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            7
+          ],
+          [
+            "dissemination_or_report",
+            5
+          ],
+          [
+            "data_request_or_backfill",
+            4
+          ],
+          [
+            "pricer_vol_surface",
+            3
+          ],
+          [
+            "infra_platform",
+            3
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "handoff / need owner",
+        "n": 18,
+        "share_pct": 4.6,
+        "resolution_meet_pct": 62.5,
+        "top_types": [
+          [
+            "airflow_job_failure",
+            4
+          ],
+          [
+            "pricer_vol_surface",
+            3
+          ],
+          [
+            "infra_platform",
+            3
+          ],
+          [
+            "rt_intraday_ticking",
+            2
+          ],
+          [
+            "dissemination_or_report",
+            1
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "permission / access / auth",
+        "n": 7,
+        "share_pct": 1.8,
+        "resolution_meet_pct": 85.7,
+        "top_types": [
+          [
+            "access_or_entitlement",
+            2
+          ],
+          [
+            "airflow_job_failure",
+            2
+          ],
+          [
+            "impact_dependency",
+            1
+          ],
+          [
+            "ci_dev_tooling",
+            1
+          ],
+          [
+            "grafana_alert",
+            1
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      },
+      {
+        "theme": "expected behavior / not a bug",
+        "n": 5,
+        "share_pct": 1.3,
+        "resolution_meet_pct": 80.0,
+        "top_types": [
+          [
+            "mapping_config_portfolio",
+            1
+          ],
+          [
+            "enhancement_or_process",
+            1
+          ],
+          [
+            "missing_data_or_gap",
+            1
+          ],
+          [
+            "index_compute_or_secapi",
+            1
+          ],
+          [
+            "airflow_job_failure",
+            1
+          ]
+        ],
+        "sample_snippets": [
+          "(snippet redacted)"
+        ]
+      }
+    ]
+  },
+  "quarterly_sample": {
+    "title": "Platform Engineering Quarterly Report",
+    "period": "Sprint 5 (Mar 9) to Sprint 11 (June 12), 2026",
+    "source": "PE_Quarterly_Delivery_Review_Mar_To_June_2026.pdf",
+    "delivery": {
+      "capacity_sp": 1113,
+      "committed_sp": 1250,
+      "delivered_sp": 1159,
+      "commitment_pct": 112,
+      "completion_pct": 93,
+      "utilization_pct": 104
+    },
+    "allocation": {
+      "helix_sp": 567.7,
+      "helix_pct": 49.0,
+      "support_bau_sp": 141,
+      "support_bau_pct": 12.2,
+      "legacy_sp": 450.75,
+      "legacy_pct": 38.9
+    },
+    "bau": {
+      "total_tickets": 512,
+      "avg_weekly_inflow": 32,
+      "peak_week": "Week 16 (39 tickets)",
+      "closed_resolved": 495,
+      "closed_pct": 96.7,
+      "top_category": "Data ETL (201 \u00b7 39.3%)",
+      "top_reporting_team": "Support (289 \u00b7 56.4%)"
+    },
+    "insights": [
+      "Overall commitment was 112% of quarterly capacity.",
+      "Helix accounted for 49% of area-based delivery.",
+      "Support / BAU consumed 12.2% of total effort to keep the lights on.",
+      "BAU inflow averaged 32 tickets/week; peak Week 16 at 39.",
+      "96.7% of quarterly PES tickets closed/resolved (495/512)."
+    ]
+  },
+  "privacy": {
+    "note": "Person names anonymized for public GitHub Pages. Ticket summaries redacted. Aggregates unchanged.",
+    "deep_dive_window": "2026-05-01 \u2264 created < 2026-08-01"
+  }
+}
