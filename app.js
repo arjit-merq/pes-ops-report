@@ -1,6 +1,6 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
-const ASSET_VERSION = "20260728c";
+const ASSET_VERSION = "20260728d";
 
 const COLORS = {
   teal: "#0f7a3a",
@@ -182,7 +182,7 @@ function buildHome(report) {
         <h1>PES support case review</h1>
         <p class="cover-lead">
           Executive walkthrough of Platform Engineering Support cases for ${report.window}:
-          volume, SLA, demand timing, case mix, hotspots, and ownership credit.
+          volume, SLA, demand timing, case mix, and hotspots.
         </p>
         <div class="cover-actions">
           <button class="btn btn-primary" data-nav="overview">Start review</button>
@@ -193,15 +193,10 @@ function buildHome(report) {
           <div class="stat-pill"><div class="label">Response SLA</div><div class="value">${fmtPct(resp.meet_pct)}</div></div>
           <div class="stat-pill"><div class="label">Resolution SLA</div><div class="value">${fmtPct(reso.meet_pct)}</div></div>
         </div>
-        <div class="notice">
-          Internal review · offline Jira export of PES cases only (${report.window}).
-          Names, summaries, and ticket fields are shown as in Jira.
-        </div>
         ${insights("What this review answers", [
           "Is support demand stable, and where does it spike by time of day?",
           "Are we meeting first-response and resolution SLAs by priority?",
           "Which case types and systems create the most operational pain?",
-          "Is ownership credit aligned with who actually works the tickets?",
         ])}
       </div>
     </section>`;
@@ -915,7 +910,7 @@ async function main() {
     if (!res.ok) throw new Error(`Could not load report.json (${res.status})`);
     const report = await res.json();
 
-    document.getElementById("sidebar-meta").textContent = `${report.window} · ${report.overview.n} PES cases`;
+    document.getElementById("sidebar-meta").textContent = "";
 
     nav.innerHTML = SECTIONS.map(
       (s) => `<button class="nav-item" type="button" data-nav="${s.id}">
