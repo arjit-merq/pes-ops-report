@@ -1,5 +1,7 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
+const ASSET_VERSION = "20260728c";
+
 const COLORS = {
   teal: "#0f7a3a",
   sky: "#335cad",
@@ -15,14 +17,16 @@ const COLORS = {
 const SECTIONS = [
   { id: "home", num: "00", title: "Cover", sub: "Executive summary" },
   { id: "overview", num: "01", title: "Overview", sub: "PES cohort volume" },
-  { id: "timing", num: "02", title: "Demand timing", sub: "IST windows & TTR" },
+  { id: "timing", num: "02", title: "Demand timing", sub: "IST windows × type" },
   { id: "sla", num: "03", title: "SLA performance", sub: "Response & resolution" },
   { id: "types", num: "04", title: "Case types", sub: "Volume & pain rank" },
   { id: "hotspots", num: "05", title: "Hotspots", sub: "Recurring systems" },
   { id: "monthly", num: "06", title: "Monthly trend", sub: "Trajectory" },
-  { id: "people", num: "07", title: "Closers & credit", sub: "Ownership from changelog" },
-  { id: "pain", num: "08", title: "Pain points", sub: "Themes from comments" },
-  { id: "cases", num: "09", title: "Case dump", sub: "All PES tickets" },
+  { id: "wfi", num: "07", title: "Waiting for Input", sub: "Dwell & backlog" },
+  { id: "people", num: "08", title: "Closers & credit", sub: "Ownership from changelog" },
+  { id: "reporters", num: "09", title: "Reporters", sub: "Intake sources" },
+  { id: "pain", num: "10", title: "Pain points", sub: "Themes from comments" },
+  { id: "cases", num: "11", title: "Case dump", sub: "All PES tickets" },
 ];
 
 const chartRegistry = [];
@@ -128,6 +132,45 @@ function escapeHtml(s) {
     .replaceAll('"', "&quot;");
 }
 
+function jiraLink(key, url) {
+  const href = url || `https://merqube.atlassian.net/browse/${encodeURIComponent(key)}`;
+  return `<a class="jira-link" href="${href}" target="_blank" rel="noreferrer">${escapeHtml(key)}</a>`;
+}
+
+function miniList(title, items) {
+  const rows = (items || [])
+    .slice(0, 8)
+    .map((it) => {
+      if (Array.isArray(it)) return `<li><strong>${escapeHtml(it[0])}</strong> · ${it[1]}</li>`;
+      if (it && typeof it === "object") {
+        const label = it.type || it.case_type || it.name || it[0] || "—";
+        const n = it.n ?? it.count ?? it[1] ?? "";
+        return `<li><strong>${escapeHtml(label)}</strong> · ${escapeHtml(n)}</li>`;
+      }
+      return `<li>${escapeHtml(it)}</li>`;
+    })
+    .join("");
+  return `<div class="mini-list"><h4>${escapeHtml(title)}</h4><ul>${rows || "<li>—</li>"}</ul></div>`;
+}
+
+function heatTable(heat) {
+  const max = Math.max(1, ...heat.cells.map((c) => c.n));
+  const head = `<tr><th>IST window</th>${heat.types.map((t) => `<th class="heat-col">${escapeHtml(t)}</th>`).join("")}</tr>`;
+  const body = heat.buckets
+    .map((bucket) => {
+      const cells = heat.types
+        .map((t) => {
+          const n = heat.cells.find((c) => c.bucket === bucket && c.type === t)?.n ?? 0;
+          const a = n ? 0.12 + (0.72 * n) / max : 0;
+          return `<td class="heat-cell" style="background:rgba(15,122,58,${a.toFixed(3)})">${n || ""}</td>`;
+        })
+        .join("");
+      return `<tr><th class="heat-row">${escapeHtml(bucket.replace(" IST", ""))}</th>${cells}</tr>`;
+    })
+    .join("");
+  return `<div class="table-wrap heat"><table class="heat-table"><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
+}
+
 function buildHome(report) {
   const ov = report.overview;
   const resp = report.sla_response.overall;
@@ -224,6 +267,11 @@ function buildTiming(report) {
           "Evening IST into US hours carries the largest open volume.",
           "p50 close times look healthier than the long p90/p99 tails — focus on outliers.",
         ])}
+        ${card("IST window × case type", heatTable(report.ist_x_type))}
+        <div class="grid-2">
+          ${card("Evening / US hours (18:00–03:00 IST)", miniList("Top types", report.ist_x_type.evening_top))}
+          ${card("Daytime IST (09:00–18:00)", miniList("Top types", report.ist_x_type.daytime_top))}
+        </div>
         ${pager("timing")}
       </div>
     </section>`;
@@ -258,6 +306,34 @@ function buildSla(report) {
             ]),
           ),
         )}
+        ${card(
+          `Response SLA breaches (top ${report.sla_response.breaches.length} of ${report.sla_response.breach_count})`,
+          table(
+            ["Case", "Pri", "Hours", "Responder", "Type", "Summary"],
+            report.sla_response.breaches.map((b) => [
+              jiraLink(b.key),
+              b.priority,
+              fmtHours(b.hours),
+              escapeHtml(b.responder || "—"),
+              escapeHtml(b.case_type || "—"),
+              escapeHtml((b.summary || "").slice(0, 60)),
+            ]),
+          ),
+        )}
+        ${card(
+          `Resolution SLA breaches (top ${report.sla_resolution.breaches.length} of ${report.sla_resolution.breach_count})`,
+          table(
+            ["Case", "Pri", "TTR", "Closer", "Type", "Summary"],
+            report.sla_resolution.breaches.map((b) => [
+              jiraLink(b.key),
+              b.priority,
+              fmtHours(b.ttr_hours),
+              escapeHtml(b.closer || "—"),
+              escapeHtml(b.case_type || "—"),
+              escapeHtml((b.summary || "").slice(0, 60)),
+            ]),
+          ),
+        )}
         ${pager("sla")}
       </div>
     </section>`;
@@ -273,6 +349,7 @@ function buildTypes(report) {
           ${card("Volume by case type", `<div class="chart-box tall"><canvas id="c-types"></canvas></div>`)}
           ${card("Pain score rank", `<div class="chart-box tall"><canvas id="c-pain"></canvas></div>`)}
         </div>
+        ${card("PE Issue Category (Jira field)", `<div class="chart-box"><canvas id="c-pe-cat"></canvas></div>`)}
         ${card(
           "Type detail",
           table(
@@ -348,6 +425,54 @@ function buildMonthly(report) {
     </section>`;
 }
 
+function buildWfi(report) {
+  const s = SECTIONS.find((x) => x.id === "wfi");
+  const dwell = report.wfi.dwell_hours || {};
+  return `
+    <section class="view" data-view="wfi">
+      ${pageHead(s, report.wfi.definition || "Time spent in Waiting for Input.")}
+      <div class="content">
+        <div class="kpi-row">
+          ${kpi("Ever WFI", report.wfi.n_ever_wfi)}
+          ${kpi("Currently WFI", report.wfi.n_currently_wfi)}
+          ${kpi("Dwell p50", fmtHours(dwell.p50 ?? dwell.p50_h))}
+          ${kpi("Dwell p90", fmtHours(dwell.p90 ?? dwell.p90_h))}
+        </div>
+        ${card(
+          "Currently Waiting for Input",
+          table(
+            ["Case", "Pri", "WFI h", "Assignee", "Type", "Summary"],
+            (report.wfi.currently || []).length
+              ? report.wfi.currently.map((r) => [
+                  jiraLink(r.key),
+                  r.priority,
+                  r.wfi_hours,
+                  escapeHtml(r.assignee || "—"),
+                  escapeHtml(r.case_type || "—"),
+                  escapeHtml((r.summary || "").slice(0, 55)),
+                ])
+              : [["—", "—", "—", "—", "—", "none"]],
+          ),
+        )}
+        ${card(
+          "Longest WFI dwell",
+          table(
+            ["Case", "Pri", "Status", "WFI h", "Type", "Summary"],
+            (report.wfi.longest_dwell || []).map((r) => [
+              jiraLink(r.key),
+              r.priority,
+              escapeHtml(r.status),
+              r.wfi_hours,
+              escapeHtml(r.case_type || "—"),
+              escapeHtml((r.summary || "").slice(0, 55)),
+            ]),
+          ),
+        )}
+        ${pager("wfi")}
+      </div>
+    </section>`;
+}
+
 function buildPeople(report) {
   const s = SECTIONS.find((x) => x.id === "people");
   const cw = report.closer_vs_worker;
@@ -371,16 +496,74 @@ function buildPeople(report) {
             ]),
           ),
         )}
+        ${card(
+          "Mismatch examples (closer ≠ primary commenter)",
+          table(
+            ["Case", "Pri", "Closer", "Top commenter (n)", "Type", "Summary"],
+            (cw.mismatches || []).slice(0, 40).map((m) => [
+              jiraLink(m.key),
+              m.priority,
+              escapeHtml(m.closer),
+              `${escapeHtml(m.top_commenter)} (${m.top_commenter_count})`,
+              escapeHtml(m.case_type || "—"),
+              escapeHtml((m.summary || "").slice(0, 45)),
+            ]),
+          ),
+        )}
+        ${card(
+          "Weekly closers",
+          (report.weekly_closers || [])
+            .map(
+              (w) => `<div class="week-block"><p class="week-title">${escapeHtml(w.week)} — ${w.total_closed} closed</p>${table(
+                ["Person", "Closed"],
+                (w.by_person || []).map((p) => [escapeHtml(p.person), p.closed]),
+              )}</div>`,
+            )
+            .join(""),
+        )}
         ${pager("people")}
+      </div>
+    </section>`;
+}
+
+function buildReporters(report) {
+  const s = SECTIONS.find((x) => x.id === "reporters");
+  const r = report.reporters;
+  return `
+    <section class="view" data-view="reporters">
+      ${pageHead(
+        s,
+        `${r.n_unique_reporters} unique reporters · alert-like summaries ${r.alertish_summary_count} (${r.alertish_pct}%).`,
+      )}
+      <div class="content">
+        ${card("Top reporters", `<div class="chart-box tall"><canvas id="c-reporters"></canvas></div>`)}
+        ${card(
+          "Reporter detail",
+          table(
+            ["Reporter", "n", "Share", "Alertish", "Top types"],
+            r.reporters.map((row) => [
+              escapeHtml(row.reporter),
+              row.n,
+              `${row.share_pct}%`,
+              row.alertish_summaries,
+              (row.top_types || [])
+                .filter((t) => t && t[0])
+                .slice(0, 3)
+                .map(([t, n]) => `${t}(${n})`)
+                .join(", "),
+            ]),
+          ),
+        )}
+        ${pager("reporters")}
       </div>
     </section>`;
 }
 
 function ticketRows(tickets) {
   return tickets.map((t) => [
-    `<span class="mono">${escapeHtml(t.key)}</span>`,
+    jiraLink(t.key, t.jira_url),
     `<span class="wrap">${escapeHtml(t.summary)}</span>`,
-    escapeHtml(t.creator || "—"),
+    escapeHtml(t.reporter || t.creator || "—"),
     escapeHtml(t.assignee || "—"),
     `<span class="mono">${fmtTs(t.created_at)}</span>`,
     `<span class="mono">${fmtTs(t.closed_at)}</span>`,
@@ -393,7 +576,7 @@ function renderCaseTable(tickets) {
   return `<div class="table-wrap raw"><table><thead><tr>${[
     "Case",
     "Subject",
-    "Creator",
+    "Reporter",
     "Assignee",
     "Created",
     "Closed",
@@ -413,11 +596,11 @@ function buildCases(report) {
     <section class="view" data-view="cases">
       ${pageHead(
         s,
-        `All ${tickets.length} PES tickets in the cohort. Closed-at is first terminal status transition (not Jira resolutiondate).`,
+        `All ${tickets.length} PES tickets. Reporter is the Jira reporter (not Atlassian Assist creator). Closed-at is first terminal status transition. Case keys link to Jira.`,
       )}
       <div class="content">
         <div class="toolbar">
-          <input id="case-filter" type="search" placeholder="Filter by key, summary, creator, assignee, status…" />
+          <input id="case-filter" type="search" placeholder="Filter by key, summary, reporter, assignee, status…" />
           <span class="count" id="case-count">${tickets.length} shown</span>
         </div>
         ${card("Raw case table", `<div id="case-table">${renderCaseTable(tickets)}</div>`)}
@@ -437,7 +620,7 @@ function wireCaseFilter(report) {
     const filtered = !q
       ? all
       : all.filter((t) =>
-          [t.key, t.summary, t.creator, t.assignee, t.status, t.priority]
+          [t.key, t.summary, t.reporter, t.creator, t.assignee, t.status, t.priority]
             .map((x) => String(x || "").toLowerCase())
             .some((x) => x.includes(q)),
         );
@@ -565,6 +748,23 @@ function mountCharts(report, viewId) {
       },
       options: { ...commonOpts, indexAxis: "y", plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true } } },
     });
+    const pe = (report.case_types.pe_category_bars || []).slice(0, 12);
+    const peCanvas = document.getElementById("c-pe-cat");
+    if (peCanvas) {
+      chart(peCanvas, {
+        type: "bar",
+        data: {
+          labels: pe.map((r) => r.category),
+          datasets: [{ data: pe.map((r) => r.n), backgroundColor: COLORS.sky, borderRadius: 8 }],
+        },
+        options: {
+          ...commonOpts,
+          indexAxis: "y",
+          plugins: { legend: { display: false } },
+          scales: { x: { beginAtZero: true, ticks: { precision: 0 } } },
+        },
+      });
+    }
   }
 
   if (viewId === "hotspots") {
@@ -640,6 +840,23 @@ function mountCharts(report, viewId) {
     });
   }
 
+  if (viewId === "reporters") {
+    const rows = report.reporters.reporters.slice(0, 12);
+    chart(document.getElementById("c-reporters"), {
+      type: "bar",
+      data: {
+        labels: rows.map((r) => (r.reporter.length > 22 ? `${r.reporter.slice(0, 20)}…` : r.reporter)),
+        datasets: [{ data: rows.map((r) => r.n), backgroundColor: COLORS.sky, borderRadius: 8 }],
+      },
+      options: {
+        ...commonOpts,
+        indexAxis: "y",
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, ticks: { precision: 0 } } },
+      },
+    });
+  }
+
   if (viewId === "pain") {
     const themes = report.pain_points.themes.slice(0, 10);
     chart(document.getElementById("c-themes"), {
@@ -694,7 +911,7 @@ async function main() {
   const nav = document.getElementById("side-nav");
 
   try {
-    const res = await fetch("./data/report.json");
+    const res = await fetch(`./data/report.json?v=${ASSET_VERSION}`);
     if (!res.ok) throw new Error(`Could not load report.json (${res.status})`);
     const report = await res.json();
 
@@ -715,7 +932,9 @@ async function main() {
       buildTypes(report),
       buildHotspots(report),
       buildMonthly(report),
+      buildWfi(report),
       buildPeople(report),
+      buildReporters(report),
       buildPain(report),
       buildCases(report),
     ].join("");

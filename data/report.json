@@ -5344,3955 +5344,4746 @@
     {
       "key": "PES-582",
       "summary": "[Grafana]: [FIRING:1] M3 Task Runs Legacy (merqube P2)",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-04-30T19:14:40.925000+00:00",
       "closed_at": "2026-04-30T21:22:44.298000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-582"
     },
     {
       "key": "PES-583",
       "summary": "NMEVUSTY Failure Due to Missing Intraday FX Fixing for USD to JPY",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-04-30T21:05:46+00:00",
       "closed_at": "2026-04-30T21:37:15.838000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-583"
     },
     {
       "key": "PES-584",
       "summary": "DataAPI job failing to post values to SecAPI",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-01T15:13:23.869000+00:00",
       "closed_at": "2026-05-01T16:57:58.748000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-584"
     },
     {
       "key": "PES-585",
       "summary": "Can someone look into this error and let me know why I'm not able to restate the BEASEAGT index?  https://airflow.internal.api.merqube.com/dags/Index_Restater/grid?search=Index_Restater&dag_run_id=manual__2026-05-01T16%3A12%3A13.736458%2B00%3A00&tab=logs\u2026",
+      "reporter": "Kwai Tsui",
       "creator": "Atlassian Assist",
       "assignee": "Pratibha Singh",
       "created_at": "2026-05-01T17:16:18.401000+00:00",
       "closed_at": "2026-05-08T15:25:23.345000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-585"
     },
     {
       "key": "PES-586",
       "summary": "2026-05-01: M3 Task Runs",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-01T18:00:47.841000+00:00",
       "closed_at": "2026-05-01T18:44:49.383000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-586"
     },
     {
       "key": "PES-587",
       "summary": "List of MQ trackers and baskets having CME futures as underlying",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-01T19:48:46.250000+00:00",
       "closed_at": "2026-05-08T15:05:45.322000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-587"
     },
     {
       "key": "PES-588",
       "summary": "eod_vol_surfaces DAG failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-01T20:27:13.300000+00:00",
       "closed_at": "2026-05-01T21:11:44.390000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-588"
     },
     {
       "key": "PES-589",
       "summary": "Debug files setup and file generation failure for OBLQYQ15",
+      "reporter": "Kwai Tsui",
       "creator": "Atlassian Assist",
       "assignee": "aryaman",
       "created_at": "2026-05-01T21:03:16.312000+00:00",
       "closed_at": "2026-05-04T16:18:00.515000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-589"
     },
     {
       "key": "PES-590",
       "summary": "This security looks to have history back to May 2022 in Index Admin.  IFX_USD_CAD_SPOT.  We would expect to have more history than this.  Can someone confirm if this is all we have or if we do have additional history?  It is also possible that we have ac\u2026",
+      "reporter": "Keith Loggie",
       "creator": "Atlassian Assist",
       "assignee": "Pratibha Singh",
       "created_at": "2026-05-03T18:36:48.751000+00:00",
       "closed_at": "2026-05-05T11:44:15.941000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-590"
     },
     {
       "key": "PES-591",
       "summary": "Integration tests failing - urgent need to merge for launch",
+      "reporter": "Aastha Sinha",
       "creator": "Atlassian Assist",
       "assignee": "rajat",
       "created_at": "2026-05-04T08:07:54.530000+00:00",
       "closed_at": "2026-05-04T09:23:20.656000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-591"
     },
     {
       "key": "PES-592",
       "summary": "Futures contracts ingested with 4 dps; higher than usual | Reported: 04-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "aryaman",
       "created_at": "2026-05-04T13:33:52.559000+00:00",
       "closed_at": "2026-05-21T14:01:23.022000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-592"
     },
     {
       "key": "PES-593",
       "summary": "EDI corporate action event not flowing through to merq_corp_action table",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "Bryan Kuntz",
       "created_at": "2026-05-04T14:20:35.057000+00:00",
       "closed_at": "2026-05-04T19:13:47.491000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-593"
     },
     {
       "key": "PES-594",
       "summary": "2026-05-04: Airflow staging alerts",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Pratibha Singh",
       "created_at": "2026-05-04T17:49:50.818000+00:00",
       "closed_at": "2026-05-05T08:16:11.493000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-594"
     },
     {
       "key": "PES-595",
       "summary": "2026-05-04: secapi-price-integrity-checks",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-04T18:01:18.859000+00:00",
       "closed_at": "2026-05-21T14:01:42.570000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-595"
     },
     {
       "key": "PES-596",
       "summary": "GS Launch website issue with opening methodology urls",
+      "reporter": "daniela",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-04T18:23:16.384000+00:00",
       "closed_at": "2026-05-04T21:49:14.821000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-596"
     },
     {
       "key": "PES-597",
       "summary": "2026-05-04: ifx_usd_jpy Data not in secapi",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-04T20:45:08.547000+00:00",
       "closed_at": "2026-05-21T13:11:45.526000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-597"
     },
     {
       "key": "PES-598",
       "summary": "Request for ec2 for long running backtest.",
+      "reporter": "ekansh",
       "creator": "Atlassian Assist",
       "assignee": "Sreedath N S",
       "created_at": "2026-05-05T13:26:23.638000+00:00",
       "closed_at": "2026-05-07T08:17:23.128000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-598"
     },
     {
       "key": "PES-599",
       "summary": "Sync of deletes into secapi for tradingeconomics reporting date data not working",
+      "reporter": "Anthony Schmieder",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-05T15:05:32.861000+00:00",
       "closed_at": "2026-05-05T16:24:46.412000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-599"
     },
     {
       "key": "PES-600",
       "summary": "2026-05-05: db1: Memory Utilization > 99%",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-05T18:45:53.556000+00:00",
       "closed_at": "2026-05-26T11:18:00.103000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-600"
     },
     {
       "key": "PES-601",
       "summary": "Dev test failing hitting DSS",
+      "reporter": "Anthony Schmieder",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-05-05T21:18:12.804000+00:00",
       "closed_at": "2026-05-25T14:39:20.055000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-601"
     },
     {
       "key": "PES-602",
       "summary": "Incorrect MIC Returned (XNYS instead of XLON) for RHZ5NC-S on 04-05-2026 \u2013 Forward Fill Failure",
+      "reporter": "Shivang Agrawal",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-06T04:07:26.872000+00:00",
       "closed_at": "2026-05-11T09:34:32.332000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-602"
     },
     {
       "key": "PES-603",
       "summary": "Reuters options settlement pricer does not seem to have weekly expiring options data",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-06T12:00:04.449000+00:00",
       "closed_at": "2026-05-12T11:39:04.490000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-603"
     },
     {
       "key": "PES-604",
       "summary": "Recapture Intraday data for NVDA",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-06T15:18:10.453000+00:00",
       "closed_at": "2026-05-21T20:07:42.329000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-604"
     },
     {
       "key": "PES-605",
       "summary": "Garage tries to create index in * namespace",
+      "reporter": "Yohannes Kifle",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-06T15:38:46.176000+00:00",
       "closed_at": "2026-05-07T22:38:28.427000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-605"
     },
     {
       "key": "PES-606",
       "summary": "FTSE Indices Failing",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Yohannes Kifle",
       "created_at": "2026-05-06T16:19:10.824000+00:00",
       "closed_at": "2026-05-14T15:31:29.460000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-606"
     },
     {
       "key": "PES-607",
       "summary": "Don't run reuters_eod_futures_settlements on weekends",
+      "reporter": "Anthony Schmieder",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-05-06T21:04:02.782000+00:00",
       "closed_at": "2026-05-06T22:04:39.312000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-607"
     },
     {
       "key": "PES-608",
       "summary": "[BUG] FX Rate Insertion Delay \u2014 SECAPI-POLL Feed Caused Stale GBP/EUR Rate in Index Calculation (Eff Date: 2026-05-07)",
+      "reporter": "Shivang Agrawal",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-07T10:04:48.287000+00:00",
       "closed_at": "2026-05-08T12:25:21.564000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-608"
     },
     {
       "key": "PES-609",
       "summary": "IntradayOptionsPricer data issue on 2025-04-07",
+      "reporter": "Yash Pasari",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-07T17:38:41.201000+00:00",
       "closed_at": "2026-05-13T16:57:31.339000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-609"
     },
     {
       "key": "PES-610",
       "summary": "2026-05-07: M3 dealy",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-07T22:11:59.140000+00:00",
       "closed_at": "2026-05-08T12:27:38.192000+00:00",
       "status": "Canceled",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-610"
     },
     {
       "key": "PES-611",
       "summary": "tickhistory_options_daily Stuck at load_options Stage",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-08T06:14:12.639000+00:00",
       "closed_at": "2026-05-08T13:19:59.600000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-611"
     },
     {
       "key": "PES-612",
       "summary": "Missing value of futures contract JNIM26 for 2026-05-08 | Reported: 08-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-08T08:10:28.046000+00:00",
       "closed_at": "2026-05-08T12:58:33.748000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-612"
     },
     {
       "key": "PES-613",
       "summary": "Full Impact Needed for Missing Contract and FX Rates",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-08T20:06:08.049000+00:00",
       "closed_at": "2026-05-14T08:36:16.017000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-613"
     },
     {
       "key": "PES-614",
       "summary": "SOLUS5PR/NR/XT Dissapi is failing | Reported on: 11th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-11T10:55:54.398000+00:00",
       "closed_at": "2026-05-13T14:55:05.626000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-614"
     },
     {
       "key": "PES-615",
       "summary": "take out dependents of any index that is in role development but downstream dependent is in not",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-11T12:35:28.207000+00:00",
       "closed_at": "2026-05-22T14:07:35.664000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-615"
     },
     {
       "key": "PES-616",
       "summary": "CSCB_CS report failing due to 503 Server Error",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-11T21:53:51.956000+00:00",
       "closed_at": "2026-05-12T20:57:44.153000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-616"
     },
     {
       "key": "PES-617",
       "summary": "Indices using Eurex data",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-11T22:10:35.280000+00:00",
       "closed_at": "2026-05-26T08:28:04.371000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-617"
     },
     {
       "key": "PES-618",
       "summary": "Intraday indices infra failure",
+      "reporter": "Jarryd Scully",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-11T23:00:02.660000+00:00",
       "closed_at": "2026-05-25T09:13:06.577000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-618"
     },
     {
       "key": "PES-619",
       "summary": "2026-05-11: No value for CPIAUCSL",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-11T23:24:00.990000+00:00",
       "closed_at": "2026-05-25T17:16:01.156000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-619"
     },
     {
       "key": "PES-620",
       "summary": "2026-05-11: Hightened awareness for M3",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-12T01:27:19.276000+00:00",
       "closed_at": "2026-05-12T09:34:44.479000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-620"
     },
     {
       "key": "PES-621",
       "summary": "2026-05-11: MQ_CAGR_PA_TR_OPEN_INDEX report error",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-12T01:36:02.873000+00:00",
       "closed_at": "2026-05-12T08:39:09.344000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-621"
     },
     {
       "key": "PES-622",
       "summary": "2026-05-11:UBS-SOW-42-Top-level",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-12T01:47:57.800000+00:00",
       "closed_at": "2026-05-12T11:24:03.391000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-622"
     },
     {
       "key": "PES-623",
       "summary": "Tag change for multiple indices",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "Pratibha Singh",
       "created_at": "2026-05-12T11:02:51.580000+00:00",
       "closed_at": "2026-05-18T06:14:08.634000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-623"
     },
     {
       "key": "PES-624",
       "summary": "MSDPLISB | Restatement is Failing | Reported on: 12th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-12T13:15:25.466000+00:00",
       "closed_at": "2026-05-15T07:59:58.172000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-624"
     },
     {
       "key": "PES-625",
       "summary": "Question regarding The Garage",
+      "reporter": "Kwai Tsui",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-12T16:43:41.408000+00:00",
       "closed_at": "2026-05-19T17:46:10.184000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-625"
     },
     {
       "key": "PES-626",
       "summary": "Constellation indices data Deleted in SecApi for Mar/Apri 26",
+      "reporter": "daniela",
       "creator": "Atlassian Assist",
       "assignee": "Pratibha Singh",
       "created_at": "2026-05-12T20:59:53.063000+00:00",
       "closed_at": "2026-05-14T09:05:08.419000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-626"
     },
     {
       "key": "PES-627",
       "summary": "tickhistory_options_daily stuck at load_options",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-13T05:34:09.213000+00:00",
       "closed_at": "2026-05-13T08:27:37.336000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-627"
     },
     {
       "key": "PES-628",
       "summary": "Request: Average Send Times for Reuters-Published Indices",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-13T07:31:13.705000+00:00",
       "closed_at": "2026-05-18T06:56:09.084000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-628"
     },
     {
       "key": "PES-630",
       "summary": "MQDQSR50 failed with ERROR - Received SIGTERM",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-05-13T10:30:13.804000+00:00",
       "closed_at": "2026-06-10T13:15:20.535000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-630"
     },
     {
       "key": "PES-631",
       "summary": "UBENGDEI: ERROR - Received SIGTERM on Index_Restater_High_Capacity_2 | Reported: 13-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-13T13:10:56.390000+00:00",
       "closed_at": "2026-05-14T08:27:56.119000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-631"
     },
     {
       "key": "PES-632",
       "summary": "dsp_reference_prices_data_loader: Sub-tasks failing in consecutive runs | Reported: 13-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-13T13:57:55.962000+00:00",
       "closed_at": "2026-05-13T18:45:49.194000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-632"
     },
     {
       "key": "PES-633",
       "summary": "merqube website opening in french bug",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-13T14:07:01.020000+00:00",
       "closed_at": "2026-05-22T17:32:59.765000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-633"
     },
     {
       "key": "PES-634",
       "summary": "nexus_final | nexus_final_JMLNJLG0 is failing | Reported on : 13th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Pratibha Singh",
       "created_at": "2026-05-13T14:10:20.789000+00:00",
       "closed_at": "2026-05-14T13:59:42.883000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-634"
     },
     {
       "key": "PES-635",
       "summary": "Investigate why MQFTSETC and MQDDSETC didn't post values to SecAPI for May 13, 2026",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-14T16:59:49.557000+00:00",
       "closed_at": "2026-05-14T18:02:25.808000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-635"
     },
     {
       "key": "PES-636",
       "summary": "Consultation Standalone URL for Vol Advantage",
+      "reporter": "daniela",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-14T18:45:49.979000+00:00",
       "closed_at": "2026-05-14T20:40:55.250000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-636"
     },
     {
       "key": "PES-637",
       "summary": "dependency tracker on mic codes",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-05-15T06:52:47.161000+00:00",
       "closed_at": "2026-05-15T09:22:13.129000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-637"
     },
     {
       "key": "PES-638",
       "summary": "vol_advantage_fairstrikes \u2013 fairstrikes_gc_east failing consecutively | Reported: 15-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-15T14:09:00.297000+00:00",
       "closed_at": "2026-05-22T14:33:32.774000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-638"
     },
     {
       "key": "PES-639",
       "summary": "cmci failing due to missing futures",
+      "reporter": "Anthony Schmieder",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-05-15T20:18:23.692000+00:00",
       "closed_at": "2026-05-15T20:32:56.883000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-639"
     },
     {
       "key": "PES-640",
       "summary": "Intraday data mismatches",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-15T20:26:55.372000+00:00",
       "closed_at": "2026-06-10T13:21:49.529000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-640"
     },
     {
       "key": "PES-641",
       "summary": "Missing futures price for MMEM26 and MFSM26",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-15T21:52:45.646000+00:00",
       "closed_at": "2026-05-18T14:36:34.455000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-641"
     },
     {
       "key": "PES-642",
       "summary": "2026-05-16: grafana_backup_process",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-17T04:35:06.260000+00:00",
       "closed_at": "2026-05-18T18:38:57.208000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-642"
     },
     {
       "key": "PES-643",
       "summary": "Credit-Suisse DataAPI Failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-17T22:38:37.336000+00:00",
       "closed_at": "2026-05-18T19:43:22.942000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-643"
     },
     {
       "key": "PES-644",
       "summary": "UBS Neo Index Manager \u2013 KeyError: 'created_at' on Manage Indices Page",
+      "reporter": "Shivang Agrawal",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-18T08:03:06.625000+00:00",
       "closed_at": "2026-05-18T17:34:19.911000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-644"
     },
     {
       "key": "PES-645",
       "summary": "grafana_backup_process \u2013 Expired API key | Reported: 18-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Sreedath N S",
       "created_at": "2026-05-18T15:34:23.573000+00:00",
       "closed_at": "2026-06-11T13:33:47.910000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-645"
     },
     {
       "key": "PES-646",
       "summary": "Character Limit change",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-18T17:00:52.265000+00:00",
       "closed_at": "2026-05-19T16:17:12.288000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-646"
     },
     {
       "key": "PES-647",
       "summary": "Factsheet display issues",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-18T17:10:38.913000+00:00",
       "closed_at": "2026-05-18T21:09:47.258000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-647"
     },
     {
       "key": "PES-648",
       "summary": "eod_vol_surfaces Failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-05-18T20:31:18.897000+00:00",
       "closed_at": "2026-05-18T21:51:31.206000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-648"
     },
     {
       "key": "PES-649",
       "summary": "New FactSet root for YAP and GIF Appear to be Wrong",
+      "reporter": "Anthony Schmieder",
       "creator": "Atlassian Assist",
       "assignee": "rajat",
       "created_at": "2026-05-19T00:07:32.530000+00:00",
       "closed_at": "2026-05-19T14:41:37.074000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-649"
     },
     {
       "key": "PES-650",
       "summary": "Review 1 second tick data as of 2024-12-02",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-19T03:43:12.339000+00:00",
       "closed_at": "2026-05-22T14:35:14.409000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-650"
     },
     {
       "key": "PES-651",
       "summary": "IFX_EUR_USD_SPOT missing data on secapi for 2026-05-18 at 16:00",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-19T05:27:32.378000+00:00",
       "closed_at": "2026-05-20T05:46:47.461000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-651"
     },
     {
       "key": "PES-652",
       "summary": "MAF Freezer dependant equity index (PR) failing while picking up Parent Freezer data",
+      "reporter": "Aastha Sinha",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-19T11:38:06.991000+00:00",
       "closed_at": "2026-05-21T13:09:56.278000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-652"
     },
     {
       "key": "PES-653",
       "summary": "BAEIV* | Index computation failed | Reported on: 19th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-19T13:21:12.404000+00:00",
       "closed_at": "2026-05-21T13:49:00.324000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-653"
     },
     {
       "key": "PES-654",
       "summary": "Missing 2026-05-18 Reuters Price for VIK26, VIM26, VIN26, VIQ26 | Reported: 19-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-19T13:55:19.555000+00:00",
       "closed_at": "2026-05-20T16:43:09.090000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-654"
     },
     {
       "key": "PES-655",
       "summary": "Complete Reload FSYM not working",
+      "reporter": "Shivang Agrawal",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-19T15:30:20.538000+00:00",
       "closed_at": "2026-05-26T11:19:12.155000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-655"
     },
     {
       "key": "PES-656",
       "summary": "Mapping in place but prices are missing",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-19T16:32:03.041000+00:00",
       "closed_at": "2026-07-15T21:29:11.356000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-656"
     },
     {
       "key": "PES-657",
       "summary": "eod_vol_surfaces Failure | May 19, 2026",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-19T20:48:41.427000+00:00",
       "closed_at": "2026-05-21T14:45:01.906000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-657"
     },
     {
       "key": "PES-658",
       "summary": "AS_OF_DATE on format_string_with_report_manifest",
+      "reporter": "matias",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-19T21:00:43.116000+00:00",
       "closed_at": "2026-06-10T12:59:51.810000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-658"
     },
     {
       "key": "PES-659",
       "summary": "2026-05-19: Matching values for replica1 and replica2 checks failed",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-05-19T21:39:52.208000+00:00",
       "closed_at": "2026-06-15T13:50:01.341000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-659"
     },
     {
       "key": "PES-660",
       "summary": "Missing `FX_EUR_USD_SPOT` data for `2026-05-19`",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-20T03:36:32.023000+00:00",
       "closed_at": "2026-05-20T13:43:44.712000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-660"
     },
     {
       "key": "PES-661",
       "summary": "MQU_NDAFI_HE_PR_INDEX \u2013 Missing price for DR21V6-S | Reported: 20-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-20T09:06:23.826000+00:00",
       "closed_at": "2026-05-21T14:17:45.283000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-661"
     },
     {
       "key": "PES-662",
       "summary": "M3: missing root UKAFMQ26",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-20T11:14:54.277000+00:00",
       "closed_at": "2026-05-20T16:37:10.136000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-662"
     },
     {
       "key": "PES-663",
       "summary": "Devops - Microsoft Authenticator App not working",
+      "reporter": "Astrid Ludwig",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-20T11:44:43.217000+00:00",
       "closed_at": "2026-05-20T13:05:01.567000+00:00",
       "status": "Canceled",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-663"
     },
     {
       "key": "PES-664",
       "summary": "change reinvestment method for TR indices",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-05-20T16:27:16.227000+00:00",
       "closed_at": "2026-05-22T21:30:33.089000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-664"
     },
     {
       "key": "PES-665",
       "summary": "2026-05-20: secapi-price-integrity-checks",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-20T18:41:27.763000+00:00",
       "closed_at": "2026-06-10T11:59:37.124000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-665"
     },
     {
       "key": "PES-666",
       "summary": "HTTPError: 414 Client Error | PACC_tree",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-21T05:15:29.802000+00:00",
       "closed_at": "2026-05-21T11:00:43.157000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-666"
     },
     {
       "key": "PES-667",
       "summary": "Recheck OIS rate data ingested on 30/04/2026 for `SOFR_OIS_USD_3W` to see if there is any change",
+      "reporter": "garvit",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-21T09:41:52.443000+00:00",
       "closed_at": "2026-05-21T19:57:21.644000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-667"
     },
     {
       "key": "PES-668",
       "summary": "BAEIVTSL | Index computation Failed | Reported on: 21st-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-21T13:44:51.123000+00:00",
       "closed_at": "2026-05-21T14:21:33.669000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-668"
     },
     {
       "key": "PES-669",
       "summary": "MSCF1CLP | Index Computation Failure | Reported on: 21st-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-21T18:24:27.445000+00:00",
       "closed_at": "2026-05-21T21:48:09.925000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-669"
     },
     {
       "key": "PES-670",
       "summary": "2026-05-21: secapi-price-integrity-checks.data_integrity_checks",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-21T19:34:04.667000+00:00",
       "closed_at": "2026-05-22T20:38:12.483000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-670"
     },
     {
       "key": "PES-671",
       "summary": "2026-05-21: Root TXQ26 with no value",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-21T21:03:21.059000+00:00",
       "closed_at": "2026-05-21T21:51:17.108000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-671"
     },
     {
       "key": "PES-672",
       "summary": "dataapi Barchart-S3 faiing due to Request Failed: 400. Text: Error: daily quota exceeded",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-22T06:15:00.859000+00:00",
       "closed_at": "2026-05-26T08:55:38.462000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-672"
     },
     {
       "key": "PES-673",
       "summary": "Multiple Indices Failing | FX_EUR_USD_SPOT not in secapi for sec_type | Reported on: 22nd-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-22T08:47:15.248000+00:00",
       "closed_at": "2026-05-22T11:41:19.704000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-673"
     },
     {
       "key": "PES-674",
       "summary": "CIIS SEE (Shanghai) data usage",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-22T15:00:48.166000+00:00",
       "closed_at": "2026-05-26T08:54:57.029000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-674"
     },
     {
       "key": "PES-675",
       "summary": "2025-05-22: dsp_reference_prices_data_loader",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-22T17:41:29.849000+00:00",
       "closed_at": "2026-05-26T15:25:38.574000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-675"
     },
     {
       "key": "PES-676",
       "summary": "Issues with circleci checks on PR",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "Rokibul Islam",
       "created_at": "2026-05-22T20:07:05.197000+00:00",
       "closed_at": "2026-05-26T14:36:01.488000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-676"
     },
     {
       "key": "PES-677",
       "summary": "eod_vol_surfaces DAG failure | May 22, 2026",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-22T20:56:45.677000+00:00",
       "closed_at": "2026-05-26T15:24:12.350000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-677"
     },
     {
       "key": "PES-678",
       "summary": "2025-05-22:  EDI-Equities-EOD-SFTP-S3",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-22T21:44:33.111000+00:00",
       "closed_at": "2026-05-29T14:45:33.555000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-678"
     },
     {
       "key": "PES-679",
       "summary": "ice_options_contracts Failing | Reported on: 25th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-25T13:39:36.876000+00:00",
       "closed_at": "2026-05-26T11:49:11.740000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-679"
     },
     {
       "key": "PES-680",
       "summary": "BOFA_DISPERSION report failing with SQL error",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-26T05:24:25.235000+00:00",
       "closed_at": "2026-05-26T12:47:46.632000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-680"
     },
     {
       "key": "PES-681",
       "summary": "Reclassification of Greece to Developed markets and creation of a Greece Index",
+      "reporter": "rudra",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-26T09:07:12.591000+00:00",
       "closed_at": "2026-05-28T11:17:01.990000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-681"
     },
     {
       "key": "PES-685",
       "summary": "UISUCATE \u2013 Computation failure | Reported: 26th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-26T13:18:31.589000+00:00",
       "closed_at": "2026-05-26T20:52:05.978000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-685"
     },
     {
       "key": "PES-686",
       "summary": "Event not applied for MQBWOA selection portfolio",
+      "reporter": "Shivang Agrawal",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-26T14:18:20.809000+00:00",
       "closed_at": "2026-06-01T06:57:52.839000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-686"
     },
     {
       "key": "PES-687",
       "summary": "Stitch history for 5 indices for Morgan Stanley",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-26T17:26:16.248000+00:00",
       "closed_at": "2026-06-01T06:08:36.664000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-687"
     },
     {
       "key": "PES-688",
       "summary": "2026-05-26: mq.helix.car.ported.pipelines.hsbc-swap-legacy-v1-amd64-vsfix-prod",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "prabpreet",
       "created_at": "2026-05-26T17:52:21.816000+00:00",
       "closed_at": "2026-05-27T13:50:33.707000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-688"
     },
     {
       "key": "PES-689",
       "summary": "2026-05-26: M3: p99 Processing Lag",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-26T21:19:10.066000+00:00",
       "closed_at": "2026-06-10T13:30:11.624000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-689"
     },
     {
       "key": "PES-690",
       "summary": "2026-05-26:  secapi-futures-limits-check",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-27T00:48:34.386000+00:00",
       "closed_at": "2026-05-28T21:22:25.372000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-690"
     },
     {
       "key": "PES-691",
       "summary": "incorrect list using dependency tracker",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-27T10:39:36.911000+00:00",
       "closed_at": "2026-05-29T09:03:53.991000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-691"
     },
     {
       "key": "PES-692",
       "summary": "Garage thread investigation",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-27T17:31:33.787000+00:00",
       "closed_at": "2026-06-10T14:41:51.407000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-692"
     },
     {
       "key": "PES-693",
       "summary": "2026-05-27: Update BFD reports before EOD",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-27T17:42:55.038000+00:00",
       "closed_at": "2026-05-27T21:37:00.572000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-693"
     },
     {
       "key": "PES-694",
       "summary": "Add EEM and EFA as allowed root for get_var_swap_fair_strike",
+      "reporter": "avery",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-05-27T20:02:47.716000+00:00",
       "closed_at": "2026-06-08T07:18:53.140000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-694"
     },
     {
       "key": "PES-695",
       "summary": "Nomura DataAPI job not posting Updated Values to SecAPI",
+      "reporter": "rohan@merqube.com",
       "creator": "rohan@merqube.com",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-27T22:24:42.373000+00:00",
       "closed_at": "2026-05-28T21:36:14.570000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-695"
     },
     {
       "key": "PES-696",
       "summary": "openfigi_data_loader Failure | Reported: 28-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-05-28T13:05:53.204000+00:00",
       "closed_at": "2026-06-02T14:43:07.215000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-696"
     },
     {
       "key": "PES-697",
       "summary": "fairstrikes_gc_east / gc_west is failing | Reported on: 28th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-28T14:37:08.520000+00:00",
       "closed_at": "2026-06-01T11:01:16.082000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-697"
     },
     {
       "key": "PES-698",
       "summary": "PipelineFailed: DAG run failed: mq.helix.car.ported.pipelines.hsbc-swap-legacy-v1-amd64-vsfix-prod",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-28T19:58:17.807000+00:00",
       "closed_at": "2026-05-28T20:02:14.617000+00:00",
       "status": "Canceled",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-698"
     },
     {
       "key": "PES-699",
       "summary": "2026-05-28: [Grafana]: [FIRING:1] No recent calendar data available",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-28T20:49:38.779000+00:00",
       "closed_at": "2026-05-28T21:04:31.897000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-699"
     },
     {
       "key": "PES-700",
       "summary": "Update MF mapping",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-28T21:24:56.562000+00:00",
       "closed_at": "2026-05-28T21:44:09.058000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-700"
     },
     {
       "key": "PES-701",
       "summary": "2026-05-28: KOIDTR Report missing WMR spot value for the 29th",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-28T22:44:24.858000+00:00",
       "closed_at": "2026-06-10T21:04:42.555000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-701"
     },
     {
       "key": "PES-702",
       "summary": "BFD OHL Metrics Publication & RT Pod Validation",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Sagar Saluja",
       "created_at": "2026-05-29T03:16:14.850000+00:00",
       "closed_at": "2026-05-29T13:34:37.630000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-702"
     },
     {
       "key": "PES-703",
       "summary": "Disable incoming reports for JMLNJLG0 | Reported: 29-May-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-05-29T08:08:27.040000+00:00",
       "closed_at": "2026-06-01T13:26:23.039000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-703"
     },
     {
       "key": "PES-704",
       "summary": "MQTJPN* | Index computation Failure | Reported on: 29th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-05-29T10:53:39.621000+00:00",
       "closed_at": "2026-06-02T07:54:53.615000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-704"
     },
     {
       "key": "PES-705",
       "summary": "MQDJPN50 and MQDJPN5N | Index computation failure | Reported on: 29th-May-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-05-29T12:46:27.409000+00:00",
       "closed_at": "2026-06-03T11:40:02.167000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-705"
     },
     {
       "key": "PES-706",
       "summary": "fred-secapi DataAPI failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-29T15:45:29.699000+00:00",
       "closed_at": "2026-05-29T15:53:27.804000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-706"
     },
     {
       "key": "PES-707",
       "summary": "Investigate Missing ZNU26 TWAP Generation Resulting in NaN Values on 2026-05-27",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-05-29T16:13:35.495000+00:00",
       "closed_at": "2026-06-11T15:06:50.312000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-707"
     },
     {
       "key": "PES-708",
       "summary": "Missing mutual fund mappings causing VT index to fail",
+      "reporter": "Aastha Sinha",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-29T17:37:42.924000+00:00",
       "closed_at": "2026-05-29T18:50:01.310000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-708"
     },
     {
       "key": "PES-709",
       "summary": "2025-05-29:  4 of 10 pods for dqmsapi in error",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-29T18:09:53.807000+00:00",
       "closed_at": "2026-05-29T18:12:15.579000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-709"
     },
     {
       "key": "PES-710",
       "summary": "2026-05-29:  secapi-price-integrity-checks",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-29T21:17:46.302000+00:00",
       "closed_at": "2026-06-10T11:56:53.102000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-710"
     },
     {
       "key": "PES-711",
       "summary": "grafana_backup_process DAG failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-31T22:00:08.219000+00:00",
       "closed_at": "2026-06-04T15:56:28.944000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-711"
     },
     {
       "key": "PES-712",
       "summary": "edi_reference_data_loader DAG failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-05-31T22:31:22.639000+00:00",
       "closed_at": "2026-06-10T12:55:30.296000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-712"
     },
     {
       "key": "PES-713",
       "summary": "Missing price.merq for T5YIE (interest_rate) for May 29, 2026",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-05-31T23:20:06.928000+00:00",
       "closed_at": "2026-06-01T11:02:00.745000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-713"
     },
     {
       "key": "PES-714",
       "summary": "MGXT100 Report Failure | Reported on: June 1st, 2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-01T08:15:24.294000+00:00",
       "closed_at": "2026-06-02T13:15:25.849000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-714"
     },
     {
       "key": "PES-715",
       "summary": "dataapi_fred-secapi_55b7f597-ab22-4782-a369-c08f11c2ed08 is Failing | Reported on: 1st-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-01T11:16:06.808000+00:00",
       "closed_at": "2026-06-05T02:04:11.766000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-715"
     },
     {
       "key": "PES-716",
       "summary": "Suspect mcap request from live index",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-01T11:41:03.558000+00:00",
       "closed_at": "2026-06-17T14:25:57.248000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-716"
     },
     {
       "key": "PES-717",
       "summary": "Create Mirror SFTP jobs for NMJSNKIL eod files",
+      "reporter": "Varshini Priyaa S",
       "creator": "Atlassian Assist",
       "assignee": null,
       "created_at": "2026-06-01T12:40:31.167000+00:00",
       "closed_at": "2026-06-02T09:59:50.672000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-717"
     },
     {
       "key": "PES-718",
       "summary": "Create Mirror SFTP jobs for NMJSNKIL override files",
+      "reporter": "Varshini Priyaa S",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-01T12:42:53.051000+00:00",
       "closed_at": "2026-06-02T10:00:05.542000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-718"
     },
     {
       "key": "PES-719",
       "summary": "Recapture data for TSM",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-01T15:18:30.535000+00:00",
       "closed_at": "2026-06-03T15:09:01.504000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-719"
     },
     {
       "key": "PES-720",
       "summary": "[Grafana]: [FIRING:1] indexapi: Database Connections > 95% (indexapi-prod-2-instance-3 opsgenie-devops RDS Databases P1) | Reported on: 1st-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-01T15:49:54.223000+00:00",
       "closed_at": "2026-06-02T13:32:19.194000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-720"
     },
     {
       "key": "PES-721",
       "summary": "2026-06-01:  Index api RDS db storage 100%",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-06-01T17:33:57.201000+00:00",
       "closed_at": "2026-06-02T10:51:17.045000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-721"
     },
     {
       "key": "PES-722",
       "summary": "BXIIIVPR \u2013 Production and Local Calculation Mismatch Resulting in Incorrect Restatement Levels",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-02T03:18:43.450000+00:00",
       "closed_at": "2026-06-10T12:01:11.122000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-722"
     },
     {
       "key": "PES-724",
       "summary": "Clear streamlit cache, UBS AMC Key updated",
+      "reporter": "rudra",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-02T10:12:56.118000+00:00",
       "closed_at": "2026-06-02T11:46:44.517000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-724"
     },
     {
       "key": "PES-725",
       "summary": "JSYSTEFI missing in secapi for entire month of may seems only historical bacload",
+      "reporter": "Aastha Sinha",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-02T11:17:00.815000+00:00",
       "closed_at": "2026-06-04T06:58:02.355000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-725"
     },
     {
       "key": "PES-726",
       "summary": "Can't run standard reports from Admin UI",
+      "reporter": "Daniel Hodgetts",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-02T14:20:06.971000+00:00",
       "closed_at": "2026-06-03T14:16:03.925000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-726"
     },
     {
       "key": "PES-727",
       "summary": "rdp_bofa_data_update_dag is Failing | Reported on: 2nd-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-02T14:43:50.032000+00:00",
       "closed_at": "2026-06-04T19:27:35.041000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-727"
     },
     {
       "key": "PES-728",
       "summary": "[Grafana]: [FIRING:1] indexapi: Database Connections > 95% (indexapi-prod-2-instance-3 opsgenie-devops RDS Databases P1)",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-02T15:42:54.334000+00:00",
       "closed_at": "2026-06-04T19:24:50.714000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-728"
     },
     {
       "key": "PES-729",
       "summary": "Incorrect ISIN present in live index",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-02T16:11:32.802000+00:00",
       "closed_at": "2026-06-02T20:44:27.578000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-729"
     },
     {
       "key": "PES-730",
       "summary": "Incorrect listing in MQTNRGYT",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-03T09:33:19.979000+00:00",
       "closed_at": "2026-06-04T19:20:14.085000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-730"
     },
     {
       "key": "PES-731",
       "summary": "MSUSEUPS \u2013 Run stuck for about 12 hours | Reported: 03-June-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-03T09:41:49.574000+00:00",
       "closed_at": "2026-06-03T11:17:50.504000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-731"
     },
     {
       "key": "PES-732",
       "summary": "hey, anyone who could help me with aws access? I'm getting some authorization errors",
+      "reporter": "marco calamandrei",
       "creator": "Atlassian Assist",
       "assignee": null,
       "created_at": "2026-06-03T09:48:47.378000+00:00",
       "closed_at": "2026-06-03T10:41:15.471000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-732"
     },
     {
       "key": "PES-733",
       "summary": "fairstrikes_gc_east/ gc_west is failing | Reported on: 3rd-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-03T15:26:42.716000+00:00",
       "closed_at": "2026-06-08T14:39:57.715000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-733"
     },
     {
       "key": "PES-734",
       "summary": "2026-06-03: dataapi_SnP-3AI-Tilt-Index-USD-TR-from-SnP Key error",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-03T21:47:58+00:00",
       "closed_at": "2026-06-04T00:06:35.028000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-734"
     },
     {
       "key": "PES-735",
       "summary": "Job build_option_volsurf failed with exception \"None of ['name'] are in the columns\" after 2.7s | Reported on: 4th-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-04T12:36:25.217000+00:00",
       "closed_at": "2026-06-10T12:48:21.603000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-735"
     },
     {
       "key": "PES-736",
       "summary": "regression on equity index garage tool",
+      "reporter": "Daniel Hodgetts",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-04T13:41:50.810000+00:00",
       "closed_at": "2026-06-04T19:12:28.192000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-736"
     },
     {
       "key": "PES-737",
       "summary": "Recapture Real Tiime prices",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-04T15:19:07.817000+00:00",
       "closed_at": "2026-06-05T00:39:56.003000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-737"
     },
     {
       "key": "PES-738",
       "summary": "Sorting Logic for Same-Timestamp Prices \u2014 Options & Stocks",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Yohannes Kifle",
       "created_at": "2026-06-04T15:52:39.989000+00:00",
       "closed_at": "2026-06-09T08:46:23.835000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-738"
     },
     {
       "key": "PES-739",
       "summary": "fairstrikes_gc_east and west failing consecutively | Reported: 04-June-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Yohannes Kifle",
       "created_at": "2026-06-04T16:42:25.921000+00:00",
       "closed_at": "2026-06-19T14:45:05.041000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-739"
     },
     {
       "key": "PES-740",
       "summary": "Issues with CircleCi check on PR",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "Rokibul Islam",
       "created_at": "2026-06-05T01:25:04.951000+00:00",
       "closed_at": "2026-06-05T15:31:39.943000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-740"
     },
     {
       "key": "PES-741",
       "summary": "fixing family names and attached tags, to make it a list instead of free text",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": null,
       "created_at": "2026-06-05T08:29:13.617000+00:00",
       "closed_at": "2026-06-05T15:09:38.365000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-741"
     },
     {
       "key": "PES-742",
       "summary": "secapi-price-integrity-checks",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-05T11:37:24.379000+00:00",
       "closed_at": "2026-07-14T23:14:45.642000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-742"
     },
     {
       "key": "PES-743",
       "summary": "adjusting impact cube indices to not fail eod calculations and delay selection similar to what happens due to market cap data",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-05T11:56:16.512000+00:00",
       "closed_at": "2026-07-07T14:56:26.764000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-743"
     },
     {
       "key": "PES-744",
       "summary": "MQBESG* and MQTRGM* are failing | Reported on: 5th-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-05T12:59:55.094000+00:00",
       "closed_at": "2026-06-11T13:10:44.614000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-744"
     },
     {
       "key": "PES-745",
       "summary": "[Grafana]: [FIRING:1] Airflow: Critical Section Duration High (merqube P2)",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-05T14:03:31.292000+00:00",
       "closed_at": "2026-06-09T18:54:05.355000+00:00",
       "status": "Canceled",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-745"
     },
     {
       "key": "PES-746",
       "summary": "[Grafana]: [FIRING:1] Airflow: Critical Section Duration High (merqube P2)",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-05T22:35:48.627000+00:00",
       "closed_at": "2026-06-09T18:52:26.071000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-746"
     },
     {
       "key": "PES-747",
       "summary": "2026-06-05: Barclays-via-Bloomberg---LND",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-06-05T23:13:56.340000+00:00",
       "closed_at": "2026-06-05T23:58:10.195000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-747"
     },
     {
       "key": "PES-748",
       "summary": "MQTRGMNR calculatiuon issue",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": null,
       "created_at": "2026-06-08T08:45:54.184000+00:00",
       "closed_at": "2026-06-08T10:37:22.316000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-748"
     },
     {
       "key": "PES-749",
       "summary": "MQBER1P, MQBER1T, MQBER1N report's failing due to OOM",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-08T09:34:04.196000+00:00",
       "closed_at": "2026-06-08T13:07:05.268000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-749"
     },
     {
       "key": "PES-750",
       "summary": "[Grafana]: [FIRING:1] Airflow: Critical Section Duration High (merqube P2)",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Sreedath N S",
       "created_at": "2026-06-08T12:06:07.736000+00:00",
       "closed_at": "2026-07-09T12:39:56.561000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-750"
     },
     {
       "key": "PES-751",
       "summary": "2026-06-08: Barclays-via-Bloomberg---LND",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": null,
       "created_at": "2026-06-08T22:53:47.058000+00:00",
       "closed_at": "2026-06-08T23:11:34.289000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-751"
     },
     {
       "key": "PES-752",
       "summary": "tickhistory_options_daily task failing with log read interruption on base container",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": null,
       "created_at": "2026-06-09T05:08:16.104000+00:00",
       "closed_at": "2026-06-09T08:24:17.890000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-752"
     },
     {
       "key": "PES-753",
       "summary": "[ERROR] [1] 500 Server Error: INTERNAL SERVER ERROR",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-09T06:48:18.941000+00:00",
       "closed_at": "2026-06-09T14:34:21.929000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-753"
     },
     {
       "key": "PES-754",
       "summary": "Incorrect membership contributed to BBG for several indices",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-09T11:18:14.116000+00:00",
       "closed_at": "2026-06-10T14:38:30.249000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-754"
     },
     {
       "key": "PES-755",
       "summary": "FX Spot Data Issue \u2013 USD/TRY Scaling Adjustment",
+      "reporter": "Emir Kirdan",
       "creator": "Emir Kirdan",
       "assignee": "suyash shah",
       "created_at": "2026-06-09T13:20:34.396000+00:00",
       "closed_at": "2026-06-10T07:00:10.839000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-755"
     },
     {
       "key": "PES-756",
       "summary": "API key sharing link might be broken",
+      "reporter": "Yohannes Kifle",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-09T14:22:28.930000+00:00",
       "closed_at": "2026-06-09T18:50:13.734000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-756"
     },
     {
       "key": "PES-757",
       "summary": "Less than 75% of replicas are available for a k8s deployment",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-09T17:01:54.039000+00:00",
       "closed_at": "2026-06-09T18:57:47.751000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-757"
     },
     {
       "key": "PES-758",
       "summary": "2026-06-09: Barclays-via-Bloomberg---LND skipping file.",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-06-09T20:51:19.003000+00:00",
       "closed_at": "2026-06-10T21:18:29.038000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-758"
     },
     {
       "key": "PES-759",
       "summary": "secapi-futures-limits-check DAG failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-06-09T21:06:53.859000+00:00",
       "closed_at": "2026-06-12T22:18:06.372000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-759"
     },
     {
       "key": "PES-760",
       "summary": "mapping suddenly missing for mutual funds",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-06-10T06:21:48.305000+00:00",
       "closed_at": "2026-06-10T10:26:39.933000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-760"
     },
     {
       "key": "PES-762",
       "summary": "Mutual Fund Mapping missing blocking backtest",
+      "reporter": "Aastha Sinha",
       "creator": "Atlassian Assist",
       "assignee": null,
       "created_at": "2026-06-10T09:10:48.329000+00:00",
       "closed_at": "2026-06-10T10:23:26.875000+00:00",
       "status": "Canceled",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-762"
     },
     {
       "key": "PES-763",
       "summary": "[devops] Create new read-only user in dependency tracker schema for 3-rd party contractor",
+      "reporter": "Anthony Schmieder",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-06-10T12:30:47.089000+00:00",
       "closed_at": "2026-06-16T13:35:54.511000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-763"
     },
     {
       "key": "PES-764",
       "summary": "Euronext Commodity Deriatives data",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-10T15:06:58.702000+00:00",
       "closed_at": "2026-06-30T15:42:27.943000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-764"
     },
     {
       "key": "PES-765",
       "summary": "[Grafana]: [FIRING:1] indexapi: Database Connections > 95%",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-10T15:34:39.478000+00:00",
       "closed_at": "2026-06-11T16:04:59.627000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-765"
     },
     {
       "key": "PES-766",
       "summary": "2026-06-10:  DAG: edi_corporate_actions_loader",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-10T18:09:49.204000+00:00",
       "closed_at": "2026-06-11T13:20:03.827000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-766"
     },
     {
       "key": "PES-767",
       "summary": "Missing VIX3M prices",
+      "reporter": "Atharwa Pandey",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-10T20:10:03.682000+00:00",
       "closed_at": "2026-06-10T21:08:02.399000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-767"
     },
     {
       "key": "PES-771",
       "summary": "2026-06-11: trirt-summaryapi-archive.trirt-summaryapi-archive-replica2",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-11T17:37:56.811000+00:00",
       "closed_at": "2026-06-12T14:31:27.575000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-771"
     },
     {
       "key": "PES-772",
       "summary": "backtest_qa_report Failure for Multiple Indices",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-06-11T19:17:46.903000+00:00",
       "closed_at": "2026-06-12T02:36:54.625000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-772"
     },
     {
       "key": "PES-773",
       "summary": "Freezer issue on MQBESG3P while picking up prices from parent",
+      "reporter": "Aastha Sinha",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-11T20:45:15.552000+00:00",
       "closed_at": "2026-06-11T22:18:37.437000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-773"
     },
     {
       "key": "PES-774",
       "summary": "2026-06-11: MQAUTOCL_VAR_Report",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-11T23:52:21.355000+00:00",
       "closed_at": "2026-06-12T14:29:52.655000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-774"
     },
     {
       "key": "PES-775",
       "summary": "Refinitiv TickHistory returning partial data for options",
+      "reporter": "Uday Goel",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-12T13:05:05.416000+00:00",
       "closed_at": "2026-07-14T11:16:37.380000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-775"
     },
     {
       "key": "PES-776",
       "summary": "BXIIFL01 \u2013 Stuck for over 10 hours without any progress | Reported: 12-June-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-12T15:00:46.830000+00:00",
       "closed_at": "2026-06-15T20:37:22.758000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-776"
     },
     {
       "key": "PES-848",
       "summary": "2026-06-13: tickhistory_options_daily stuck procesing the 12th",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-13T17:20:14.978000+00:00",
       "closed_at": "2026-06-29T07:30:43.032000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-848"
     },
     {
       "key": "PES-778",
       "summary": "2026-06-13: dsp_reference_prices_data_loader",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-13T17:29:48.180000+00:00",
       "closed_at": "2026-06-22T03:43:09.622000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-778"
     },
     {
       "key": "PES-780",
       "summary": "2026-06-13: rebalance portfolio errors",
+      "reporter": "Daniel Carranco",
       "creator": "Daniel Carranco",
       "assignee": "yash.singh",
       "created_at": "2026-06-13T17:36:35.401000+00:00",
       "closed_at": "2026-06-15T12:32:38.242000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-780"
     },
     {
       "key": "PES-779",
       "summary": "2026-06-14: UBS_FX_Tracker",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-14T23:17:41.379000+00:00",
       "closed_at": "2026-06-15T14:20:02.305000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-779"
     },
     {
       "key": "PES-781",
       "summary": "[Grafana]: [FIRING:1] Reuters Daily Prices Loader Job hasn't recently executed (Equities EOD P1)",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-15T12:25:48.529000+00:00",
       "closed_at": "2026-06-15T17:21:44.516000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-781"
     },
     {
       "key": "PES-782",
       "summary": "Check BXIITTER ingestion time",
+      "reporter": "garvit",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-15T14:31:18.797000+00:00",
       "closed_at": "2026-06-15T20:03:05.528000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-782"
     },
     {
       "key": "PES-783",
       "summary": "Index Restater Report",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-15T15:16:39.747000+00:00",
       "closed_at": "2026-06-15T17:16:53.393000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-783"
     },
     {
       "key": "PES-784",
       "summary": "BME - Current use",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-06-15T19:39:24.081000+00:00",
       "closed_at": "2026-06-17T09:40:13.046000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-784"
     },
     {
       "key": "PES-785",
       "summary": "CME settlements pipeline failed attempting to create futures contract RPN27 in secapi",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-15T19:53:17.454000+00:00",
       "closed_at": "2026-06-19T19:01:49.794000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-785"
     },
     {
       "key": "PES-786",
       "summary": "Need Recompute of SPY + IBIT Fairstrikes from ENG-1796",
+      "reporter": "Astrid Ludwig",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-15T20:08:09.885000+00:00",
       "closed_at": "2026-06-26T18:44:23.361000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-786"
     },
     {
       "key": "PES-787",
       "summary": "UBS_intraday_checks Report Failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "puja",
       "created_at": "2026-06-16T01:28:37.880000+00:00",
       "closed_at": "2026-06-17T14:53:35.682000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-787"
     },
     {
       "key": "PES-788",
       "summary": "enabling top 10 constituent similar to MQBEZ5N for MQDZ40AR and MQDZ4AR",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-16T12:09:20.621000+00:00",
       "closed_at": "2026-06-16T13:39:50.953000+00:00",
       "status": "Canceled",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-788"
     },
     {
       "key": "PES-789",
       "summary": "dataapi_ZARONIA_4cae1768-2513-4f86-9bca-4f4bbea48cf4 Failing | Reported on: 16th-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-16T13:58:30.398000+00:00",
       "closed_at": "2026-06-16T17:47:16.695000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-789"
     },
     {
       "key": "PES-790",
       "summary": "IWM, QQQ and SPY fairstrikes mismatch | Reported on 16th-June-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-16T15:24:53.756000+00:00",
       "closed_at": "2026-06-19T18:21:29.743000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-790"
     },
     {
       "key": "PES-791",
       "summary": "incorrect dividend precision - impact needed",
+      "reporter": "rudra",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-16T19:00:50.934000+00:00",
       "closed_at": "2026-06-16T19:45:55.254000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-791"
     },
     {
       "key": "PES-792",
       "summary": "Annual Returns are not shown on merqube's website",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-16T20:36:11.200000+00:00",
       "closed_at": "2026-06-17T22:09:53.770000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-792"
     },
     {
       "key": "PES-793",
       "summary": "Issues with circleci checks on PR",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-16T21:51:36.784000+00:00",
       "closed_at": "2026-06-17T08:25:31.106000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-793"
     },
     {
       "key": "PES-794",
       "summary": "2026-06-16: StepStone weights",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-16T22:27:37.645000+00:00",
       "closed_at": "2026-06-17T14:45:53.613000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-794"
     },
     {
       "key": "PES-795",
       "summary": "MQBER1T Difference Report \u2013 File Size Issue & Long-Term Fix Request",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-17T04:12:31.295000+00:00",
       "closed_at": "2026-06-17T14:36:24.242000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-795"
     },
     {
       "key": "PES-796",
       "summary": "Nomura | Duplicate Records with Different Timestamps and Re-run Impacted Data Jobs",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "rajat",
       "created_at": "2026-06-17T06:23:54.968000+00:00",
       "closed_at": "2026-06-18T14:42:31.157000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-796"
     },
     {
       "key": "PES-797",
       "summary": "Garage performance slow",
+      "reporter": "Daniel Hodgetts",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-06-17T09:31:41.996000+00:00",
       "closed_at": "2026-06-26T11:03:00.844000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-797"
     },
     {
       "key": "PES-798",
       "summary": "2026-06-17: AWS Glue Rate Limited",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-18T00:45:10.670000+00:00",
       "closed_at": "2026-06-25T13:23:51.116000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-798"
     },
     {
       "key": "PES-799",
       "summary": "[Grafana]: [FIRING:1] M3: p99 Processing Lag &gt;3600 seconds (page merqube)",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-06-18T12:00:03.354000+00:00",
       "closed_at": "2026-06-24T15:02:27.396000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-799"
     },
     {
       "key": "PES-800",
       "summary": "Getting timeout error when trying to PUT a portfolio to target portfolio API.",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-18T13:12:34.017000+00:00",
       "closed_at": "2026-06-18T13:53:19.423000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-800"
     },
     {
       "key": "PES-801",
       "summary": "BXIIFL01 \u2013 Terminated due to OOM: Empty reports generated in the successful run | Reported: 18-June-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-18T14:29:58.487000+00:00",
       "closed_at": "2026-06-25T09:40:14.898000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-801"
     },
     {
       "key": "PES-802",
       "summary": "SPY fairstrikes issues detected",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-18T19:08:35.894000+00:00",
       "closed_at": "2026-06-18T21:17:50.665000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-802"
     },
     {
       "key": "PES-803",
       "summary": "New Zealand exchange usage",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-06-18T20:29:35.900000+00:00",
       "closed_at": "2026-06-22T11:59:14.248000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-803"
     },
     {
       "key": "PES-804",
       "summary": "SPX Option Expiry Availability and Potential Ingestion Issues Impacting Barclays Submissions",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-19T06:05:10.147000+00:00",
       "closed_at": "2026-06-22T14:59:42.677000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-804"
     },
     {
       "key": "PES-805",
       "summary": "BXIIFL04/06/03/01 Index Computation is Failing | Reported on: 19th-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-19T07:12:03.963000+00:00",
       "closed_at": "2026-06-25T02:35:13.233000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-805"
     },
     {
       "key": "PES-806",
       "summary": "dependents on expiry dates of futures contract MSNN26 and MSNM26",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-19T08:33:43.893000+00:00",
       "closed_at": "2026-06-29T04:44:34.191000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-806"
     },
     {
       "key": "PES-807",
       "summary": "Portfolio Validator DAG Shows Success When Validation Process Aborts",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-19T11:18:37.208000+00:00",
       "closed_at": "2026-06-29T20:58:08.897000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-807"
     },
     {
       "key": "PES-808",
       "summary": "RT / EOD dependency consumption for list of indices",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-19T17:43:29.283000+00:00",
       "closed_at": "2026-06-26T17:50:52.927000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-808"
     },
     {
       "key": "PES-809",
       "summary": "eod_vol_surfaces DAG failure | June 19, 2026",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-19T21:22:32.119000+00:00",
       "closed_at": "2026-06-22T15:38:24.753000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-809"
     },
     {
       "key": "PES-810",
       "summary": "secapi-futures-limits-check DAG failure | June 19, 2026",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-19T21:25:46.131000+00:00",
       "closed_at": "2026-06-22T14:15:57.202000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-810"
     },
     {
       "key": "PES-811",
       "summary": "CME settlements + real-time pipelines stalled after deploying fix for PES-785",
+      "reporter": "rohan@merqube.com",
       "creator": "Anthony Schmieder",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-20T11:20:30.131000+00:00",
       "closed_at": "2026-07-07T00:04:40.367000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-811"
     },
     {
       "key": "PES-812",
       "summary": "MQDDSETC / MQFTSETC \u2014 missing SOLA EOD level SFTP file for 2026-06-18 (Swedish holiday + report date misalignment)",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-22T05:46:12.791000+00:00",
       "closed_at": "2026-06-22T07:14:19.820000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-812"
     },
     {
       "key": "PES-813",
       "summary": "tickhistory_options_daily:compute_summaries failure schema_differences",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-22T06:09:11.320000+00:00",
       "closed_at": "2026-06-22T15:43:50.948000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-813"
     },
     {
       "key": "PES-814",
       "summary": "Understand rebalance implementation",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-22T20:00:18.759000+00:00",
       "closed_at": "2026-06-22T21:51:55.926000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-814"
     },
     {
       "key": "PES-815",
       "summary": "TEST",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-22T20:06:02.172000+00:00",
       "closed_at": "2026-06-22T20:08:19.391000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-815"
     },
     {
       "key": "PES-816",
       "summary": "Incorrect drop of NV7N8C-S from MQXTR20T as of 22nd June 2026 rebal",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-23T07:42:15.535000+00:00",
       "closed_at": "2026-06-24T13:34:36.338000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-816"
     },
     {
       "key": "PES-817",
       "summary": "WHDINCEQ | dissapi-plt-mng-2 Failing | Reported on: 23rd-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-23T12:31:51.804000+00:00",
       "closed_at": "2026-07-07T09:09:24.077000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-817"
     },
     {
       "key": "PES-818",
       "summary": "complete reload of etf fsym",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-23T12:56:11.450000+00:00",
       "closed_at": "2026-07-07T06:31:08.249000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-818"
     },
     {
       "key": "PES-819",
       "summary": "vol_advantage_fairstrikes Failing | Reported on: 23rd-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-23T13:15:38.203000+00:00",
       "closed_at": "2026-06-24T06:48:53.929000+00:00",
       "status": "Completed",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-819"
     },
     {
       "key": "PES-821",
       "summary": "Create single stock PR/TR",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-23T14:32:52.354000+00:00",
       "closed_at": "2026-06-23T23:04:37.359000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-821"
     },
     {
       "key": "PES-822",
       "summary": "Earnings data not propagating delete sentinel",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-23T16:37:21.988000+00:00",
       "closed_at": "2026-07-02T11:07:54.181000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-822"
     },
     {
       "key": "PES-823",
       "summary": "Duplicate entries for MWEN26 - MWEU26 on SecAPI",
+      "reporter": "matias",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-23T23:57:34.613000+00:00",
       "closed_at": "2026-06-24T13:38:17.112000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-823"
     },
     {
       "key": "PES-824",
       "summary": "Recapture tick data for CRM stock",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-06-24T03:36:59.071000+00:00",
       "closed_at": "2026-06-26T13:37:10.303000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-824"
     },
     {
       "key": "PES-826",
       "summary": "2026-06-24: Increase in  bloomberg_membership_sender errors",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-24T17:32:39.194000+00:00",
       "closed_at": "2026-07-02T11:56:25.543000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-826"
     },
     {
       "key": "PES-828",
       "summary": "2026-06-24: vol_advantage_fairstrikes_eod_publish",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-24T20:32:19.924000+00:00",
       "closed_at": "2026-07-02T16:16:16.220000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-828"
     },
     {
       "key": "PES-829",
       "summary": "Root CL futures reingest data from October 2017 to November 2017",
+      "reporter": "Astrid Ludwig",
       "creator": "Astrid Ludwig",
       "assignee": "Pratibha Singh",
       "created_at": "2026-06-24T22:12:59.954000+00:00",
       "closed_at": "2026-06-26T05:05:27.748000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-829"
     },
     {
       "key": "PES-832",
       "summary": "2026-06-24:  M3 Historical Daemon Runs",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-06-24T23:31:29.356000+00:00",
       "closed_at": "2026-07-14T08:46:54.888000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-832"
     },
     {
       "key": "PES-833",
       "summary": "2026-06-24: indexapi: Database Connections",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-25T01:17:36.669000+00:00",
       "closed_at": "2026-06-25T07:14:25.624000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-833"
     },
     {
       "key": "PES-834",
       "summary": "SECAPI precision truncation affecting BXIIUS10 and  Avantis indices",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-25T06:03:08.650000+00:00",
       "closed_at": "2026-06-25T17:28:08.986000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-834"
     },
     {
       "key": "PES-835",
       "summary": "UI adding numbers not entered for Custom Basket tool",
+      "reporter": "Daniel Hodgetts",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-25T07:46:01.871000+00:00",
       "closed_at": "2026-06-29T11:00:58.558000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-835"
     },
     {
       "key": "PES-836",
       "summary": "Custom basket failed due to missing cash position but the portfolio does not start with a cash position",
+      "reporter": "Daniel Hodgetts",
       "creator": "Atlassian Assist",
       "assignee": "prajjwal",
       "created_at": "2026-06-25T07:54:05.947000+00:00",
       "closed_at": "2026-06-26T12:47:45.925000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-836"
     },
     {
       "key": "PES-838",
       "summary": "Mutual Fund Mapping missing for - JPMGEAD_LX",
+      "reporter": "Aastha Sinha",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-06-25T13:23:36.909000+00:00",
       "closed_at": "2026-06-25T15:29:13.631000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-838"
     },
     {
       "key": "PES-839",
       "summary": "reports on admin ui cannot be edited anymore(standard)",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "Max Rondon",
       "created_at": "2026-06-25T13:26:36.195000+00:00",
       "closed_at": "2026-06-26T17:43:06.782000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-839"
     },
     {
       "key": "PES-840",
       "summary": "vol_advantage_fairstrikes",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-25T15:46:29.916000+00:00",
       "closed_at": "2026-06-29T17:20:27.690000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-840"
     },
     {
       "key": "PES-841",
       "summary": "Canada exchanges (TSX, TSXV, MX) ingestion",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-25T17:43:27.799000+00:00",
       "closed_at": "2026-07-02T11:30:29.834000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-841"
     },
     {
       "key": "PES-843",
       "summary": "SCNQ34-S not getting added in MQTCOSTE in 2019/12/23 rebal",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-06-26T11:12:41.498000+00:00",
       "closed_at": "2026-06-26T12:16:22.690000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-843"
     },
     {
       "key": "PES-844",
       "summary": "2026-06-26: Swapsmonitor-To-SecAPI",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-26T17:57:47.957000+00:00",
       "closed_at": "2026-06-29T14:57:11.506000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-844"
     },
     {
       "key": "PES-845",
       "summary": "dissapi /sftp-upload fails for ED25519 SFTP private keys due to hard-coded Paramiko RSAKey parser",
+      "reporter": "Jagmeet Singh",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-26T19:00:29.774000+00:00",
       "closed_at": "2026-07-03T09:16:22.695000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-845"
     },
     {
       "key": "PES-847",
       "summary": "2026-06-26: dependency-tracker-production: Storage Used > 95%",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Sreedath N S",
       "created_at": "2026-06-27T01:15:08.946000+00:00",
       "closed_at": "2026-06-29T08:49:15.581000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-847"
     },
     {
       "key": "PES-849",
       "summary": "dataapi_Swapsmonitor-To-SecAPI_backfill_ac498ce2-bcae-451c-b230-de856510076b | Reported on 29th-Jun-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-29T14:40:01.546000+00:00",
       "closed_at": "2026-06-29T15:50:29.243000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-849"
     },
     {
       "key": "PES-850",
       "summary": "ice_options_contracts | Reported on 29th-Jun-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-06-29T14:48:36.534000+00:00",
       "closed_at": "2026-06-29T20:48:21.651000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-850"
     },
     {
       "key": "PES-852",
       "summary": "2026-06-29: eod_vol_surfaces \"TLT\" - \"v2_default\"",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-29T20:39:50.414000+00:00",
       "closed_at": "2026-07-03T16:25:37.316000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-852"
     },
     {
       "key": "PES-853",
       "summary": "JNIU26 Settlement Price Updated by Reuters After Initial Publication",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-30T11:19:26.863000+00:00",
       "closed_at": "2026-07-06T10:32:11.916000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-853"
     },
     {
       "key": "PES-854",
       "summary": "MQ3M \u2013 Report Failure: Missing security price data | Reported: 30-June-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-06-30T11:49:56.766000+00:00",
       "closed_at": "2026-07-02T07:56:20.903000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-854"
     },
     {
       "key": "PES-855",
       "summary": "MQUSGVA & MQUSGVAL \u2013 RT Ticking Issue | Reported: 30-June-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "justin.jose",
       "created_at": "2026-06-30T12:01:05.443000+00:00",
       "closed_at": "2026-07-01T14:50:27.422000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-855"
     },
     {
       "key": "PES-856",
       "summary": " MQDQSR50 \u2013 RT Pod Failure | Reported: 30-June-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-30T14:45:12.144000+00:00",
       "closed_at": "2026-07-02T12:03:43.034000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-856"
     },
     {
       "key": "PES-857",
       "summary": "DSS access",
+      "reporter": "Renato Laino",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-06-30T17:12:28.331000+00:00",
       "closed_at": "2026-06-30T17:49:56.932000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-857"
     },
     {
       "key": "PES-858",
       "summary": "Remove access to SSE RT data",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-06-30T17:46:04.575000+00:00",
       "closed_at": "2026-07-02T12:01:36.611000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-858"
     },
     {
       "key": "PES-859",
       "summary": "2026-06-30: Is Airflow ok?",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Sreedath N S",
       "created_at": "2026-06-30T22:21:54.679000+00:00",
       "closed_at": "2026-07-21T14:53:03.418000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-859"
     },
     {
       "key": "PES-860",
       "summary": "Send bulk historical reports for MQBWOA/MQBWEA",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "justin.jose",
       "created_at": "2026-06-30T23:00:16.460000+00:00",
       "closed_at": "2026-07-04T03:07:00.137000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-860"
     },
     {
       "key": "PES-861",
       "summary": "2026-06-30: DagTriggerDLQ: [TEST] dag-router DLQ has messages \u2014 a downstream DAG trigger failed",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-01T00:47:57.405000+00:00",
       "closed_at": "2026-07-02T08:24:52.157000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-861"
     },
     {
       "key": "PES-862",
       "summary": "2026-06-30: Report errors",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-01T01:46:36.732000+00:00",
       "closed_at": "2026-07-02T07:49:34.295000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-862"
     },
     {
       "key": "PES-863",
       "summary": "Target Portfolio API is running very slowly, with a single portfolio PUT taking >2min 30 sec.",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-01T11:29:54.929000+00:00",
       "closed_at": "2026-07-03T07:57:28.793000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-863"
     },
     {
       "key": "PES-864",
       "summary": "[Grafana]: [FIRING:1] indexapi: Database Connections > 95%",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-01T16:38:20.069000+00:00",
       "closed_at": "2026-07-06T13:44:12.207000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-864"
     },
     {
       "key": "PES-865",
       "summary": "ICE - Assets being retrieved",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-01T19:58:11.849000+00:00",
       "closed_at": "2026-07-14T17:51:09.182000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-865"
     },
     {
       "key": "PES-866",
       "summary": "RunFailed: DAG run failed: mq.helix.car.pipelines.hsbc.options-ice-cf-v1-prod (task data-provider)",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-01T20:18:22.439000+00:00",
       "closed_at": "2026-07-02T08:25:43.271000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-866"
     },
     {
       "key": "PES-867",
       "summary": "Portfolio Validator tries to process already Finalised portfolio probably because the processed file wasn't posted to the db.",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-02T10:20:12.609000+00:00",
       "closed_at": "2026-07-03T07:58:54.402000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-867"
     },
     {
       "key": "PES-868",
       "summary": "Dissapis Failing for CIEQUSSI | Reported on: 2nd-Jul-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-02T10:58:39.498000+00:00",
       "closed_at": "2026-07-14T22:33:59.548000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-868"
     },
     {
       "key": "PES-869",
       "summary": "BAEIV* | Index Computation Failed | Reported on: 2nd-Jul-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-02T11:12:30.903000+00:00",
       "closed_at": "2026-07-02T14:24:51.569000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-869"
     },
     {
       "key": "PES-870",
       "summary": "ice_options_contracts | Reported on 2nd-Jul-2025",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-02T14:16:03.857000+00:00",
       "closed_at": "2026-07-02T14:22:55.036000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-870"
     },
     {
       "key": "PES-871",
       "summary": "BXIITAAC \u2013 production-replica2 prompting alert | Reported: 02-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-02T17:46:59.108000+00:00",
       "closed_at": "2026-07-21T15:49:10.131000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-871"
     },
     {
       "key": "PES-872",
       "summary": "2026-07-02: mq.helix.car.pipelines.hsbc.options-ice",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-02T21:18:29.189000+00:00",
       "closed_at": "2026-07-09T15:02:32.786000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-872"
     },
     {
       "key": "PES-873",
       "summary": "Generate Restatement report for MQBER1T",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-03T02:27:19.232000+00:00",
       "closed_at": "2026-07-03T12:46:19.045000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-873"
     },
     {
       "key": "PES-874",
       "summary": "DSP reference prices loader job hasn\u2019t recently executed (Equities EOD P1) | Reported on: 3rd-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-03T03:45:02.946000+00:00",
       "closed_at": "2026-07-03T08:20:31.372000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-874"
     },
     {
       "key": "PES-875",
       "summary": "DAGs repo PR failing AWS codebuild even after retries https://github.com/merqurian/airflow-dags/pull/631",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "Yohannes Kifle",
       "created_at": "2026-07-03T14:33:42.693000+00:00",
       "closed_at": "2026-07-03T15:13:54.519000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-875"
     },
     {
       "key": "PES-876",
       "summary": "[Grafana]: [FIRING:1] Fairstrikes Pipeline Status - WEST  & EAST(General Alerting GC P1)",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Yohannes Kifle",
       "created_at": "2026-07-03T15:07:48.627000+00:00",
       "closed_at": "2026-07-09T17:28:56.988000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-876"
     },
     {
       "key": "PES-877",
       "summary": "eod_vol_surfaces | Reported on 3rd-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-03T16:12:58.277000+00:00",
       "closed_at": "2026-07-06T12:15:57.079000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-877"
     },
     {
       "key": "PES-878",
       "summary": "Australian exchange data usage",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-03T20:53:09.690000+00:00",
       "closed_at": "2026-07-07T23:20:08.147000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-878"
     },
     {
       "key": "PES-879",
       "summary": "mq.helix.car.pipelines.hsbc.options-vs-th-v1-prod failure on AirFlow | Reported: 04-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-04T11:51:51.124000+00:00",
       "closed_at": "2026-07-06T10:28:11.621000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-879"
     },
     {
       "key": "PES-880",
       "summary": "Luxembourg exchange data",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-06T15:53:04.329000+00:00",
       "closed_at": "2026-07-08T16:12:19.864000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-880"
     },
     {
       "key": "PES-881",
       "summary": "2026-07-06: level_override dag in error",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-06T22:30:36.868000+00:00",
       "closed_at": "2026-07-06T23:04:12.130000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-881"
     },
     {
       "key": "PES-882",
       "summary": "2026-07-06: SOLUES* reports failling",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-07T01:50:50.038000+00:00",
       "closed_at": "2026-07-08T14:31:19.186000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-882"
     },
     {
       "key": "PES-883",
       "summary": "RunFailed: DAG run failed: mq.helix.car.ported.pipelines.hsbc-swap-legacy-v1-amd64-vsfix-prod (task run) | Reported on: 7th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-07T03:43:58.610000+00:00",
       "closed_at": "2026-07-09T15:57:12.614000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-883"
     },
     {
       "key": "PES-884",
       "summary": "[ERROR] [1] 500 Server Error: INTERNAL SERVER ERROR | Reported on:: 7th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-07T04:25:25.987000+00:00",
       "closed_at": "2026-07-17T14:29:32.206000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-884"
     },
     {
       "key": "PES-885",
       "summary": "index-checks failing for secapi-price-integrity-checks | Reported on 7th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-07T08:53:31.509000+00:00",
       "closed_at": "2026-07-07T16:48:14.010000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-885"
     },
     {
       "key": "PES-886",
       "summary": "Dependency of the future contracts",
+      "reporter": "aditya.dhoba",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-07T10:53:13.400000+00:00",
       "closed_at": "2026-07-07T12:36:19.716000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-886"
     },
     {
       "key": "PES-887",
       "summary": "missing LLY option bid ask prices (entire chain) on 2026-07-02",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-07T12:10:42.542000+00:00",
       "closed_at": "2026-07-07T16:20:40.938000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-887"
     },
     {
       "key": "PES-888",
       "summary": "mq.helix.car.ported.pipelines.hsbc-swap-legacy-v1-amd64-vsfix-prod Failure | Reported: 07-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-07T12:59:45.638000+00:00",
       "closed_at": "2026-07-08T05:00:49.068000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-888"
     },
     {
       "key": "PES-889",
       "summary": "IWM fairstrikes mismatch at time 2026-07-07 13:45:00 | Reported: 07-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-07T14:40:04.233000+00:00",
       "closed_at": "2026-07-13T19:14:30.941000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-889"
     },
     {
       "key": "PES-890",
       "summary": "Fetching LME quarterly data 2026Q2",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Leonardo Rafaeli",
       "assignee": "arjit",
       "created_at": "2026-07-07T14:43:54.311000+00:00",
       "closed_at": "2026-07-13T14:12:08.817000+00:00",
       "status": "Waiting for Input",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-890"
     },
     {
       "key": "PES-891",
       "summary": "LSEG data request for rt, eod, lipper fund and trbc - 2026Q2",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Leonardo Rafaeli",
       "assignee": "justin.jose",
       "created_at": "2026-07-07T15:08:51.915000+00:00",
       "closed_at": "2026-07-15T19:30:28.640000+00:00",
       "status": "In Progress",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-891"
     },
     {
       "key": "PES-892",
       "summary": "List of MQ tickers having CME futures as underlying 2026Q2",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Leonardo Rafaeli",
       "assignee": "arjit",
       "created_at": "2026-07-07T15:15:17.370000+00:00",
       "closed_at": "2026-07-21T20:56:22.044000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-892"
     },
     {
       "key": "PES-893",
       "summary": "Help getting full dependents for Futures Contracts",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-07T15:48:29.665000+00:00",
       "closed_at": "2026-07-07T19:04:08.253000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-893"
     },
     {
       "key": "PES-894",
       "summary": "fairstrikes_gc_west & fairstrikes_gc_east | Reported on 7th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-07T15:55:15.612000+00:00",
       "closed_at": "2026-07-07T23:02:12.278000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-894"
     },
     {
       "key": "PES-895",
       "summary": "reload_equity_fsym Airflow job fails a lot",
+      "reporter": "Yohannes Kifle",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-07T16:03:29.780000+00:00",
       "closed_at": "2026-07-09T11:49:14.885000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-895"
     },
     {
       "key": "PES-896",
       "summary": "2026-07-07: Helix Ice_options and futures",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-07T20:35:23.162000+00:00",
       "closed_at": "2026-07-09T14:54:49.545000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-896"
     },
     {
       "key": "PES-897",
       "summary": "2026-07-07:  PROD: Secapi->M3 Publisher Runs",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-08T01:21:17.890000+00:00",
       "closed_at": "2026-07-14T15:54:53.802000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-897"
     },
     {
       "key": "PES-898",
       "summary": "NDXGEN5 | dissapi-nas-NDXGEN5 Failing | Reported on: 8th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-08T03:11:18.333000+00:00",
       "closed_at": "2026-07-10T04:40:53.488000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-898"
     },
     {
       "key": "PES-899",
       "summary": "removing price for GBP currency and reloading the fsym",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-08T09:07:21.577000+00:00",
       "closed_at": "2026-07-16T06:38:17.298000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-899"
     },
     {
       "key": "PES-900",
       "summary": "Not able to upload portfolio in the equity tool",
+      "reporter": "ashwini",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-08T09:51:33.209000+00:00",
       "closed_at": "2026-07-09T08:47:01.421000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-900"
     },
     {
       "key": "PES-901",
       "summary": "Missing TH data for SPX/SPXW on 2025-11-13",
+      "reporter": "Yash Pasari",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-08T12:56:45.874000+00:00",
       "closed_at": "2026-07-08T16:15:19.216000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-901"
     },
     {
       "key": "PES-902",
       "summary": "confirmation of what happens if the eod job is re enabled for an index",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "Yohannes Kifle",
       "created_at": "2026-07-08T14:21:26.951000+00:00",
       "closed_at": "2026-07-08T15:08:55.741000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-902"
     },
     {
       "key": "PES-904",
       "summary": "target portfolio file monitor DAG running extremely slowly, affecting client testing",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "Yohannes Kifle",
       "created_at": "2026-07-08T15:39:52.241000+00:00",
       "closed_at": "2026-07-09T09:29:37.955000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-904"
     },
     {
       "key": "PES-905",
       "summary": "2026-07-08: index-data-store-production: CPU Utilization > 40%",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-08T17:45:30.644000+00:00",
       "closed_at": "2026-07-10T14:20:48.921000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-905"
     },
     {
       "key": "PES-906",
       "summary": "2026-07-08: AWS Service Quota: Running On-Demand vCPU > 90% AWS",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-08T22:10:45.551000+00:00",
       "closed_at": "2026-07-10T14:38:20.556000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-906"
     },
     {
       "key": "PES-907",
       "summary": "2026=07-08: ipper-funds-estimates-price-checks",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Juan Perozo",
       "created_at": "2026-07-08T23:52:35.104000+00:00",
       "closed_at": "2026-07-09T17:36:06.173000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-907"
     },
     {
       "key": "PES-908",
       "summary": "CarApiServerErrors: Pricer API 5xx: asset-hsbc-flex-pricer-th-gen1 /prices (NoSuchKey) Failed | Reported on: 9th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-09T05:41:00.118000+00:00",
       "closed_at": "2026-07-10T12:38:03.953000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-908"
     },
     {
       "key": "PES-909",
       "summary": "No data for symbol GCV26 with delayed=False | Reported on 9th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-09T15:49:48.656000+00:00",
       "closed_at": "2026-07-15T14:29:38.176000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-909"
     },
     {
       "key": "PES-910",
       "summary": "Restater Report not being saved on s3",
+      "reporter": "Atharwa Pandey",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-09T20:51:03.833000+00:00",
       "closed_at": "2026-07-10T14:36:27.236000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-910"
     },
     {
       "key": "PES-911",
       "summary": "2026-07-09:  Dependency Tracker Calendar Data",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-09T22:12:37.183000+00:00",
       "closed_at": "2026-07-13T18:09:43.765000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-911"
     },
     {
       "key": "PES-912",
       "summary": "dataapi_EDI-Equities-EOD-SFTP-S3 Failing | Reported on: 10th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rupsha",
       "created_at": "2026-07-10T03:25:01.735000+00:00",
       "closed_at": "2026-07-10T06:29:47.843000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-912"
     },
     {
       "key": "PES-913",
       "summary": "Q2 2026 SLA reports for Barclays, UBS and HSBC",
+      "reporter": "Renato Laino",
       "creator": "Renato Laino",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-07-10T07:48:03.054000+00:00",
       "closed_at": "2026-07-13T15:21:41.175000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-913"
     },
     {
       "key": "PES-914",
       "summary": "[ERROR] [1] 1 validation error for ColMapping | Reported on 10th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-10T12:50:08.423000+00:00",
       "closed_at": "2026-07-15T13:42:39.931000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-914"
     },
     {
       "key": "PES-915",
       "summary": "2026-07-10: Kubernetes: Persistent Volume Claim - % Disk Used (merqube P2)",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-10T18:48:22.116000+00:00",
       "closed_at": "2026-07-15T13:24:13.401000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-915"
     },
     {
       "key": "PES-916",
       "summary": "2026-07-12: edi_reference_data_loader",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-12T22:37:07.689000+00:00",
       "closed_at": "2026-07-13T18:51:03.162000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-916"
     },
     {
       "key": "PES-917",
       "summary": "trirt-summaryapi-archive-replica2 Failed | Reported on: 13th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-13T06:46:24.794000+00:00",
       "closed_at": "2026-07-16T14:58:32.206000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-917"
     },
     {
       "key": "PES-918",
       "summary": "RTDQ Pricer issue",
+      "reporter": "Yash Pasari",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-07-13T11:08:48.761000+00:00",
       "closed_at": null,
       "status": "In Progress",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-918"
     },
     {
       "key": "PES-919",
       "summary": "Error populating 'IGLN_LN' | Reported on 13th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-13T11:49:13.991000+00:00",
       "closed_at": "2026-07-15T15:01:53.500000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-919"
     },
     {
       "key": "PES-920",
       "summary": "Usage of Taiwan instruments",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-13T13:49:13.821000+00:00",
       "closed_at": "2026-07-14T16:09:54.231000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-920"
     },
     {
       "key": "PES-921",
       "summary": "2026-07-13: Data not accesiable for CSEAGM10",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-13T21:45:50.469000+00:00",
       "closed_at": "2026-07-20T06:41:27.829000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-921"
     },
     {
       "key": "PES-922",
       "summary": "Get mapping corrected for CSEAGM10 and CSEAGMB1",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-14T00:35:18.638000+00:00",
       "closed_at": "2026-07-14T18:39:24.668000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-922"
     },
     {
       "key": "PES-923",
       "summary": "Multiple RT indices failing on a regular basis | Reported: 14-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-14T09:15:26.846000+00:00",
       "closed_at": "2026-07-15T19:14:02.772000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-923"
     },
     {
       "key": "PES-924",
       "summary": "2026-07-14: CarApiServerErrors boto error",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-14T21:18:53.093000+00:00",
       "closed_at": "2026-07-16T15:37:04.759000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-924"
     },
     {
       "key": "PES-925",
       "summary": "Manual SecAPI insertion required for Citi verification index: CIEQUSSI",
+      "reporter": "Jagmeet Singh",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-07-14T22:17:19.645000+00:00",
       "closed_at": "2026-07-14T22:25:34.032000+00:00",
       "status": "Canceled",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-925"
     },
     {
       "key": "PES-926",
       "summary": "2026-07-14: /security/index and /index?name= vending different UUID ",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-14T22:25:48.662000+00:00",
       "closed_at": "2026-07-15T17:42:24.582000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-926"
     },
     {
       "key": "PES-927",
       "summary": "2026-07-14: vol_advantage_fairstrikes fault pattern",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-14T23:41:59.138000+00:00",
       "closed_at": "2026-07-15T17:58:33.926000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-927"
     },
     {
       "key": "PES-930",
       "summary": "CSEATREP | dissapi-06052dd8-2a7 Failed | Reported on: 15th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-15T04:50:45.346000+00:00",
       "closed_at": "2026-07-22T06:42:08.528000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-930"
     },
     {
       "key": "PES-931",
       "summary": "tickhistory_options_daily paused | Reported on: 15th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-15T05:11:12.308000+00:00",
       "closed_at": "2026-07-15T09:08:56.860000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-931"
     },
     {
       "key": "PES-932",
       "summary": "The `HSIEDBUS` EOD job (calc date 2026-07-14) is failing at the option-pricing step",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-15T08:48:43.665000+00:00",
       "closed_at": "2026-07-15T14:35:42.832000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-932"
     },
     {
       "key": "PES-933",
       "summary": "Restate Reports are failing | Reported on: 15th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-15T09:08:48.805000+00:00",
       "closed_at": "2026-07-15T14:56:04.539000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-933"
     },
     {
       "key": "PES-934",
       "summary": "Create an image for testing MSUMSDSI class rewrite",
+      "reporter": "Pablo Andr\u00e9s Villegas Mills",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-15T13:11:52.894000+00:00",
       "closed_at": "2026-07-15T15:10:58.406000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-934"
     },
     {
       "key": "PES-935",
       "summary": "Need to check why target portfolio for UBCSPMT5 has PASSED_VALIDATION but no FINAL on 07-14",
+      "reporter": "Siddharth Patwardhan",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-15T15:38:18.994000+00:00",
       "closed_at": "2026-07-15T17:56:58.698000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-935"
     },
     {
       "key": "PES-936",
       "summary": "Multiple jobs getting stuck in *queued* state for a long time",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-15T16:15:23.211000+00:00",
       "closed_at": "2026-07-21T14:42:36.640000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-936"
     },
     {
       "key": "PES-937",
       "summary": "[Grafana]: [FIRING:1] DSP reference prices loader job hasn\u2019t recently executed (Equities EOD P1)",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-15T16:29:18.916000+00:00",
       "closed_at": "2026-07-15T17:44:58.829000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-937"
     },
     {
       "key": "PES-938",
       "summary": "[Grafana]: [FIRING:1] Airflow: Dag Import Errors (merqube P2)",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-15T17:45:53.685000+00:00",
       "closed_at": "2026-07-15T18:55:59.038000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-938"
     },
     {
       "key": "PES-939",
       "summary": "LSEG RT entitlements - PDP list",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-15T18:30:56.107000+00:00",
       "closed_at": "2026-07-15T21:39:11.820000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-939"
     },
     {
       "key": "PES-940",
       "summary": "2026-07-15: WMR-Intraday-SFTP-Forwards",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-07-16T01:12:36.842000+00:00",
       "closed_at": "2026-07-23T18:13:40.166000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-940"
     },
     {
       "key": "PES-941",
       "summary": "RunFailed: DAG run failed: hsbc-swap-legacy-v1-amd64-vsfix-prod \u2014 task deliver | Reported on: 16th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-16T04:27:56.767000+00:00",
       "closed_at": "2026-07-16T09:36:17.629000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-941"
     },
     {
       "key": "PES-942",
       "summary": "2026-07-16: Impact_Cubed_MQTRGMPR",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-16T23:19:51.247000+00:00",
       "closed_at": "2026-07-17T18:42:39.507000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-942"
     },
     {
       "key": "PES-943",
       "summary": "blocking bulk disseination for full history for more than 5 indices and enabling date range",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-17T06:40:26.362000+00:00",
       "closed_at": "2026-07-17T15:04:00.671000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-943"
     },
     {
       "key": "PES-945",
       "summary": "2026-07-17:  RDS Databases: High CPU Usage",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-17T20:59:50.720000+00:00",
       "closed_at": "2026-07-20T13:59:02.050000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-945"
     },
     {
       "key": "PES-946",
       "summary": "Datascope-Plus-SFTP-S3 Failing | Reported on: 19th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-19T14:13:45.747000+00:00",
       "closed_at": "2026-07-20T13:56:57.524000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-946"
     },
     {
       "key": "PES-947",
       "summary": "WHDINC | No ticker mapping found for FSYM | Reported on: 20th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "suyash shah",
       "created_at": "2026-07-20T09:10:46.268000+00:00",
       "closed_at": "2026-07-20T16:49:18.026000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-947"
     },
     {
       "key": "PES-948",
       "summary": "DAG runs stuck for up to 48 hours | Reported: 20-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Jagmeet Singh",
       "created_at": "2026-07-20T10:06:25.283000+00:00",
       "closed_at": "2026-07-22T06:01:28.985000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-948"
     },
     {
       "key": "PES-949",
       "summary": "Correction of multiple documents for single key on website",
+      "reporter": "rudra",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-20T11:27:57.281000+00:00",
       "closed_at": "2026-07-23T20:42:54.337000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-949"
     },
     {
       "key": "PES-950",
       "summary": "Maintain consistent naming of document keys",
+      "reporter": "rudra",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-20T11:37:56.605000+00:00",
       "closed_at": "2026-07-21T15:56:56.552000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-950"
     },
     {
       "key": "PES-951",
       "summary": "Less than 75% of replicas are available for a k8s deployment. | Reported: 20-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-20T12:19:53.419000+00:00",
       "closed_at": "2026-07-20T12:43:20.016000+00:00",
       "status": "Canceled",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-951"
     },
     {
       "key": "PES-952",
       "summary": "CME TickHistory Data Release Schedule Changing",
+      "reporter": "Anthony Schmieder",
       "creator": "Atlassian Assist",
       "assignee": "Anthony Schmieder",
       "created_at": "2026-07-20T17:03:05.171000+00:00",
       "closed_at": "2026-07-21T15:16:53.196000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-952"
     },
     {
       "key": "PES-953",
       "summary": "CarApiServerErrors: Pricer API 5xx: asset-hsbc-flex-pricer-th-gen1 /prices (NoSuchKey)",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-20T20:06:53.957000+00:00",
       "closed_at": "2026-07-21T14:37:31.267000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-953"
     },
     {
       "key": "PES-954",
       "summary": "Regional German exchanges usage",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-21T00:25:46.368000+00:00",
       "closed_at": "2026-07-21T21:07:26.801000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-954"
     },
     {
       "key": "PES-955",
       "summary": "EDI: Bad Zip file: /tmp/tmpdvi_jz5v/Prices/P04/US/US_XNYS_20260720.zip",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-21T01:45:44.656000+00:00",
       "closed_at": "2026-07-21T08:49:36.136000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-955"
     },
     {
       "key": "PES-956",
       "summary": "Update record in merq.mutual_fund_listing_current table",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-21T02:11:28.624000+00:00",
       "closed_at": "2026-07-21T15:10:53.842000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-956"
     },
     {
       "key": "PES-957",
       "summary": "Option Tick Data Recapture Request \u2014 JPM (April 2\u20133, 2025)",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-21T04:36:16.349000+00:00",
       "closed_at": "2026-07-23T14:18:04.947000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-957"
     },
     {
       "key": "PES-958",
       "summary": "ice_cf_contracts_load_with_twaps_v1 Failed | Reported on: 21st-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-21T11:03:33.754000+00:00",
       "closed_at": "2026-07-21T11:36:24.202000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-958"
     },
     {
       "key": "PES-959",
       "summary": "ice_cf_post_write_dq_v1 \u2014 task ice_cf_raw_market_events_post_write_dq Failed | Reported on: 21st-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-21T11:12:14.877000+00:00",
       "closed_at": "2026-07-21T11:36:32.109000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-959"
     },
     {
       "key": "PES-960",
       "summary": "BXIIIMBD & BXIIBDST | Dissemination Failures due to missing get_returns_data Attribute",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-21T12:09:21.935000+00:00",
       "closed_at": "2026-07-21T19:59:10.408000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-960"
     },
     {
       "key": "PES-961",
       "summary": "Less than 75% of replicas are available for a k8s deployment. | Reported: 21-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-21T12:54:22.082000+00:00",
       "closed_at": "2026-07-22T12:11:20.877000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-961"
     },
     {
       "key": "PES-962",
       "summary": "DAG failing hsbc-options-chain-realtime-<1,2>-release | Reported on 21st-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-21T13:30:16.296000+00:00",
       "closed_at": "2026-07-24T14:52:13.893000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-962"
     },
     {
       "key": "PES-963",
       "summary": "2026-07-21: Garage index failed MILL_DEF_JUL_21_13_10",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-21T18:31:23.148000+00:00",
       "closed_at": "2026-07-23T23:04:00.238000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-963"
     },
     {
       "key": "PES-964",
       "summary": "2026-07-21:  rclone failing to mirror s3 bucket",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-21T19:07:03.422000+00:00",
       "closed_at": "2026-07-21T21:11:13.367000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-964"
     },
     {
       "key": "PES-965",
       "summary": "Add record to merq.mutual_fund_listing_current table",
+      "reporter": "Francisco Acosta",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-21T19:24:20.228000+00:00",
       "closed_at": "2026-07-21T20:24:18.794000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-965"
     },
     {
       "key": "PES-966",
       "summary": "2026-07-21: Factset snapshot failed for symbols XIU",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-21T20:18:54.513000+00:00",
       "closed_at": "2026-07-24T14:59:20.630000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-966"
     },
     {
       "key": "PES-967",
       "summary": "Missing Reuters data for NIYU26 for 2026-07-21",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-21T21:32:28.196000+00:00",
       "closed_at": "2026-07-21T22:27:37.258000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-967"
     },
     {
       "key": "PES-968",
       "summary": "2026-07-21: EOD/last RT price check failed: 905 differences o",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-21T22:45:53.019000+00:00",
       "closed_at": "2026-07-27T17:44:09.360000+00:00",
       "status": "Completed",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-968"
     },
     {
       "key": "PES-969",
       "summary": "2026-07-21: Missing merq-reuters-intraday data for the 21st",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-22T00:52:10.819000+00:00",
       "closed_at": "2026-07-22T08:54:30.634000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-969"
     },
     {
       "key": "PES-970",
       "summary": "options-vs-th-v1-prod \u2014 task data-provider Failed | Reported on: 22nd-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-22T04:30:13.624000+00:00",
       "closed_at": "2026-07-22T07:31:04.045000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-970"
     },
     {
       "key": "PES-971",
       "summary": "CarApiServerErrors: Pricer API 5xx: asset-hsbc-flex-pricer-th-gen1 /prices (NoSuchKey) Failed | Reported on: 22nd-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-22T04:38:09.489000+00:00",
       "closed_at": "2026-07-22T07:29:29.768000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-971"
     },
     {
       "key": "PES-972",
       "summary": "Dependent list on indices",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-22T08:54:48.503000+00:00",
       "closed_at": "2026-07-22T15:51:43.225000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-972"
     },
     {
       "key": "PES-973",
       "summary": "CarApiClientErrors: Pricer API 4xx on /prices: asset-hsbc-flex-pricer-th-gen1 (422) | Reported on 22nd-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-22T11:16:03.932000+00:00",
       "closed_at": "2026-07-22T12:06:46.003000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-973"
     },
     {
       "key": "PES-974",
       "summary": "The backtest fails because ISIN AU000000UTB9 for security H9TQDC-S is missing from mapping.qad_isin_hist, preventing sector data from being resolved.",
+      "reporter": "ekansh",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-22T11:39:10.898000+00:00",
       "closed_at": null,
       "status": "Waiting for Input",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-974"
     },
     {
       "key": "PES-976",
       "summary": "Matching values for replica1 and replica2 checks failed for 1 ticks | Reported: 22-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Kratarth Singh",
       "assignee": "arjit",
       "created_at": "2026-07-22T13:59:25.262000+00:00",
       "closed_at": "2026-07-22T15:56:46.708000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-976"
     },
     {
       "key": "PES-975",
       "summary": "RunFailed: DAG run failed: hsbc-options-chain-realtime-1-release \u2014 task svi-surface | Reported on 22nd-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-22T14:06:29.836000+00:00",
       "closed_at": "2026-07-22T15:55:54.600000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-975"
     },
     {
       "key": "PES-977",
       "summary": "RT DAGs failing MQIMBA10 & MQIMDM05 | reported on 22nd-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-22T14:51:18.463000+00:00",
       "closed_at": "2026-07-23T15:53:37.307000+00:00",
       "status": "ENHANCEMENT",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-977"
     },
     {
       "key": "PES-978",
       "summary": "RunFailed: DAG run failed: hsbc-options-chain-realtime-2-release \u2014 task svi-surface",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-22T17:05:49.826000+00:00",
       "closed_at": "2026-07-22T17:07:45.770000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-978"
     },
     {
       "key": "PES-979",
       "summary": "Usage of Refinitiv's TickHistory",
+      "reporter": "Leonardo Rafaeli",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-22T17:14:56.677000+00:00",
       "closed_at": "2026-07-23T21:37:21.508000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-979"
     },
     {
       "key": "PES-980",
       "summary": "2026-07-22: index-data-store-production: CPU Utilization > 40%",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-22T18:23:09.255000+00:00",
       "closed_at": "2026-07-27T15:35:01.522000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-980"
     },
     {
       "key": "PES-981",
       "summary": "2026-07-22: New report failed JPEQRATE",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-23T00:21:53.756000+00:00",
       "closed_at": "2026-07-23T14:40:57.718000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-981"
     },
     {
       "key": "PES-982",
       "summary": "2026-07-22: No availability dates found for BV8JHF-S",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-07-23T00:27:20.689000+00:00",
       "closed_at": null,
       "status": "Open",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-982"
     },
     {
       "key": "PES-983",
       "summary": "2026-07-22: Customer supplied duplicate portfolio",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-23T00:48:03.619000+00:00",
       "closed_at": "2026-07-23T06:21:00.617000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-983"
     },
     {
       "key": "PES-984",
       "summary": "Compliance Statement Change",
+      "reporter": "sarang",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-23T11:22:52.387000+00:00",
       "closed_at": "2026-07-24T15:49:52.727000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-984"
     },
     {
       "key": "PES-985",
       "summary": "Help needed creating daily report files for Ycharts",
+      "reporter": "Matteo Marchesi",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-23T18:50:17.755000+00:00",
       "closed_at": "2026-07-23T21:24:17.198000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-985"
     },
     {
       "key": "PES-986",
       "summary": "trirt-real-time-values-price-check DAG failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-23T20:11:52.435000+00:00",
       "closed_at": "2026-07-24T16:58:28.851000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-986"
     },
     {
       "key": "PES-987",
       "summary": "2026-07-23: index-data-store-production: CPU Utilization > 40%",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "Darshan Nijaguna",
       "created_at": "2026-07-24T00:40:27.248000+00:00",
       "closed_at": "2026-07-24T17:07:55.704000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-987"
     },
     {
       "key": "PES-988",
       "summary": "Multiple indices failure | 503 Server Error: SERVICE UNAVAILABLE | Reported on : 24th-July-2026",
+      "reporter": "chiranter",
       "creator": "Atlassian Assist",
       "assignee": "rohan.kumar",
       "created_at": "2026-07-24T03:17:23.860000+00:00",
       "closed_at": "2026-07-24T05:24:42.667000+00:00",
       "status": "Completed",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-988"
     },
     {
       "key": "PES-990",
       "summary": "Matching values for replica1 and replica2 checks failed \u2013 multiple tickers | Reported: 24-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-07-24T12:13:51.848000+00:00",
       "closed_at": null,
       "status": "TRIAGE",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-990"
     },
     {
       "key": "PES-991",
       "summary": "trirt-real-time-values-price-check DAG failure",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-24T14:47:44.405000+00:00",
       "closed_at": "2026-07-24T18:40:10.916000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-991"
     },
     {
       "key": "PES-992",
       "summary": "CarApiServerErrors: Pricer API 5xx: asset-hsbc-flex-pricer-ice-gen1 /prices (NoSuchKey)",
+      "reporter": "rohan@merqube.com",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-24T16:13:01.107000+00:00",
       "closed_at": "2026-07-24T16:46:41.823000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-992"
     },
     {
       "key": "PES-993",
       "summary": "2026-07-24:  DatasourceNoData prometheus merqube P2 Factset No recent calendar data available swapmonitor, edi, factset",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-24T17:39:39.473000+00:00",
       "closed_at": null,
       "status": "Waiting for Input",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-993"
     },
     {
       "key": "PES-994",
       "summary": "2026-07-24: DE_XETR EDI  bad file",
+      "reporter": "Daniel Carranco",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-25T00:29:50.784000+00:00",
       "closed_at": "2026-07-27T15:07:22.043000+00:00",
       "status": "Completed",
-      "priority": "High"
+      "priority": "High",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-994"
     },
     {
       "key": "PES-995",
       "summary": "EDI-Equities-EOD-SFTP-S3 \u2013 SFTP to S3 mirroring failed | Reported: 25-July-2026",
+      "reporter": "Kratarth Singh",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-25T14:47:50.793000+00:00",
       "closed_at": null,
       "status": "In Progress",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-995"
     },
     {
       "key": "PES-996",
       "summary": "NodeNotReady: Node NotReady: ip-10-200-23-72.ec2.internal (mq-eks-infra) | Reported on 27th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-27T08:09:04.671000+00:00",
       "closed_at": null,
       "status": "TRIAGE",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-996"
     },
     {
       "key": "PES-997",
       "summary": "Nomura InQubator not displaying latest run timestamp and composition for MQ \u2013 US Energy & Semi 20",
+      "reporter": "Shivang Agrawal",
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-07-27T11:56:40.199000+00:00",
       "closed_at": null,
       "status": "In Progress",
-      "priority": "Highest"
+      "priority": "Highest",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-997"
     },
     {
       "key": "PES-998",
       "summary": "CarApiClientErrors: Pricer API 4xx on /prices: asset-hsbc-flex-pricer-ice-gen1 (422) | Reported on 27th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-27T12:53:49.931000+00:00",
       "closed_at": null,
       "status": "In Progress",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-998"
     },
     {
       "key": "PES-999",
       "summary": "Custom live date to replay incremental run in production",
+      "reporter": "aditya.anand",
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-27T13:42:48.187000+00:00",
       "closed_at": null,
       "status": "In Progress",
-      "priority": "Low"
+      "priority": "Low",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-999"
     },
     {
       "key": "PES-1000",
       "summary": "HsbcRtFallbackEod: HSBC RT (SPY): no intraday surface \u2014 prices served from eod (2026-07-24) | Reported on 27th-Jul-2026",
+      "reporter": "Rishabh Doneriya",
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-27T15:27:59.744000+00:00",
       "closed_at": null,
       "status": "Waiting for Input",
-      "priority": "Medium"
+      "priority": "Medium",
+      "jira_url": "https://merqube.atlassian.net/browse/PES-1000"
     }
   ],
   "privacy": {
-    "note": "Uses offline Jira export of PES cases only. Person names and ticket summaries are shown as in Jira."
-  }
+    "note": "Internal. Full Jira names and summaries from offline PES export."
+  },
+  "jira_base_url": "https://merqube.atlassian.net"
 }
