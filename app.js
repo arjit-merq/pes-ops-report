@@ -1,6 +1,6 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
-const ASSET_VERSION = "20260804e";
+const ASSET_VERSION = "20260804f";
 
 const COLORS = {
   teal: "#0f7a3a",
@@ -14,20 +14,23 @@ const COLORS = {
   white: "#212322",
 };
 
+/* Executive narrative order for manager/director review:
+   volume → when demand hits → improvement → what kinds of work → SLA detail →
+   systems → monthly path → themes → blockers → intake → ownership → raw dump */
 const SECTIONS = [
   { id: "home", num: "00", title: "Cover", sub: "Executive summary" },
-  { id: "overview", num: "01", title: "Overview", sub: "PES cohort volume" },
-  { id: "impact", num: "02", title: "Resolution trend", sub: "Mar → Aug Highest & High" },
-  { id: "timing", num: "03", title: "Demand timing", sub: "IST windows × type" },
-  { id: "sla", num: "04", title: "SLA performance", sub: "Response & resolution" },
-  { id: "types", num: "05", title: "Case types", sub: "Volume & pain rank" },
+  { id: "overview", num: "01", title: "Overview", sub: "Volume & open cases" },
+  { id: "timing", num: "02", title: "Demand timing", sub: "When cases arrive (IST)" },
+  { id: "impact", num: "03", title: "Resolution trend", sub: "Mar → Aug improvement" },
+  { id: "types", num: "04", title: "Case types", sub: "What work looks like" },
+  { id: "sla", num: "05", title: "SLA performance", sub: "Response & resolution detail" },
   { id: "hotspots", num: "06", title: "Hotspots", sub: "Recurring systems" },
-  { id: "monthly", num: "07", title: "Monthly trend", sub: "Trajectory" },
-  { id: "wfi", num: "08", title: "Waiting for Input", sub: "Dwell & backlog" },
-  { id: "people", num: "09", title: "Closers & credit", sub: "Ownership from changelog" },
-  { id: "reporters", num: "10", title: "Reporters", sub: "Intake sources" },
-  { id: "pain", num: "11", title: "Pain points", sub: "Themes from comments" },
-  { id: "cases", num: "12", title: "Case dump", sub: "All PES tickets" },
+  { id: "monthly", num: "07", title: "Monthly trend", sub: "Volume & SLA path" },
+  { id: "pain", num: "08", title: "Pain points", sub: "Themes from comments" },
+  { id: "wfi", num: "09", title: "Waiting for Input", sub: "Blocked on responders" },
+  { id: "reporters", num: "10", title: "Reporters", sub: "Who files cases" },
+  { id: "people", num: "11", title: "Closers & credit", sub: "Who closes / works tickets" },
+  { id: "cases", num: "12", title: "Case dump", sub: "Full ticket list" },
 ];
 
 const chartRegistry = [];
@@ -203,10 +206,10 @@ function buildHome(report) {
           <div class="stat-pill"><div class="label">High SLA (Jun–Jul)</div><div class="value">${fmtPct(high?.summer?.resolution_meet_pct ?? high?.after?.resolution_meet_pct)}</div></div>
         </div>
         ${insights("What this review answers", [
+          "What is the current support volume and open backlog?",
+          "When does demand arrive during the day?",
           "Did Highest/High resolution improve from early spring into June–July?",
-          "Is support demand stable, and where does it spike by time of day?",
-          "Are we meeting first-response and resolution SLAs by priority?",
-          "Which case types and systems create the most operational pain?",
+          "What kinds of cases and systems drive the most pain?",
         ])}
       </div>
     </section>`;
@@ -1102,16 +1105,16 @@ async function main() {
     stage.innerHTML = [
       buildHome(report),
       buildOverview(report),
-      buildImpact(report),
       buildTiming(report),
-      buildSla(report),
+      buildImpact(report),
       buildTypes(report),
+      buildSla(report),
       buildHotspots(report),
       buildMonthly(report),
-      buildWfi(report),
-      buildPeople(report),
-      buildReporters(report),
       buildPain(report),
+      buildWfi(report),
+      buildReporters(report),
+      buildPeople(report),
       buildCases(report),
     ].join("");
 
