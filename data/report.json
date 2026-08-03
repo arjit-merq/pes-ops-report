@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T20:34:32.115533+00:00",
+  "generated_at": "2026-08-03T20:39:54.348529+00:00",
   "title": "PES support case review \u00b7 Mar\u2013Aug 2026",
   "window": "2026-03-09 \u2264 created < 2026-08-05",
   "methodology": {
@@ -35,13 +35,13 @@
   },
   "overview": {
     "n": 682,
-    "closed_now": 655,
-    "open_now": 27,
-    "closed_pct": 96.0,
+    "closed_now": 664,
+    "open_now": 18,
+    "closed_pct": 97.4,
     "status_counts": [
       {
         "status": "Completed",
-        "n": 584
+        "n": 592
       },
       {
         "status": "Canceled",
@@ -49,23 +49,19 @@
       },
       {
         "status": "ENHANCEMENT",
-        "n": 26
-      },
-      {
-        "status": "In Progress",
-        "n": 9
+        "n": 27
       },
       {
         "status": "Waiting for Input",
-        "n": 8
+        "n": 7
+      },
+      {
+        "status": "In Progress",
+        "n": 4
       },
       {
         "status": "Open",
-        "n": 5
-      },
-      {
-        "status": "TRIAGE",
-        "n": 2
+        "n": 4
       },
       {
         "status": "Blocked",
@@ -79,15 +75,15 @@
     "priority_counts": [
       {
         "priority": "High",
-        "n": 288
+        "n": 287
       },
       {
         "priority": "Medium",
-        "n": 220
+        "n": 222
       },
       {
         "priority": "Highest",
-        "n": 160
+        "n": 159
       },
       {
         "priority": "Low",
@@ -186,7 +182,9 @@
         "summary": "Custom live date to replay incremental run in production",
         "assignee": "Vivek Andhavarapu"
       }
-    ]
+    ],
+    "open_definition": "status NOT IN (Canceled, Cancelled, Completed, Done, DECLINED, ENHANCEMENT)",
+    "open_refreshed_at": "2026-08-03T20:39:54.348409+00:00"
   },
   "ist_buckets": [
     {
@@ -11893,7 +11891,7 @@
       "assignee": "arjit",
       "created_at": "2026-07-07T14:43:54.311000+00:00",
       "closed_at": "2026-07-13T14:12:08.817000+00:00",
-      "status": "Waiting for Input",
+      "status": "Completed",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-890"
     },
@@ -11905,7 +11903,7 @@
       "assignee": "justin.jose",
       "created_at": "2026-07-07T15:08:51.915000+00:00",
       "closed_at": "2026-07-15T19:30:28.640000+00:00",
-      "status": "In Progress",
+      "status": "Completed",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-891"
     },
@@ -12216,8 +12214,8 @@
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-07-13T11:08:48.761000+00:00",
-      "closed_at": null,
-      "status": "In Progress",
+      "closed_at": "2026-07-28T13:10:27.763000+00:00",
+      "status": "Completed",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-918"
     },
@@ -12949,7 +12947,7 @@
       "assignee": "yash.singh",
       "created_at": "2026-07-23T00:27:20.689000+00:00",
       "closed_at": null,
-      "status": "Open",
+      "status": "Waiting for Input",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-982"
     },
@@ -13032,8 +13030,8 @@
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-07-24T12:13:51.848000+00:00",
-      "closed_at": null,
-      "status": "TRIAGE",
+      "closed_at": "2026-07-31T14:37:46.059000+00:00",
+      "status": "ENHANCEMENT",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-990"
     },
@@ -13070,7 +13068,7 @@
       "created_at": "2026-07-24T17:39:39.473000+00:00",
       "closed_at": null,
       "status": "Waiting for Input",
-      "priority": "High",
+      "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-993"
     },
     {
@@ -13092,8 +13090,8 @@
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-25T14:47:50.793000+00:00",
-      "closed_at": null,
-      "status": "In Progress",
+      "closed_at": "2026-07-27T21:24:14.283000+00:00",
+      "status": "Completed",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-995"
     },
@@ -13104,8 +13102,8 @@
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-27T08:09:04.671000+00:00",
-      "closed_at": null,
-      "status": "TRIAGE",
+      "closed_at": "2026-07-28T14:40:42.697000+00:00",
+      "status": "Completed",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-996"
     },
@@ -13116,9 +13114,9 @@
       "creator": "Atlassian Assist",
       "assignee": "yash.singh",
       "created_at": "2026-07-27T11:56:40.199000+00:00",
-      "closed_at": null,
-      "status": "In Progress",
-      "priority": "Highest",
+      "closed_at": "2026-08-03T06:18:17.051000+00:00",
+      "status": "Completed",
+      "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-997"
     },
     {
@@ -13128,8 +13126,8 @@
       "creator": "Atlassian Assist",
       "assignee": "Vivek Andhavarapu",
       "created_at": "2026-07-27T12:53:49.931000+00:00",
-      "closed_at": null,
-      "status": "In Progress",
+      "closed_at": "2026-07-27T21:24:52.046000+00:00",
+      "status": "Completed",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-998"
     },
@@ -13140,8 +13138,8 @@
       "creator": "Atlassian Assist",
       "assignee": "arjit",
       "created_at": "2026-07-27T15:27:59.744000+00:00",
-      "closed_at": null,
-      "status": "Waiting for Input",
+      "closed_at": "2026-07-27T18:39:04.780000+00:00",
+      "status": "Completed",
       "priority": "Medium",
       "jira_url": "https://merqube.atlassian.net/browse/PES-1000"
     },

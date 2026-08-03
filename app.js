@@ -1,6 +1,6 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
-const ASSET_VERSION = "20260804c";
+const ASSET_VERSION = "20260804d";
 
 const COLORS = {
   teal: "#0f7a3a",
@@ -213,12 +213,12 @@ function buildOverview(report) {
   const reso = report.sla_resolution.overall;
   return `
     <section class="view" data-view="overview">
-      ${pageHead(s, `PES tickets created ${report.window_label || report.window} (${ov.n} cases). Closed-at uses first terminal status transition.`)}
+      ${pageHead(s, `PES tickets created ${report.window_label || report.window} (${ov.n} cases). Open = status NOT IN (Canceled, Cancelled, Completed, Done, DECLINED, ENHANCEMENT). Closed-at uses first terminal status transition.`)}
       <div class="content">
         <div class="kpi-row">
           ${kpi("Opened", ov.n)}
           ${kpi("Closed now", ov.closed_now, `${ov.closed_pct}%`)}
-          ${kpi("Still open", ov.open_now)}
+          ${kpi("Still open", ov.open_now, "matches live open JQL")}
           ${kpi("Response SLA", fmtPct(resp.meet_pct), `${resp.n_met}/${resp.n_applicable} · May–Jul deep dive`)}
         </div>
         <div class="grid-2">
