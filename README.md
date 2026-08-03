@@ -2,9 +2,9 @@
 
 Static MerQube-branded review of **Platform Engineering Support (PES)** cases.
 
-Data source: offline Jira export for `2026-05-01 ≤ created < 2026-08-01` (395 tickets). No quarterly PDF / capacity figures.
+Data source: offline Jira export for `2026-03-09 ≤ created < 2026-08-05` (682 tickets, from ISO week 11).
 
-Includes SLA, demand timing, case types, hotspots, closers (real Jira display names), and a filterable raw case dump.
+Includes capacity-impact WoW charts, SLA, demand timing, case types, hotspots, closers, and a filterable raw case dump.
 
 ## Local preview
 
@@ -23,7 +23,8 @@ python3 -m http.server 4173
 From `PES-CASE-ANALYSIS`:
 
 ```bash
+python3 scripts/analyze_weekly_impact.py
 python3 scripts/analyze_full_suite.py
 python3 scripts/build_dashboard_report_bundle.py
-# then rebuild public report.json (copy dashboard_full_report.json + tickets dump)
+# then rebuild public report.json (copy dashboard_full_report.json + tickets dump + weekly_impact)
 ```

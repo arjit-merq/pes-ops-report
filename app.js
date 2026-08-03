@@ -1,6 +1,6 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
-const ASSET_VERSION = "20260804a";
+const ASSET_VERSION = "20260804b";
 
 const COLORS = {
   teal: "#0f7a3a",
@@ -174,16 +174,18 @@ function heatTable(heat) {
 
 function buildHome(report) {
   const ov = report.overview;
-  const resp = report.sla_response.overall;
-  const reso = report.sla_resolution.overall;
+  const wi = report.weekly_impact;
+  const highestAfter = wi?.before_after_created_cohort?.Highest?.after;
+  const highAfter = wi?.before_after_created_cohort?.High?.after;
   return `
     <section class="view active" data-view="home">
       <div class="cover">
         <p class="cover-eyebrow">Platform Engineering · Support Operations</p>
         <h1>PES support case review</h1>
         <p class="cover-lead">
-          Executive walkthrough of Platform Engineering Support cases for ${report.window},
-          plus week-on-week Highest/High resolution from week 11 with a May 18 capacity inflection.
+          Executive walkthrough of Platform Engineering Support cases from
+          ${report.window_label || report.window}, including week-on-week Highest/High
+          resolution with a May 18 capacity inflection.
         </p>
         <div class="cover-actions">
           <button class="btn btn-primary" data-nav="overview">Start review</button>
@@ -191,8 +193,8 @@ function buildHome(report) {
         <div class="cover-stats">
           <div class="stat-pill"><div class="label">PES cases</div><div class="value">${ov.n}</div></div>
           <div class="stat-pill"><div class="label">Closed</div><div class="value">${fmtPct(ov.closed_pct)}</div></div>
-          <div class="stat-pill"><div class="label">Response SLA</div><div class="value">${fmtPct(resp.meet_pct)}</div></div>
-          <div class="stat-pill"><div class="label">Resolution SLA</div><div class="value">${fmtPct(reso.meet_pct)}</div></div>
+          <div class="stat-pill"><div class="label">Highest SLA (post May 18)</div><div class="value">${fmtPct(highestAfter?.resolution_meet_pct)}</div></div>
+          <div class="stat-pill"><div class="label">High SLA (post May 18)</div><div class="value">${fmtPct(highAfter?.resolution_meet_pct)}</div></div>
         </div>
         ${insights("What this review answers", [
           "Did Highest/High resolution improve week-on-week after the May 18 capacity add?",
@@ -211,13 +213,13 @@ function buildOverview(report) {
   const reso = report.sla_resolution.overall;
   return `
     <section class="view" data-view="overview">
-      ${pageHead(s, `PES tickets created ${report.window}. Closed-at uses first terminal status transition.`)}
+      ${pageHead(s, `PES tickets created ${report.window_label || report.window} (${ov.n} cases). Closed-at uses first terminal status transition.`)}
       <div class="content">
         <div class="kpi-row">
           ${kpi("Opened", ov.n)}
           ${kpi("Closed now", ov.closed_now, `${ov.closed_pct}%`)}
           ${kpi("Still open", ov.open_now)}
-          ${kpi("Response SLA", fmtPct(resp.meet_pct), `${resp.n_met}/${resp.n_applicable}`)}
+          ${kpi("Response SLA", fmtPct(resp.meet_pct), `${resp.n_met}/${resp.n_applicable} · May–Jul deep dive`)}
         </div>
         <div class="grid-2">
           ${card("Open vs closed", `<div class="chart-box"><canvas id="c-open"></canvas></div>`)}
@@ -331,7 +333,7 @@ function buildTiming(report) {
   const s = SECTIONS.find((x) => x.id === "timing");
   return `
     <section class="view" data-view="timing">
-      ${pageHead(s, "Created timestamps converted to Asia/Kolkata and grouped into 3-hour windows.")}
+      ${pageHead(s, "Created timestamps converted to Asia/Kolkata and grouped into 3-hour windows (May–Jul deep-dive cohort).")}
       <div class="content">
         <div class="grid-2">
           ${card("Opened by IST window", `<div class="chart-box"><canvas id="c-ist"></canvas></div>`)}
@@ -371,7 +373,7 @@ function buildSla(report) {
   const reso = report.sla_resolution.overall;
   return `
     <section class="view" data-view="sla">
-      ${pageHead(s, "Mapped to On-call Guidelines response and resolution targets.")}
+      ${pageHead(s, "Mapped to On-call Guidelines response and resolution targets (May–Jul deep-dive cohort).")}
       <div class="content">
         <div class="kpi-row">
           ${kpi("Response meet", fmtPct(resp.meet_pct), `${report.sla_response.breach_count} breaches`)}
@@ -431,7 +433,7 @@ function buildTypes(report) {
   const s = SECTIONS.find((x) => x.id === "types");
   return `
     <section class="view" data-view="types">
-      ${pageHead(s, `Summary/description classifier. Low-confidence labels: ${report.case_types.low_confidence_count}.`)}
+      ${pageHead(s, `Summary/description classifier on the May–Jul deep-dive cohort. Low-confidence labels: ${report.case_types.low_confidence_count}.`)}
       <div class="content">
         <div class="grid-2">
           ${card("Volume by case type", `<div class="chart-box tall"><canvas id="c-types"></canvas></div>`)}
@@ -462,7 +464,7 @@ function buildHotspots(report) {
   const s = SECTIONS.find((x) => x.id === "hotspots");
   return `
     <section class="view" data-view="hotspots">
-      ${pageHead(s, "Recurring systems and alert patterns matched from ticket summaries.")}
+      ${pageHead(s, "Recurring systems and alert patterns matched from ticket summaries (May–Jul deep-dive cohort).")}
       <div class="content">
         ${card("Top hotspots", `<div class="chart-box tall"><canvas id="c-hot"></canvas></div>`)}
         ${card(
@@ -487,7 +489,7 @@ function buildMonthly(report) {
   const s = SECTIONS.find((x) => x.id === "monthly");
   return `
     <section class="view" data-view="monthly">
-      ${pageHead(s, "Created month in IST — volume and SLA trajectory over May–Jul.")}
+      ${pageHead(s, "Created month in IST — volume and SLA trajectory (May–Jul deep-dive cohort).")}
       <div class="content">
         <div class="grid-2">
           ${card("Opened vs still open", `<div class="chart-box"><canvas id="c-mvol"></canvas></div>`)}
@@ -518,7 +520,7 @@ function buildWfi(report) {
   const dwell = report.wfi.dwell_hours || {};
   return `
     <section class="view" data-view="wfi">
-      ${pageHead(s, report.wfi.definition || "Time spent in Waiting for Input.")}
+      ${pageHead(s, (report.wfi.definition || "Time spent in Waiting for Input.") + " (May–Jul deep-dive cohort)")}
       <div class="content">
         <div class="kpi-row">
           ${kpi("Ever WFI", report.wfi.n_ever_wfi)}
@@ -568,7 +570,7 @@ function buildPeople(report) {
     <section class="view" data-view="people">
       ${pageHead(
         s,
-        `Closer = author of first changelog transition to a terminal status. Closer ≠ top-commenter on ${fmtPct(cw.mismatch_pct)} of closed tickets (${cw.n_mismatch}/${cw.n_closed_with_closer}).`,
+        `Closer = author of first changelog transition to a terminal status. Closer ≠ top-commenter on ${fmtPct(cw.mismatch_pct)} of closed tickets (${cw.n_mismatch}/${cw.n_closed_with_closer}). May–Jul deep-dive cohort.`,
       )}
       <div class="content">
         ${card("Tickets closed (changelog closer)", `<div class="chart-box tall"><canvas id="c-closers"></canvas></div>`)}
@@ -621,7 +623,7 @@ function buildReporters(report) {
     <section class="view" data-view="reporters">
       ${pageHead(
         s,
-        `${r.n_unique_reporters} unique reporters · alert-like summaries ${r.alertish_summary_count} (${r.alertish_pct}%).`,
+        `${r.n_unique_reporters} unique reporters · alert-like summaries ${r.alertish_summary_count} (${r.alertish_pct}%). May–Jul deep-dive cohort.`,
       )}
       <div class="content">
         ${card("Top reporters", `<div class="chart-box tall"><canvas id="c-reporters"></canvas></div>`)}
@@ -722,7 +724,7 @@ function buildPain(report) {
   const s = SECTIONS.find((x) => x.id === "pain");
   return `
     <section class="view" data-view="pain">
-      ${pageHead(s, `${report.pain_points.pr_mention_count} tickets mention a GitHub PR in comments.`)}
+      ${pageHead(s, `${report.pain_points.pr_mention_count} tickets mention a GitHub PR in comments (May–Jul deep-dive cohort).`)}
       <div class="content">
         ${insights("Narrative", report.pain_points.narrative_bullets)}
         ${card("Theme frequency", `<div class="chart-box tall"><canvas id="c-themes"></canvas></div>`)}
