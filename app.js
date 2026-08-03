@@ -1,6 +1,6 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
-const ASSET_VERSION = "20260804b";
+const ASSET_VERSION = "20260804c";
 
 const COLORS = {
   teal: "#0f7a3a",
@@ -17,7 +17,7 @@ const COLORS = {
 const SECTIONS = [
   { id: "home", num: "00", title: "Cover", sub: "Executive summary" },
   { id: "overview", num: "01", title: "Overview", sub: "PES cohort volume" },
-  { id: "impact", num: "02", title: "Capacity impact", sub: "WoW Highest & High since W11" },
+  { id: "impact", num: "02", title: "Resolution trend", sub: "Mar → Aug Highest & High" },
   { id: "timing", num: "03", title: "Demand timing", sub: "IST windows × type" },
   { id: "sla", num: "04", title: "SLA performance", sub: "Response & resolution" },
   { id: "types", num: "05", title: "Case types", sub: "Volume & pain rank" },
@@ -175,8 +175,8 @@ function heatTable(heat) {
 function buildHome(report) {
   const ov = report.overview;
   const wi = report.weekly_impact;
-  const highestAfter = wi?.before_after_created_cohort?.Highest?.after;
-  const highAfter = wi?.before_after_created_cohort?.High?.after;
+  const highest = wi?.early_vs_summer_created?.Highest || wi?.before_after_created_cohort?.Highest;
+  const high = wi?.early_vs_summer_created?.High || wi?.before_after_created_cohort?.High;
   return `
     <section class="view active" data-view="home">
       <div class="cover">
@@ -184,8 +184,8 @@ function buildHome(report) {
         <h1>PES support case review</h1>
         <p class="cover-lead">
           Executive walkthrough of Platform Engineering Support cases from
-          ${report.window_label || report.window}, including week-on-week Highest/High
-          resolution with a May 18 capacity inflection.
+          ${report.window_label || report.window}, with week-on-week Highest/High
+          resolution trending through June and July.
         </p>
         <div class="cover-actions">
           <button class="btn btn-primary" data-nav="overview">Start review</button>
@@ -193,11 +193,11 @@ function buildHome(report) {
         <div class="cover-stats">
           <div class="stat-pill"><div class="label">PES cases</div><div class="value">${ov.n}</div></div>
           <div class="stat-pill"><div class="label">Closed</div><div class="value">${fmtPct(ov.closed_pct)}</div></div>
-          <div class="stat-pill"><div class="label">Highest SLA (post May 18)</div><div class="value">${fmtPct(highestAfter?.resolution_meet_pct)}</div></div>
-          <div class="stat-pill"><div class="label">High SLA (post May 18)</div><div class="value">${fmtPct(highAfter?.resolution_meet_pct)}</div></div>
+          <div class="stat-pill"><div class="label">Highest SLA (Jun–Jul)</div><div class="value">${fmtPct(highest?.summer?.resolution_meet_pct ?? highest?.after?.resolution_meet_pct)}</div></div>
+          <div class="stat-pill"><div class="label">High SLA (Jun–Jul)</div><div class="value">${fmtPct(high?.summer?.resolution_meet_pct ?? high?.after?.resolution_meet_pct)}</div></div>
         </div>
         ${insights("What this review answers", [
-          "Did Highest/High resolution improve week-on-week after the May 18 capacity add?",
+          "Did Highest/High resolution improve from early spring into June–July?",
           "Is support demand stable, and where does it spike by time of day?",
           "Are we meeting first-response and resolution SLAs by priority?",
           "Which case types and systems create the most operational pain?",
@@ -257,55 +257,56 @@ function buildImpact(report) {
     return `<section class="view" data-view="impact">${pageHead(s, "Weekly impact data not loaded.")}${pager("impact")}</section>`;
   }
   const def = wi.definition;
-  const highest = wi.before_after_created_cohort.Highest;
-  const high = wi.before_after_created_cohort.High;
-  const both = wi.before_after_created_cohort["Highest+High"];
-  const recent = wi.recent_vs_baseline.Highest;
+  const highest = wi.early_vs_summer_created?.Highest || wi.before_after_created_cohort.Highest;
+  const high = wi.early_vs_summer_created?.High || wi.before_after_created_cohort.High;
+  const both = wi.early_vs_summer_created?.["Highest+High"] || wi.before_after_created_cohort["Highest+High"];
+  const early = highest.early || highest.before;
+  const summer = highest.summer || highest.after;
   return `
     <section class="view" data-view="impact">
       ${pageHead(
         s,
-        `Week-on-week Highest & High resolution from ${def.window_start} (ISO week 11). Capacity inflection marked at ${def.join_date}.`,
+        `Highest & High resolution from ${def.window_label || def.window_start}. Compare Mar–May vs Jun–Jul, then read the week-on-week charts.`,
       )}
       <div class="content">
         ${insights("How to read this", [
-          "Primary lens: tickets that <em>arrived</em> before vs after May 18 (created cohort) — avoids backlog-flush noise.",
-          "Charts below are week-of-<em>resolution</em> (closed week): mean TTR and resolution SLA meet % for Highest and High.",
-          "Vertical marker on charts = May 18 capacity inflection.",
+          "General March → August trajectory for Highest and High priority PE support cases.",
+          "Headline comparison: tickets that <em>arrived</em> in Mar–May vs Jun–Jul (created cohort).",
+          "Charts use week-of-resolution. Shaded band / marker marks the start of June.",
         ])}
         <div class="kpi-row">
           ${kpi(
-            "Highest mean TTR",
-            `${highest.after.mean_ttr_h}h`,
-            `${highest.before.mean_ttr_h}h → ${fmtDeltaPct(highest.mean_ttr_change_pct)} after join`,
+            "Highest mean TTR (Jun–Jul)",
+            `${summer.mean_ttr_h}h`,
+            `Mar–May ${early.mean_ttr_h}h → ${fmtDeltaPct(highest.mean_ttr_change_pct)}`,
           )}
           ${kpi(
-            "Highest median TTR",
-            `${highest.after.median_ttr_h}h`,
-            `${highest.before.median_ttr_h}h → ${fmtDeltaPct(highest.median_ttr_change_pct)}`,
+            "Highest median TTR (Jun–Jul)",
+            `${summer.median_ttr_h}h`,
+            `Mar–May ${early.median_ttr_h}h → ${fmtDeltaPct(highest.median_ttr_change_pct)}`,
           )}
           ${kpi(
             "Highest resolution SLA",
-            fmtPct(highest.after.resolution_meet_pct),
-            `${fmtPct(highest.before.resolution_meet_pct)} → ${fmtPp(highest.resolution_meet_pp)}`,
+            fmtPct(summer.resolution_meet_pct),
+            `Mar–May ${fmtPct(early.resolution_meet_pct)} → ${fmtPp(highest.resolution_meet_pp)}`,
           )}
           ${kpi(
             "High resolution SLA",
-            fmtPct(high.after.resolution_meet_pct),
-            `${fmtPct(high.before.resolution_meet_pct)} → ${fmtPp(high.resolution_meet_pp)}`,
+            fmtPct((high.summer || high.after).resolution_meet_pct),
+            `Mar–May ${fmtPct((high.early || high.before).resolution_meet_pct)} → ${fmtPp(high.resolution_meet_pp)}`,
           )}
         </div>
         <div class="grid-2">
           ${card(
-            "Created-cohort before → after May 18",
+            "Mar–May → Jun–Jul (created cohort)",
             table(
-              ["Priority", "n before", "n after", "Mean TTR Δ", "Median TTR Δ", "SLA meet Δ"],
+              ["Priority", "n early", "n Jun–Jul", "Mean TTR Δ", "Median TTR Δ", "SLA meet Δ"],
               ["Highest", "High", "Highest+High"].map((p) => {
-                const row = wi.before_after_created_cohort[p];
+                const row = (wi.early_vs_summer_created || wi.before_after_created_cohort)[p];
                 return [
                   p,
-                  row.before.n_closed,
-                  row.after.n_closed,
+                  (row.early || row.before).n_closed,
+                  (row.summer || row.after).n_closed,
                   fmtDeltaPct(row.mean_ttr_change_pct),
                   fmtDeltaPct(row.median_ttr_change_pct),
                   fmtPp(row.resolution_meet_pp),
@@ -313,11 +314,11 @@ function buildImpact(report) {
               }),
             ),
           )}
-          ${insights("Created-cohort takeaways", [
-            `Highest mean TTR fell ${Math.abs(highest.mean_ttr_change_pct)}% (${highest.before.mean_ttr_h}h → ${highest.after.mean_ttr_h}h) for tickets filed after May 18.`,
-            `Highest resolution SLA meet rose ${fmtPp(highest.resolution_meet_pp)} (${fmtPct(highest.before.resolution_meet_pct)} → ${fmtPct(highest.after.resolution_meet_pct)}).`,
+          ${insights("Jun–Jul takeaways", [
+            `Highest mean TTR fell ${Math.abs(highest.mean_ttr_change_pct)}% (${early.mean_ttr_h}h → ${summer.mean_ttr_h}h) for tickets filed in Jun–Jul vs Mar–May.`,
+            `Highest resolution SLA meet rose ${fmtPp(highest.resolution_meet_pp)} (${fmtPct(early.resolution_meet_pct)} → ${fmtPct(summer.resolution_meet_pct)}).`,
             `Highest+High SLA meet rose ${fmtPp(both.resolution_meet_pp)}; mean TTR ${fmtDeltaPct(both.mean_ttr_change_pct)}.`,
-            `Recent closed weeks vs early baseline (Highest): median TTR ${fmtDeltaPct(recent.median_ttr_change_pct)}, SLA ${fmtPp(recent.resolution_meet_pp)}.`,
+            "Week-on-week charts below show the path into that summer improvement.",
           ])}
         </div>
         ${card("Mean TTR by closed week (hours)", `<div class="chart-box tall"><canvas id="c-impact-mean"></canvas></div>`)}
@@ -743,13 +744,13 @@ function mountCharts(report, viewId) {
   if (viewId === "impact" && report.weekly_impact) {
     const weeks = report.weekly_impact.weekly_closed;
     const labels = weeks.map((w) => w.week_id.replace("2026-", ""));
-    const joinIdx = weeks.findIndex((w) => w.period === "after_join");
-    const joinPlugin = {
-      id: "joinMarker",
+    const juneIdx = weeks.findIndex((w) => (w.phase || w.period) === "summer" || w.week_monday >= "2026-06-01");
+    const junePlugin = {
+      id: "juneMarker",
       afterDraw(chart) {
-        if (joinIdx < 0) return;
+        if (juneIdx < 0) return;
         const { ctx, chartArea, scales } = chart;
-        const x = scales.x.getPixelForValue(joinIdx);
+        const x = scales.x.getPixelForValue(juneIdx);
         ctx.save();
         ctx.strokeStyle = "rgba(15,122,58,0.55)";
         ctx.setLineDash([5, 4]);
@@ -759,7 +760,7 @@ function mountCharts(report, viewId) {
         ctx.stroke();
         ctx.fillStyle = "rgba(15,122,58,0.85)";
         ctx.font = "11px IBM Plex Sans";
-        ctx.fillText("May 18", x + 4, chartArea.top + 12);
+        ctx.fillText("Jun →", x + 4, chartArea.top + 12);
         ctx.restore();
       },
     };
@@ -774,7 +775,7 @@ function mountCharts(report, viewId) {
         ],
       },
       options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, title: { display: true, text: "Hours" } } } },
-      plugins: [joinPlugin],
+      plugins: [junePlugin],
     });
     chart(document.getElementById("c-impact-median"), {
       type: "line",
@@ -786,7 +787,7 @@ function mountCharts(report, viewId) {
         ],
       },
       options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, title: { display: true, text: "Hours" } } } },
-      plugins: [joinPlugin],
+      plugins: [junePlugin],
     });
     chart(document.getElementById("c-impact-sla"), {
       type: "line",
@@ -798,7 +799,7 @@ function mountCharts(report, viewId) {
         ],
       },
       options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, max: 100, title: { display: true, text: "%" } } } },
-      plugins: [joinPlugin],
+      plugins: [junePlugin],
     });
     chart(document.getElementById("c-impact-vol"), {
       type: "bar",
@@ -810,7 +811,7 @@ function mountCharts(report, viewId) {
         ],
       },
       options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true, ticks: { precision: 0 } } } },
-      plugins: [joinPlugin],
+      plugins: [junePlugin],
     });
   }
 
