@@ -1,6 +1,6 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
-const ASSET_VERSION = "20260804d";
+const ASSET_VERSION = "20260804e";
 
 const COLORS = {
   teal: "#0f7a3a",
@@ -60,10 +60,16 @@ function chart(canvas, config) {
   return instance;
 }
 
-function kpi(label, value, hint = "") {
-  return `<div class="kpi"><div class="label">${label}</div><div class="value">${value}</div>${
-    hint ? `<div class="hint">${hint}</div>` : ""
-  }</div>`;
+function kpi(label, value, hint = "", tip = "") {
+  const tipAttr = tip ? ` data-tip="${escapeHtml(tip)}"` : "";
+  const tipBtn = tip
+    ? `<button type="button" class="tip-btn" aria-label="What this metric means">?</button>`
+    : "";
+  return `<div class="kpi"${tipAttr}>
+    <div class="label">${label}${tipBtn}</div>
+    <div class="value">${value}</div>
+    ${hint ? `<div class="hint">${hint}</div>` : ""}
+  </div>`;
 }
 
 function card(title, body, extraClass = "") {
@@ -279,21 +285,25 @@ function buildImpact(report) {
             "Highest mean TTR (Jun–Jul)",
             `${summer.mean_ttr_h}h`,
             `Mar–May ${early.mean_ttr_h}h → ${fmtDeltaPct(highest.mean_ttr_change_pct)}`,
+            "Mean time to resolution for Highest-priority tickets created in Jun–Jul (then closed). TTR = calendar hours from created → first terminal status. Lower is better. Compared with the same metric for tickets created in Mar–May.",
           )}
           ${kpi(
             "Highest median TTR (Jun–Jul)",
             `${summer.median_ttr_h}h`,
             `Mar–May ${early.median_ttr_h}h → ${fmtDeltaPct(highest.median_ttr_change_pct)}`,
+            "Median (50th percentile) time to resolution for Highest tickets created in Jun–Jul. Less skewed by a few very long outliers than the mean. Lower is better.",
           )}
           ${kpi(
             "Highest resolution SLA",
             fmtPct(summer.resolution_meet_pct),
             `Mar–May ${fmtPct(early.resolution_meet_pct)} → ${fmtPp(highest.resolution_meet_pp)}`,
+            "Share of Highest tickets (created in that period, now closed) that met the On-call resolution target: same IST business day or within 24 calendar hours. Higher is better. Δ is percentage points vs Mar–May.",
           )}
           ${kpi(
             "High resolution SLA",
             fmtPct((high.summer || high.after).resolution_meet_pct),
             `Mar–May ${fmtPct((high.early || high.before).resolution_meet_pct)} → ${fmtPp(high.resolution_meet_pp)}`,
+            "Share of High-priority tickets that met the On-call resolution target: closed within 3 IST business days. Higher is better. Compared Mar–May → Jun–Jul for tickets created in each period.",
           )}
         </div>
         <div class="grid-2">
