@@ -1,6 +1,6 @@
 /* MerQube PE Support Ops Report — executive SPA */
 
-const ASSET_VERSION = "20260728d";
+const ASSET_VERSION = "20260804a";
 
 const COLORS = {
   teal: "#0f7a3a",
@@ -17,16 +17,17 @@ const COLORS = {
 const SECTIONS = [
   { id: "home", num: "00", title: "Cover", sub: "Executive summary" },
   { id: "overview", num: "01", title: "Overview", sub: "PES cohort volume" },
-  { id: "timing", num: "02", title: "Demand timing", sub: "IST windows × type" },
-  { id: "sla", num: "03", title: "SLA performance", sub: "Response & resolution" },
-  { id: "types", num: "04", title: "Case types", sub: "Volume & pain rank" },
-  { id: "hotspots", num: "05", title: "Hotspots", sub: "Recurring systems" },
-  { id: "monthly", num: "06", title: "Monthly trend", sub: "Trajectory" },
-  { id: "wfi", num: "07", title: "Waiting for Input", sub: "Dwell & backlog" },
-  { id: "people", num: "08", title: "Closers & credit", sub: "Ownership from changelog" },
-  { id: "reporters", num: "09", title: "Reporters", sub: "Intake sources" },
-  { id: "pain", num: "10", title: "Pain points", sub: "Themes from comments" },
-  { id: "cases", num: "11", title: "Case dump", sub: "All PES tickets" },
+  { id: "impact", num: "02", title: "Capacity impact", sub: "WoW Highest & High since W11" },
+  { id: "timing", num: "03", title: "Demand timing", sub: "IST windows × type" },
+  { id: "sla", num: "04", title: "SLA performance", sub: "Response & resolution" },
+  { id: "types", num: "05", title: "Case types", sub: "Volume & pain rank" },
+  { id: "hotspots", num: "06", title: "Hotspots", sub: "Recurring systems" },
+  { id: "monthly", num: "07", title: "Monthly trend", sub: "Trajectory" },
+  { id: "wfi", num: "08", title: "Waiting for Input", sub: "Dwell & backlog" },
+  { id: "people", num: "09", title: "Closers & credit", sub: "Ownership from changelog" },
+  { id: "reporters", num: "10", title: "Reporters", sub: "Intake sources" },
+  { id: "pain", num: "11", title: "Pain points", sub: "Themes from comments" },
+  { id: "cases", num: "12", title: "Case dump", sub: "All PES tickets" },
 ];
 
 const chartRegistry = [];
@@ -181,8 +182,8 @@ function buildHome(report) {
         <p class="cover-eyebrow">Platform Engineering · Support Operations</p>
         <h1>PES support case review</h1>
         <p class="cover-lead">
-          Executive walkthrough of Platform Engineering Support cases for ${report.window}:
-          volume, SLA, demand timing, case mix, and hotspots.
+          Executive walkthrough of Platform Engineering Support cases for ${report.window},
+          plus week-on-week Highest/High resolution from week 11 with a May 18 capacity inflection.
         </p>
         <div class="cover-actions">
           <button class="btn btn-primary" data-nav="overview">Start review</button>
@@ -194,6 +195,7 @@ function buildHome(report) {
           <div class="stat-pill"><div class="label">Resolution SLA</div><div class="value">${fmtPct(reso.meet_pct)}</div></div>
         </div>
         ${insights("What this review answers", [
+          "Did Highest/High resolution improve week-on-week after the May 18 capacity add?",
           "Is support demand stable, and where does it spike by time of day?",
           "Are we meeting first-response and resolution SLAs by priority?",
           "Which case types and systems create the most operational pain?",
@@ -230,6 +232,97 @@ function buildOverview(report) {
           ])}
         </div>
         ${pager("overview")}
+      </div>
+    </section>`;
+}
+
+function fmtDeltaPct(v) {
+  if (v == null) return "—";
+  const sign = v > 0 ? "+" : "";
+  return `${sign}${v}%`;
+}
+
+function fmtPp(v) {
+  if (v == null) return "—";
+  const sign = v > 0 ? "+" : "";
+  return `${sign}${v} pp`;
+}
+
+function buildImpact(report) {
+  const s = SECTIONS.find((x) => x.id === "impact");
+  const wi = report.weekly_impact;
+  if (!wi) {
+    return `<section class="view" data-view="impact">${pageHead(s, "Weekly impact data not loaded.")}${pager("impact")}</section>`;
+  }
+  const def = wi.definition;
+  const highest = wi.before_after_created_cohort.Highest;
+  const high = wi.before_after_created_cohort.High;
+  const both = wi.before_after_created_cohort["Highest+High"];
+  const recent = wi.recent_vs_baseline.Highest;
+  return `
+    <section class="view" data-view="impact">
+      ${pageHead(
+        s,
+        `Week-on-week Highest & High resolution from ${def.window_start} (ISO week 11). Capacity inflection marked at ${def.join_date}.`,
+      )}
+      <div class="content">
+        ${insights("How to read this", [
+          "Primary lens: tickets that <em>arrived</em> before vs after May 18 (created cohort) — avoids backlog-flush noise.",
+          "Charts below are week-of-<em>resolution</em> (closed week): mean TTR and resolution SLA meet % for Highest and High.",
+          "Vertical marker on charts = May 18 capacity inflection.",
+        ])}
+        <div class="kpi-row">
+          ${kpi(
+            "Highest mean TTR",
+            `${highest.after.mean_ttr_h}h`,
+            `${highest.before.mean_ttr_h}h → ${fmtDeltaPct(highest.mean_ttr_change_pct)} after join`,
+          )}
+          ${kpi(
+            "Highest median TTR",
+            `${highest.after.median_ttr_h}h`,
+            `${highest.before.median_ttr_h}h → ${fmtDeltaPct(highest.median_ttr_change_pct)}`,
+          )}
+          ${kpi(
+            "Highest resolution SLA",
+            fmtPct(highest.after.resolution_meet_pct),
+            `${fmtPct(highest.before.resolution_meet_pct)} → ${fmtPp(highest.resolution_meet_pp)}`,
+          )}
+          ${kpi(
+            "High resolution SLA",
+            fmtPct(high.after.resolution_meet_pct),
+            `${fmtPct(high.before.resolution_meet_pct)} → ${fmtPp(high.resolution_meet_pp)}`,
+          )}
+        </div>
+        <div class="grid-2">
+          ${card(
+            "Created-cohort before → after May 18",
+            table(
+              ["Priority", "n before", "n after", "Mean TTR Δ", "Median TTR Δ", "SLA meet Δ"],
+              ["Highest", "High", "Highest+High"].map((p) => {
+                const row = wi.before_after_created_cohort[p];
+                return [
+                  p,
+                  row.before.n_closed,
+                  row.after.n_closed,
+                  fmtDeltaPct(row.mean_ttr_change_pct),
+                  fmtDeltaPct(row.median_ttr_change_pct),
+                  fmtPp(row.resolution_meet_pp),
+                ];
+              }),
+            ),
+          )}
+          ${insights("Created-cohort takeaways", [
+            `Highest mean TTR fell ${Math.abs(highest.mean_ttr_change_pct)}% (${highest.before.mean_ttr_h}h → ${highest.after.mean_ttr_h}h) for tickets filed after May 18.`,
+            `Highest resolution SLA meet rose ${fmtPp(highest.resolution_meet_pp)} (${fmtPct(highest.before.resolution_meet_pct)} → ${fmtPct(highest.after.resolution_meet_pct)}).`,
+            `Highest+High SLA meet rose ${fmtPp(both.resolution_meet_pp)}; mean TTR ${fmtDeltaPct(both.mean_ttr_change_pct)}.`,
+            `Recent closed weeks vs early baseline (Highest): median TTR ${fmtDeltaPct(recent.median_ttr_change_pct)}, SLA ${fmtPp(recent.resolution_meet_pp)}.`,
+          ])}
+        </div>
+        ${card("Mean TTR by closed week (hours)", `<div class="chart-box tall"><canvas id="c-impact-mean"></canvas></div>`)}
+        ${card("Median TTR by closed week (hours)", `<div class="chart-box tall"><canvas id="c-impact-median"></canvas></div>`)}
+        ${card("Resolution SLA meet % by closed week", `<div class="chart-box tall"><canvas id="c-impact-sla"></canvas></div>`)}
+        ${card("Highest + High closed volume by week", `<div class="chart-box"><canvas id="c-impact-vol"></canvas></div>`)}
+        ${pager("impact")}
       </div>
     </section>`;
 }
@@ -645,6 +738,80 @@ function mountCharts(report, viewId) {
     maintainAspectRatio: false,
   };
 
+  if (viewId === "impact" && report.weekly_impact) {
+    const weeks = report.weekly_impact.weekly_closed;
+    const labels = weeks.map((w) => w.week_id.replace("2026-", ""));
+    const joinIdx = weeks.findIndex((w) => w.period === "after_join");
+    const joinPlugin = {
+      id: "joinMarker",
+      afterDraw(chart) {
+        if (joinIdx < 0) return;
+        const { ctx, chartArea, scales } = chart;
+        const x = scales.x.getPixelForValue(joinIdx);
+        ctx.save();
+        ctx.strokeStyle = "rgba(15,122,58,0.55)";
+        ctx.setLineDash([5, 4]);
+        ctx.beginPath();
+        ctx.moveTo(x, chartArea.top);
+        ctx.lineTo(x, chartArea.bottom);
+        ctx.stroke();
+        ctx.fillStyle = "rgba(15,122,58,0.85)";
+        ctx.font = "11px IBM Plex Sans";
+        ctx.fillText("May 18", x + 4, chartArea.top + 12);
+        ctx.restore();
+      },
+    };
+    const series = (pri, field) => weeks.map((w) => w.priorities[pri]?.[field] ?? null);
+    chart(document.getElementById("c-impact-mean"), {
+      type: "line",
+      data: {
+        labels,
+        datasets: [
+          { label: "Highest mean TTR", data: series("Highest", "mean_ttr_h"), borderColor: COLORS.rose, tension: 0.25, spanGaps: true },
+          { label: "High mean TTR", data: series("High", "mean_ttr_h"), borderColor: COLORS.amber, tension: 0.25, spanGaps: true },
+        ],
+      },
+      options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, title: { display: true, text: "Hours" } } } },
+      plugins: [joinPlugin],
+    });
+    chart(document.getElementById("c-impact-median"), {
+      type: "line",
+      data: {
+        labels,
+        datasets: [
+          { label: "Highest median TTR", data: series("Highest", "median_ttr_h"), borderColor: COLORS.rose, tension: 0.25, spanGaps: true },
+          { label: "High median TTR", data: series("High", "median_ttr_h"), borderColor: COLORS.amber, tension: 0.25, spanGaps: true },
+        ],
+      },
+      options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, title: { display: true, text: "Hours" } } } },
+      plugins: [joinPlugin],
+    });
+    chart(document.getElementById("c-impact-sla"), {
+      type: "line",
+      data: {
+        labels,
+        datasets: [
+          { label: "Highest SLA meet %", data: series("Highest", "resolution_meet_pct"), borderColor: COLORS.teal, tension: 0.25, spanGaps: true },
+          { label: "High SLA meet %", data: series("High", "resolution_meet_pct"), borderColor: COLORS.sky, tension: 0.25, spanGaps: true },
+        ],
+      },
+      options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, max: 100, title: { display: true, text: "%" } } } },
+      plugins: [joinPlugin],
+    });
+    chart(document.getElementById("c-impact-vol"), {
+      type: "bar",
+      data: {
+        labels,
+        datasets: [
+          { label: "Highest closed", data: weeks.map((w) => w.priorities.Highest.n_closed), backgroundColor: COLORS.rose, borderRadius: 6 },
+          { label: "High closed", data: weeks.map((w) => w.priorities.High.n_closed), backgroundColor: COLORS.amber, borderRadius: 6 },
+        ],
+      },
+      options: { ...commonOpts, plugins: { legend: { position: "bottom" } }, scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true, ticks: { precision: 0 } } } },
+      plugins: [joinPlugin],
+    });
+  }
+
   if (viewId === "overview") {
     const ov = report.overview;
     chart(document.getElementById("c-open"), {
@@ -922,6 +1089,7 @@ async function main() {
     stage.innerHTML = [
       buildHome(report),
       buildOverview(report),
+      buildImpact(report),
       buildTiming(report),
       buildSla(report),
       buildTypes(report),
